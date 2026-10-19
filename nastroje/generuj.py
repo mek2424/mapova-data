@@ -455,6 +455,13 @@ def stat_ze_sveta(s, slozka):
     return meta
 
 
+def zapis_prubeh(radek):
+    """Průběh stahování světa – v Actions nejsou záznamy z běhu odjinud vidět."""
+    ZPRAVY.mkdir(parents=True, exist_ok=True)
+    with open(ZPRAVY / 'prubeh-svet.md', 'a', encoding='utf-8') as f:
+        f.write(f'- {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} {radek}\n')
+
+
 def svet(minut):
     global PREPSANE_UROVNE
     prepsane = NASTROJE / 'urovne-svet.json'
@@ -471,6 +478,7 @@ def svet(minut):
             log(f'Časový limit – pokračuje se příště ({hotovo} hotovo v tomto běhu).')
             break
         log(f'{s["id"]} {s["nazev"]}')
+        zacatek = time.time()
         try:
             meta = stat_ze_sveta(s, slozka)
         except Exception as e:  # noqa: BLE001 – zapsat a pokračovat dalším státem
@@ -478,12 +486,15 @@ def svet(minut):
             chyby = DATA / 'svet' / 'chyby.json'
             z = json.loads(chyby.read_text(encoding='utf-8')) if chyby.exists() else {}
             z[s['id']] = f'{dt.date.today()}: {e}'
+            zapis_prubeh(f'{s["id"]} {s["nazev"]}: CHYBA po {time.time() - zacatek:.0f} s – {e}')
             chyby.parent.mkdir(parents=True, exist_ok=True)
             chyby.write_text(json.dumps(z, ensure_ascii=False, indent=1), encoding='utf-8')
             continue
         meta['vytvoreno'] = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
         (slozka / 'meta.json').write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding='utf-8')
         hotovo += 1
+        zapis_prubeh(f'{s["id"]} {s["nazev"]}: {time.time() - zacatek:.0f} s, úrovně {meta["_urovne"]["zvolene"]}, '
+                     + ', '.join(f'{k} {v["prvku"]}' for k, v in meta.items() if isinstance(v, dict) and 'prvku' in v))
     zbyva = [s['id'] for s in staty if not (DATA / 'svet' / s['id'] / 'meta.json').exists()]
     if not zbyva:
         staty_sveta(staty)

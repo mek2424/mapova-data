@@ -14,7 +14,7 @@ on:
         default: pruzkum
       minut:
         description: Časový limit pro svět v minutách (běh pak skončí a příště pokračuje)
-        default: '300'
+        default: '230'
 
 permissions:
   contents: write
@@ -53,12 +53,23 @@ jobs:
           fi
 
       - name: Generování
+        # Limit kroku je kratší než limit úlohy, aby se hotová práce vždy stihla zveřejnit.
+        timeout-minutes: 300
+        continue-on-error: true
         env:
           VYSTUP: ${{ github.workspace }}/vystup
           PRACOVNI: ${{ runner.temp }}
         run: python nastroje/generuj.py "${{ inputs.co }}" --minut "${{ inputs.minut }}"
 
+      - name: Index (i po přerušení)
+        if: always()
+        env:
+          VYSTUP: ${{ github.workspace }}/vystup
+          PRACOVNI: ${{ runner.temp }}
+        run: python nastroje/generuj.py index
+
       - name: Zveřejnění do větve data
+        if: always()
         run: |
           cd vystup
           touch .nojekyll
