@@ -4,9 +4,9 @@ Databáze hranic (GeoJSON a TopoJSON) z OpenStreetMap pro [Mapový editor](https
 Sporná území jsou upravená podle pravidel redakce ČT (stejných jako v editoru).
 
 - **Česko** – co nejpodrobněji: kraje, okresy, ORP, obce s pověřeným úřadem, obce, městské části a obvody,
-  správní obvody Prahy, katastrální území, vojenské újezdy, senátní obvody, národní parky, CHKO,
-  přírodní parky, povodí. Obce a další celky mají i sloupce s nadřazenými celky (okres, ORP, kraj),
-  takže je jde v editoru sloučit podle sloupce.
+  správní obvody Prahy, katastrální území, vojenské újezdy, národní parky, CHKO, přírodní parky.
+  Obce a další celky mají i sloupce s nadřazenými celky (POÚ, ORP, okres, kraj), takže je jde
+  v editoru sloučit podle sloupce. Senátní obvody a povodí v OSM nejsou.
 - **Svět** – obrysy států, 1. a 2. úroveň správních celků (úrovně se volí automaticky podle OSM).
 
 Každá vrstva má dvě podoby: **zjednodušenou** (`.json`, GeoJSON, rychlá) a **plnou** (`.topojson`, sousedé sdílejí hranice).

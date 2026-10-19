@@ -106,15 +106,19 @@ def overpass(dotaz, cil=None, *, timeout=1800):
 
 # ------------------------------------------------------------------ OSM → plochy
 
-def plochy(soubor, *filtry):
+def plochy(soubor, *filtry, prijmout=None):
     """Plochy z OSM souboru (pbf nebo xml): multipolygony z relací i uzavřené cesty.
-    Vrací seznam {osm, tagy, geom}. Enklávy a díry skládá osmium správně (role inner)."""
+    Vrací seznam {osm, tagy, geom}. Enklávy a díry skládá osmium správně (role inner).
+    prijmout(tagy) vyřadí nepotřebné plochy dřív, než se z nich počítá geometrie.
+    Pozor: Overpass musí vracet prvky setříděné (out body; ne „qt“), jinak osmium odmítne soubor."""
     fab = osmium.geom.WKBFactory()
     from shapely import wkb
     vysledek = []
     fp = osmium.FileProcessor(str(soubor)).with_areas(*filtry)
     for o in fp:
         if not isinstance(o, osmium.osm.Area):
+            continue
+        if prijmout and not prijmout(o.tags):
             continue
         try:
             g = wkb.loads(fab.create_multipolygon(o), hex=True)
@@ -251,8 +255,16 @@ def soubor_ceska():
 def plochy_ceska():
     pbf = soubor_ceska()
     log('Skládám plochy hranic a chráněných území…')
-    # Filtry v with_areas platí všechny najednou – stačí jeden: cokoli se značkou boundary.
-    return plochy(pbf, osmium.filter.KeyFilter('boundary'))
+    vse = plochy(pbf, osmium.filter.KeyFilter('boundary'), prijmout=lambda t: 'boundary' in t)
+    # Výřez z Geofabriku má okraj i se sousedy – nechat jen to, co leží v Česku.
+    stat = [p for p in vse if p['tagy'].get('admin_level') == '2' and p['tagy'].get('ISO3166-1') == 'CZ']
+    if not stat:
+        log('  obrys Česka nenalezen – ořez se nepoužije')
+        return vse
+    cesko = unary_union([p['geom'] for p in stat]).buffer(0.0005)
+    strom_ok = [p for p in vse if cesko.contains(p['geom'].representative_point())]
+    log(f'  v Česku {len(strom_ok)} z {len(vse)} ploch')
+    return strom_ok
 
 
 def cesko():
@@ -269,7 +281,10 @@ def cesko():
             if vyloucit and vyloucit.search(p['tagy'].get('name', '')):
                 continue
             kod = next((p['tagy'][k] for k in v.get('id', []) if p['tagy'].get(k)), p['osm'])
-            prvky.append({'vlastnosti': {'id': kod, 'nazev': cesky_nazev(p['tagy'])}, 'geom': p['geom'], 'osm': p['osm']})
+            nazev = cesky_nazev(p['tagy'])
+            if v.get('odstranit'):
+                nazev = re.sub(v['odstranit'], '', nazev).strip() or nazev
+            prvky.append({'vlastnosti': {'id': kod, 'nazev': nazev}, 'geom': p['geom'], 'osm': p['osm']})
         # Stejná hranice může být v OSM dvakrát (relace i cesta) – nechat jednu.
         videne = set(); jedinecne = []
         for p in prvky:
@@ -328,7 +343,7 @@ def pruzkum():
 def najdi_oblast(jmena):
     """Relace sporné oblasti v OSM podle name:en. Vrací (geometrie, popis nalezeného) nebo (None, důvod)."""
     vyrazy = '|'.join(re.escape(j) for j in jmena)
-    dotaz = f'[out:xml][timeout:600];rel["name:en"~"^({vyrazy})$"]["boundary"];(._;>;);out body qt;'
+    dotaz = f'[out:xml][timeout:600];rel["name:en"~"^({vyrazy})$"]["boundary"];(._;>;);out body;'
     cil = PRACOVNI / f'oblast-{re.sub(r"[^a-z]", "", jmena[0].lower())}.osm'
     cil.parent.mkdir(parents=True, exist_ok=True)
     overpass(dotaz, cil)
@@ -404,7 +419,7 @@ def stat_ze_sveta(s, slozka):
     iso2 = s['iso']
     oblast = f'rel["boundary"="administrative"]["admin_level"="2"]["ISO3166-1"="{iso2}"]'
     soubor = PRACOVNI / f'{s["id"]}-0.osm'
-    overpass(f'[out:xml][timeout:900];{oblast};(._;>;);out body qt;', soubor)
+    overpass(f'[out:xml][timeout:900];{oblast};(._;>;);out body;', soubor)
     obrys = [p for p in plochy(soubor) if p['tagy'].get('admin_level') == '2']
     soubor.unlink(missing_ok=True)
     if not obrys:
@@ -419,7 +434,7 @@ def stat_ze_sveta(s, slozka):
     predchozi = None
     for i, uroven in enumerate(urovne, start=1):
         soubor = PRACOVNI / f'{s["id"]}-{uroven}.osm'
-        overpass(f'[out:xml][timeout:1800][maxsize:4000000000];{oblast};map_to_area->.z;rel(area.z)["boundary"="administrative"]["admin_level"="{uroven}"];(._;>;);out body qt;', soubor)
+        overpass(f'[out:xml][timeout:1800][maxsize:4000000000];{oblast};map_to_area->.z;rel(area.z)["boundary"="administrative"]["admin_level"="{uroven}"];(._;>;);out body;', soubor)
         okoli = obrys_g.buffer(0.01)
         prvky = []
         for p in plochy(soubor):
