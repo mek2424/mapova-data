@@ -1,0 +1,26 @@
+{
+  "_popis": "Redakční úpravy sporných území pro databázi. Musí odpovídat pravidlům v editoru (mek2424/mapovy-editor, js/styl.js, oddíl „sporná území“). Oblast se v OSM hledá podle anglického názvu (name:en); co se našlo, zapíše průzkum do zpravy/pruzkum-sporna.md. 'prevest' = oblast se odebere státu 'z' (obrys i celky) a přidá státu 'do'. 'rovnobezka' = část státu jižně od zeměpisné šířky se oddělí jako samostatné území.",
+  "pravidla": [
+    { "nazev": "Krym a Sevastopol patří Ukrajině", "druh": "prevest", "z": "RUS", "do": "UKR",
+      "oblasti": [
+        { "name:en": ["Autonomous Republic of Crimea", "Republic of Crimea", "Crimea"], "nazev": "Autonomní republika Krym" },
+        { "name:en": ["Sevastopol"], "nazev": "Sevastopol" }
+      ] },
+    { "nazev": "Abcházie a Jižní Osetie jsou součástí Gruzie", "druh": "prevest", "z": "RUS", "do": "GEO",
+      "oblasti": [
+        { "name:en": ["Abkhazia", "Autonomous Republic of Abkhazia"], "nazev": "Abcházie" },
+        { "name:en": ["South Ossetia", "Tskhinvali Region"], "nazev": "Jižní Osetie" }
+      ] },
+    { "nazev": "Golanské výšiny patří Sýrii (okupováno Izraelem)", "druh": "prevest", "z": "ISR", "do": "SYR",
+      "oblasti": [
+        { "name:en": ["Golan Heights"], "nazev": "Golanské výšiny, okupováno Izraelem" }
+      ] },
+    { "nazev": "Arunáčalpradéš patří Indii", "druh": "prevest", "z": "CHN", "do": "IND",
+      "oblasti": [
+        { "name:en": ["Arunachal Pradesh"], "nazev": "Arunáčalpradéš" }
+      ] },
+    { "nazev": "Západní Sahara zvlášť, hranice s Marokem po 27°40′ s. š.", "druh": "rovnobezka",
+      "stat": "MAR", "novy": "SAH", "sirka": 27.666667, "nazev_noveho": "Západní Sahara (nárokováno Marokem)" }
+  ],
+  "_beze_zmeny": "Kašmír zůstává, jak je v OSM. Kaliningrad a Nachičevan se řeší jen popisky v editoru, tvary se nemění."
+}

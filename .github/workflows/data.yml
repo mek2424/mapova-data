@@ -1,0 +1,71 @@
+# Databáze GeoJSONů z OpenStreetMap pro Mapový editor.
+# Spuštění: Actions → „Databáze GeoJSONů“ → Run workflow → vybrat, co se má vygenerovat.
+# Data se ukládají do větve „data“ (každý běh ji přepíše jedním commitem, aby úložiště nebobtnalo)
+# a z ní je servírují GitHub Pages: Settings → Pages → Branch: data, složka / (root).
+name: Databáze GeoJSONů
+
+on:
+  workflow_dispatch:
+    inputs:
+      co:
+        description: Co vygenerovat (napoprvé „pruzkum“, pak „cesko“, „svet“ – i opakovaně, navazuje –, nakonec „sporna“)
+        type: choice
+        options: [pruzkum, cesko, svet, sporna, index, vse]
+        default: pruzkum
+      minut:
+        description: Časový limit pro svět v minutách (běh pak skončí a příště pokračuje)
+        default: '300'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: databaze
+  cancel-in-progress: false
+
+jobs:
+  generuj:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Nástroje
+        run: |
+          pip install osmium==4.3.2 'shapely>=2.0,<3'
+          npm install -g mapshaper@0.7.90
+
+      - name: Dosavadní data z větve data
+        run: |
+          mkdir -p vystup
+          if git ls-remote --exit-code --heads origin data >/dev/null; then
+            git fetch --depth 1 origin data
+            git --work-tree=vystup checkout origin/data -- .
+            git reset -q
+          fi
+
+      - name: Generování
+        env:
+          VYSTUP: ${{ github.workspace }}/vystup
+          PRACOVNI: ${{ runner.temp }}
+        run: python nastroje/generuj.py "${{ inputs.co }}" --minut "${{ inputs.minut }}"
+
+      - name: Zveřejnění do větve data
+        run: |
+          cd vystup
+          touch .nojekyll
+          cp ../README.md README.md
+          git init -q -b data
+          git add -A
+          git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" \
+            commit -q -m "Databáze GeoJSONů: ${{ inputs.co }} ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data
+          du -sh --exclude=.git . | sed 's/^/Velikost dat: /'

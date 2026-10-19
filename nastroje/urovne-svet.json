@@ -1,0 +1,3 @@
+{
+  "_popis": "Ruční volba úrovní správních celků (admin_level) pro státy, kde automatika vybere špatně. Klíč = kód státu (ISO 3166-1 alpha-3 jako v editoru), hodnota = [1. úroveň, 2. úroveň]. Automatika bere nejnižší úroveň s aspoň dvěma celky a další úroveň s více celky (nejvýš 6000). Co vybrala, je v data/svet/<kód>/meta.json pod „_urovne“."
+}
