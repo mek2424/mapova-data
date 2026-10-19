@@ -340,46 +340,43 @@ def pruzkum():
     pruzkum_sporna()
 
 
-def najdi_oblast(jmena):
-    """Relace sporné oblasti v OSM podle name:en. Vrací (geometrie, popis nalezeného) nebo (None, důvod)."""
-    vyrazy = '|'.join(re.escape(j) for j in jmena)
-    dotaz = f'[out:xml][timeout:600];rel["name:en"~"^({vyrazy})$"]["boundary"];(._;>;);out body;'
-    cil = PRACOVNI / f'oblast-{re.sub(r"[^a-z]", "", jmena[0].lower())}.osm'
-    cil.parent.mkdir(parents=True, exist_ok=True)
-    overpass(dotaz, cil)
-    nalezene = plochy(cil)
+def najdi_oblast(jmena, kody=()):
+    """Sporná oblast podle name:en ve výřezech Geofabriku států `kody` (např. Rusko a Ukrajina).
+    Vrací (geometrie, popis nalezeného) nebo (None, důvod). Overpass se nepoužívá – z GitHubu nefunguje."""
+    staty = {x['id']: x for x in jedinecne_staty()}
+    nalezene = []; videne = set()
+    for kod in kody:
+        if kod not in staty:
+            continue
+        for p in hranice_extraktu(extrakt_pro(staty[kod])):
+            if p['osm'] in videne:
+                continue
+            if p['tagy'].get('name:en') in jmena or p['tagy'].get('int_name') in jmena:
+                videne.add(p['osm']); nalezene.append(p)
     if not nalezene:
-        return None, 'v OSM nenalezeno'
+        return None, f've výřezech {", ".join(kody)} nenalezeno'
     # Více relací (např. ukrajinská i ruská správa Krymu): spojit, ať je pokrytá celá oblast.
-    popis = '; '.join(f"{p['osm']} {p['tagy'].get('name', '')} (boundary={p['tagy'].get('boundary')}, admin_level={p['tagy'].get('admin_level', '-')})" for p in nalezene)
+    popis = '; '.join(f"{p['osm']} {p['tagy'].get('name', '')} (admin_level={p['tagy'].get('admin_level', '-')})" for p in nalezene)
     return unary_union([p['geom'] for p in nalezene]), popis
 
 
 def pruzkum_sporna():
     with open(NASTROJE / 'sporna-uzemi.json', encoding='utf-8') as f:
         pravidla = json.load(f)['pravidla']
-    radky = ['# Průzkum sporných území v OSM', '', 'Které relace OSM se pro pravidla z nastroje/sporna-uzemi.json najdou a do kterých států (admin_level=2) v OSM spadají.', '']
+    radky = ['# Průzkum sporných území v OSM', '', 'Které relace OSM se pro pravidla z nastroje/sporna-uzemi.json najdou ve výřezech Geofabriku dotčených států.', '']
     for pr in pravidla:
         radky.append(f'## {pr["nazev"]}')
         for o in pr.get('oblasti', []):
             try:
-                g, popis = najdi_oblast(o['name:en'])
+                g, popis = najdi_oblast(o['name:en'], (pr['z'], pr['do']))
             except Exception as e:  # noqa: BLE001
-                radky.append(f'- {o["nazev"]}: chyba Overpassu {e}')
+                radky.append(f'- {o["nazev"]}: chyba {e}')
                 continue
-            if g is None:
-                radky.append(f'- {o["nazev"]}: {popis}')
-                continue
-            b = g.representative_point()
-            dotaz = f'[out:json][timeout:120];is_in({b.y},{b.x})->.a;rel(pivot.a)["boundary"="administrative"]["admin_level"="2"];out tags;'
-            try:
-                staty = [x['tags'].get('ISO3166-1:alpha3', x['tags'].get('name')) for x in json.loads(overpass(dotaz))['elements']]
-            except Exception as e:  # noqa: BLE001
-                staty = [f'chyba {e}']
-            radky.append(f'- {o["nazev"]}: {popis}; v OSM leží ve státech {", ".join(staty) or "žádném"}')
+            radky.append(f'- {o["nazev"]}: {popis}' + (f'; plocha {g.area:.3f}°²' if g is not None else ''))
         if pr['druh'] == 'rovnobezka':
             radky.append(f'- dělí se stát {pr["stat"]} po {pr["sirka"]}° s. š.')
         radky.append('')
+    ZPRAVY.mkdir(exist_ok=True)
     (ZPRAVY / 'pruzkum-sporna.md').write_text('\n'.join(radky) + '\n', encoding='utf-8')
     log('zpravy/pruzkum-sporna.md hotovo')
 
@@ -404,6 +401,56 @@ def jedinecne_staty():
     return sorted(podle_iso.values(), key=lambda s: s['id'])
 
 
+GEOFABRIK_INDEX = 'https://download.geofabrik.de/index-v1.json'
+_index_geofabrik = None
+_hranice_cache = {}
+
+
+def index_geofabrik():
+    global _index_geofabrik
+    if _index_geofabrik is None:
+        _index_geofabrik = json.loads(stahni(GEOFABRIK_INDEX))['features']
+    return _index_geofabrik
+
+
+def extrakt_pro(s):
+    """Nejvhodnější výřez Geofabriku pro stát: podle kódu ISO (celý stát, ne jeho část),
+    jinak nejmenší výřez, který obsahuje střed státu."""
+    idx = index_geofabrik()
+    kandidati = [f for f in idx if s['iso'] in (f['properties'].get('iso3166-1:alpha2') or []) and f.get('geometry')]
+    if kandidati:
+        return max(kandidati, key=lambda f: shape(f['geometry']).area)['properties']
+    x1, y1, x2, y2 = s['bbox']
+    from shapely.geometry import Point
+    stred = Point((x1 + x2) / 2, (y1 + y2) / 2)
+    obsahuji = [f for f in idx if f.get('geometry') and shape(f['geometry']).contains(stred)]
+    if not obsahuji:
+        raise RuntimeError('pro stát není výřez Geofabriku')
+    return min(obsahuji, key=lambda f: shape(f['geometry']).area)['properties']
+
+
+def hranice_extraktu(vlastnosti):
+    """Správní hranice (boundary=administrative) z výřezu Geofabriku jako plochy. Stažený výřez
+    se hned zúží nástrojem osmium a smaže, takže na disku zůstávají jen malé soubory hranic."""
+    url = vlastnosti['urls']['pbf']
+    if url in _hranice_cache:
+        return _hranice_cache[url]
+    jmeno = re.sub(r'[^a-z0-9]+', '-', vlastnosti['id'].lower())
+    hranice = PRACOVNI / 'extrakty' / f'{jmeno}-hranice.osm.pbf'
+    hranice.parent.mkdir(parents=True, exist_ok=True)
+    if not hranice.exists():
+        surovy = PRACOVNI / 'extrakty' / f'{jmeno}.osm.pbf'
+        log(f'  stahuji {url}')
+        stahni(url, surovy, timeout=3600)
+        subprocess.run(['osmium', 'tags-filter', str(surovy), 'r/boundary=administrative', '-o', str(hranice), '--overwrite', '--no-progress'], check=True)
+        surovy.unlink()
+    vysledek = plochy(hranice, osmium.filter.TagFilter(('boundary', 'administrative')), prijmout=lambda t: t.get('boundary') == 'administrative')
+    if len(_hranice_cache) > 6:
+        _hranice_cache.clear()
+    _hranice_cache[url] = vysledek
+    return vysledek
+
+
 def zvol_urovne(pocty, iso3):
     if iso3 in PREPSANE_UROVNE:
         return PREPSANE_UROVNE[iso3]
@@ -417,35 +464,42 @@ def zvol_urovne(pocty, iso3):
 
 def stat_ze_sveta(s, slozka):
     iso2 = s['iso']
-    oblast = f'rel["boundary"="administrative"]["admin_level"="2"]["ISO3166-1"="{iso2}"]'
-    soubor = PRACOVNI / f'{s["id"]}-0.osm'
-    overpass(f'[out:xml][timeout:900];{oblast};(._;>;);out body;', soubor)
-    obrys = [p for p in plochy(soubor) if p['tagy'].get('admin_level') == '2']
-    soubor.unlink(missing_ok=True)
+    vlastnosti = extrakt_pro(s)
+    vse = hranice_extraktu(vlastnosti)
+    je_stat = lambda t: iso2 in (t.get('ISO3166-1'), t.get('ISO3166-1:alpha2'))
+    obrys = [p for p in vse if je_stat(p['tagy']) and p['tagy'].get('admin_level') == '2']
     if not obrys:
-        raise RuntimeError('obrys státu v OSM nenalezen')
+        # Závislá území (Aruba, Ålandy…) mají v OSM kód ISO na nižší úrovni.
+        jine = sorted((p for p in vse if je_stat(p['tagy']) and p['tagy'].get('admin_level', '').isdigit()), key=lambda p: int(p['tagy']['admin_level']))
+        obrys = jine[:1]
+    if not obrys:
+        raise RuntimeError(f'obrys státu ve výřezu {vlastnosti["id"]} nenalezen')
     obrys_g = unary_union([p['geom'] for p in obrys])
+    uroven_statu = int(obrys[0]['tagy'].get('admin_level', '2'))
     meta = {'stat': {'nazev': 'Obrys státu', 'skupina': 'Správní členění', **uloz_vrstvu(slozka, 'stat', [{'vlastnosti': {'id': s['id'], 'nazev': s['nazev']}, 'geom': obrys_g}], LIMIT_PLNE_SVET)}}
 
-    tagy = json.loads(overpass(f'[out:json][timeout:900];{oblast};map_to_area->.z;rel(area.z)["boundary"="administrative"]["admin_level"~"^([3-9]|10)$"];out tags;'))
-    pocty = Counter(int(x['tags']['admin_level']) for x in tagy['elements'] if x['tags'].get('admin_level', '').isdigit())
+    okoli = obrys_g.buffer(0.01)
+    uvnitr = defaultdict(list)
+    for p in vse:
+        u = p['tagy'].get('admin_level', '')
+        if u.isdigit() and uroven_statu < int(u) <= 10 and okoli.contains(p['geom'].representative_point()):
+            uvnitr[int(u)].append(p)
+    pocty = {u: len(ps) for u, ps in uvnitr.items()}
     urovne = zvol_urovne(pocty, s['id'])
-    meta['_urovne'] = {'pocty': dict(sorted(pocty.items())), 'zvolene': urovne}
+    meta['_urovne'] = {'pocty': dict(sorted(pocty.items())), 'zvolene': urovne, 'vyrez': vlastnosti['id']}
     predchozi = None
     for i, uroven in enumerate(urovne, start=1):
-        soubor = PRACOVNI / f'{s["id"]}-{uroven}.osm'
-        overpass(f'[out:xml][timeout:1800][maxsize:4000000000];{oblast};map_to_area->.z;rel(area.z)["boundary"="administrative"]["admin_level"="{uroven}"];(._;>;);out body;', soubor)
-        okoli = obrys_g.buffer(0.01)
         prvky = []
-        for p in plochy(soubor):
-            if p['tagy'].get('admin_level') != str(uroven) or not okoli.contains(p['geom'].representative_point()):
+        videne = set()
+        for p in uvnitr[uroven]:
+            if p['osm'] in videne:
                 continue
+            videne.add(p['osm'])
             kod = p['tagy'].get('ISO3166-2') or p['tagy'].get('ref') or p['osm']
             prvky.append({'vlastnosti': {'id': kod, 'nazev': cesky_nazev(p['tagy'])}, 'geom': p['geom']})
-        soubor.unlink(missing_ok=True)
         if i == 2 and predchozi:
             doplnit_nadrazene(prvky, predchozi, 'uroven1')
-        typ = Counter(x['tags'].get('border_type', '') for x in tagy['elements'] if x['tags'].get('admin_level') == str(uroven)).most_common(1)
+        typ = Counter(p['tagy'].get('border_type', '') for p in uvnitr[uroven]).most_common(1)
         meta[f'uroven{i}'] = {
             'nazev': f'{i}. úroveň', 'skupina': 'Správní členění',
             'popis': f'admin_level {uroven}' + (f' ({typ[0][0]})' if typ and typ[0][0] else ''),
@@ -493,6 +547,11 @@ def svet(minut):
         meta['vytvoreno'] = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
         (slozka / 'meta.json').write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding='utf-8')
         hotovo += 1
+        chyby = DATA / 'svet' / 'chyby.json'
+        if chyby.exists():
+            z = json.loads(chyby.read_text(encoding='utf-8'))
+            if z.pop(s['id'], None) is not None:
+                chyby.write_text(json.dumps(z, ensure_ascii=False, indent=1), encoding='utf-8')
         zapis_prubeh(f'{s["id"]} {s["nazev"]}: {time.time() - zacatek:.0f} s, úrovně {meta["_urovne"]["zvolene"]}, '
                      + ', '.join(f'{k} {v["prvku"]}' for k, v in meta.items() if isinstance(v, dict) and 'prvku' in v))
     zbyva = [s['id'] for s in staty if not (DATA / 'svet' / s['id'] / 'meta.json').exists()]
@@ -523,7 +582,7 @@ def sporna():
         zprava.append(f'## {pr["nazev"]}')
         if pr['druh'] == 'prevest':
             for o in pr['oblasti']:
-                g, popis = najdi_oblast(o['name:en'])
+                g, popis = najdi_oblast(o['name:en'], (pr['z'], pr['do']))
                 if g is None:
                     zprava.append(f'- {o["nazev"]}: {popis} – beze změny')
                     continue

@@ -40,6 +40,10 @@ jobs:
 
       - name: Nástroje
         run: |
+          sudo apt-get update -q && sudo apt-get install -y -q osmium-tool
+          # Výřezy Geofabriku jsou velké (USA ~10 GB) – pracovní složka na větším disku /mnt.
+          sudo mkdir -p /mnt/prac && sudo chown "$USER" /mnt/prac
+          df -h / /mnt
           pip install osmium==4.3.2 'shapely>=2.0,<3'
           npm install -g mapshaper@0.7.90
 
@@ -58,14 +62,14 @@ jobs:
         continue-on-error: true
         env:
           VYSTUP: ${{ github.workspace }}/vystup
-          PRACOVNI: ${{ runner.temp }}
+          PRACOVNI: /mnt/prac
         run: python nastroje/generuj.py "${{ inputs.co }}" --minut "${{ inputs.minut }}"
 
       - name: Index (i po přerušení)
         if: always()
         env:
           VYSTUP: ${{ github.workspace }}/vystup
-          PRACOVNI: ${{ runner.temp }}
+          PRACOVNI: /mnt/prac
         run: python nastroje/generuj.py index
 
       - name: Zveřejnění do větve data

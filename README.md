@@ -17,13 +17,14 @@ Seznam všeho je v [`index.json`](https://mek2424.github.io/mapova-data/index.js
 
 ## Jak data vznikají
 
-Generátor (`nastroje/generuj.py`) běží v GitHub Actions – jen tam je přístup ke Geofabriku a Overpassu.
+Generátor (`nastroje/generuj.py`) běží v GitHub Actions – jen tam je přístup ke Geofabriku. Data se berou z výřezů
+Geofabriku po zemích (Overpass se z GitHubu ukázal jako nepoužitelný – neustálé chyby 504).
 
 1. **Actions → Databáze GeoJSONů → Run workflow**, volba `pruzkum`. Vytvoří `zpravy/pruzkum-cesko.md`
    (jak jsou hranice v OSM označené) a `zpravy/pruzkum-sporna.md` (co se v OSM našlo pro sporná území).
    Podle toho se doladí `nastroje/vrstvy-cesko.json`.
 2. `cesko` – vrstvy Česka (Geofabrik, asi 15 minut).
-3. `svet` – státy světa přes Overpass. Trvá hodiny; běh skončí po časovém limitu a příště **pokračuje**,
+3. `svet` – státy světa z výřezů Geofabriku. Trvá hodiny; běh skončí po časovém limitu a příště **pokračuje**,
    kde přestal. Spouštět opakovaně, dokud `zpravy/souhrn.md` neukáže všechny státy.
 4. `sporna` – redakční úpravy sporných území (`nastroje/sporna-uzemi.json`), výsledek v `zpravy/sporna-uzemi.md`.
 
