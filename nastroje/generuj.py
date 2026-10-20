@@ -585,15 +585,33 @@ def na_pevninu(g):
         try:
             casti.append(shapely.coverage_union_all(kusy[uvnitr]))
         except Exception:  # noqa: BLE001 – kousky nejsou čisté pokrytí
-            casti.append(shapely.union_all(kusy[uvnitr]))
-    for i in hranicni:
+            try:
+                casti.append(shapely.union_all(kusy[uvnitr]))
+            except shapely.errors.GEOSException:
+                casti.append(shapely.union_all(shapely.make_valid(kusy[uvnitr]), grid_size=1e-9))
+    plochy_kusu = shapely.area(kusy[hranicni]) if len(hranicni) else []
+    for i, plocha_kusu in zip(hranicni, plochy_kusu):
         kus = kusy[i]
         vyrez = shapely.clip_by_rect(g, *kus.bounds)
-        if not vyrez.is_empty:
+        if vyrez.is_empty:
+            continue
+        x1, y1, x2, y2 = kus.bounds
+        if plocha_kusu >= (x2 - x1) * (y2 - y1) * 0.99999:
+            # Kousek pevniny je celý čtverec (vnitrozemí) – výřez obdélníkem stačí, přesný průnik
+            # se složitou hranicí by byl zbytečně pomalý (Polsko trvalo 70 minut).
+            casti.append(vyrez)
+            continue
+        try:
             casti.append(vyrez.intersection(kus))
+        except shapely.errors.GEOSException:
+            casti.append(shapely.make_valid(vyrez).intersection(shapely.make_valid(kus)))
     if not casti:
         return Polygon()
-    return jen_plochy(shapely.union_all(casti))
+    try:
+        return jen_plochy(shapely.union_all(casti))
+    except shapely.errors.GEOSException:
+        # Topologická chyba (Kanada, Grónsko) – opravit tvary a sjednotit znovu.
+        return jen_plochy(shapely.union_all([shapely.make_valid(c) for c in casti], grid_size=1e-9))
 
 
 def np_setdiff(a, b):
