@@ -170,7 +170,8 @@ def uloz_vrstvu(slozka, klic, prvky, limit_plne=LIMIT_SOUBORU):
     plna = slozka / f'{klic}.topojson'
     mapshaper('-i', str(surovy), 'encoding=utf8', '-simplify', ZJEDNODUSENI, 'keep-shapes',
               '-o', str(zjednodusena), 'format=geojson', 'geojson-type=FeatureCollection', f'precision={PRESNOST_ZJEDNODUSENE}')
-    mapshaper('-i', str(surovy), 'encoding=utf8', '-o', str(plna), 'format=topojson', 'no-quantization', f'precision={PRESNOST_PLNE}')
+    # Kvantování na milion kroků přes rozsah vrstvy: přesnost ~1 m u státu, soubor několikrát menší.
+    mapshaper('-i', str(surovy), 'encoding=utf8', '-o', str(plna), 'format=topojson', 'quantization=1000000')
     if plna.stat().st_size > limit_plne:
         log(f'  {klic}: plná verze má {plna.stat().st_size >> 20} MB, je nad limitem {limit_plne >> 20} MB – zůstane jen zjednodušená')
         plna.unlink()
@@ -472,10 +473,24 @@ def stat_ze_sveta(s, slozka):
         # Závislá území (Aruba, Ålandy…) mají v OSM kód ISO na nižší úrovni.
         jine = sorted((p for p in vse if je_stat(p['tagy']) and p['tagy'].get('admin_level', '').isdigit()), key=lambda p: int(p['tagy']['admin_level']))
         obrys = jine[:1]
-    if not obrys:
-        raise RuntimeError(f'obrys státu ve výřezu {vlastnosti["id"]} nenalezen')
-    obrys_g = unary_union([p['geom'] for p in obrys])
-    uroven_statu = int(obrys[0]['tagy'].get('admin_level', '2'))
+    if obrys:
+        obrys_g = unary_union([p['geom'] for p in obrys])
+        uroven_statu = int(obrys[0]['tagy'].get('admin_level', '2'))
+    else:
+        # Hranice státu se ve výřezu nesložila (zámořská území, hranice na moři mimo výřez):
+        # obrys = sjednocení nejvyšších celků, které leží uvnitř státu podle obrysu Natural Earth z editoru.
+        ne = obrys_natural_earth(s['id']).buffer(0.05)
+        celky = defaultdict(list)
+        for p in vse:
+            u = p['tagy'].get('admin_level', '')
+            if u.isdigit() and 2 < int(u) <= 6 and ne.contains(p['geom'].representative_point()):
+                celky[int(u)].append(p)
+        if not celky:
+            raise RuntimeError(f'obrys státu ve výřezu {vlastnosti["id"]} nenalezen ani z jeho celků')
+        nejvyssi = min(celky)
+        obrys_g = jen_plochy(unary_union([p['geom'] for p in celky[nejvyssi]]))
+        uroven_statu = nejvyssi - 1
+        zapis_prubeh(f'{s["id"]}: obrys státu složen z celků admin_level {nejvyssi} ({len(celky[nejvyssi])})')
     meta = {'stat': {'nazev': 'Obrys státu', 'skupina': 'Správní členění', **uloz_vrstvu(slozka, 'stat', [{'vlastnosti': {'id': s['id'], 'nazev': s['nazev']}, 'geom': obrys_g}], LIMIT_PLNE_SVET)}}
 
     okoli = obrys_g.buffer(0.01)
@@ -509,6 +524,12 @@ def stat_ze_sveta(s, slozka):
     return meta
 
 
+def obrys_natural_earth(iso3):
+    """Hrubý obrys státu z editoru (Natural Earth) – jen k rozhodnutí, které celky do státu patří."""
+    j = json.loads(stahni(f'https://raw.githubusercontent.com/mek2424/mapovy-editor/main/data/oblasti/stat/{iso3}.json'))
+    return jen_plochy(shape(j['geometry']))
+
+
 def zapis_prubeh(radek):
     """Průběh stahování světa – v Actions nejsou záznamy z běhu odjinud vidět."""
     ZPRAVY.mkdir(parents=True, exist_ok=True)
@@ -516,8 +537,12 @@ def zapis_prubeh(radek):
         f.write(f'- {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} {radek}\n')
 
 
-def svet(minut):
+def svet(minut, znovu=False):
     global PREPSANE_UROVNE
+    if znovu:
+        log('Mažu dosavadní data světa – generuje se od začátku.')
+        shutil.rmtree(DATA / 'svet', ignore_errors=True)
+        (ZPRAVY / 'prubeh-svet.md').unlink(missing_ok=True)
     prepsane = NASTROJE / 'urovne-svet.json'
     if prepsane.exists():
         PREPSANE_UROVNE = {k: v for k, v in json.loads(prepsane.read_text(encoding='utf-8')).items() if not k.startswith('_')}
@@ -745,7 +770,7 @@ def index():
 
 def main():
     a = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'sporna', 'index', 'vse'])
+    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'sporna', 'index', 'vse'])
     a.add_argument('--minut', type=float, default=300, help='časový limit pro svět')
     arg = a.parse_args()
     PRACOVNI.mkdir(parents=True, exist_ok=True)
@@ -753,8 +778,8 @@ def main():
         pruzkum()
     if arg.co in ('cesko', 'vse'):
         cesko()
-    if arg.co in ('svet', 'vse'):
-        svet(arg.minut)
+    if arg.co in ('svet', 'svet-znovu', 'vse'):
+        svet(arg.minut, znovu=arg.co == 'svet-znovu')
     if arg.co in ('sporna', 'vse'):
         sporna()
     if arg.co != 'pruzkum':
