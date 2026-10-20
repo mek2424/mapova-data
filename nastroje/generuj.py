@@ -54,12 +54,17 @@ SPORNA_EDITORU = 'https://raw.githubusercontent.com/mek2424/mapovy-editor/main/d
 MAPSHAPER = ['mapshaper'] if shutil.which('mapshaper') else ['npx', '-y', 'mapshaper@0.7.90']
 
 # Zjednodušená verze: kolik bodů zůstane (mapshaper -simplify) a přesnost souřadnic.
-ZJEDNODUSENI = '6%'
+# Zjednodušení podle cílového rozlišení (jako obrázek 4000 × 4000 px přes rozsah vrstvy): u malých států
+# i u Ruska vypadá stejně podrobně a jednoduché tvary (obdélník) se nezdeformují, což procenta bodů dělala.
+ZJEDNODUSENI = 'resolution=4000x4000'
 PRESNOST_ZJEDNODUSENE = '0.00001'   # ~1 m
 PRESNOST_PLNE = '0.000001'          # ~10 cm
 LIMIT_SOUBORU = 95 * 1024 * 1024    # GitHub nepřijme soubor nad 100 MB
 # GitHub Pages mají limit 1 GB na celý web – plné verze ve světě jen do této velikosti.
-LIMIT_PLNE_SVET = int(os.environ.get('LIMIT_PLNE_SVET_MB', '25')) * 1024 * 1024
+LIMIT_PLNE_SVET = int(os.environ.get('LIMIT_PLNE_SVET_MB', '15')) * 1024 * 1024
+# Pevnina z OSM (osmdata.openstreetmap.de, land-polygons-split-4326) – ořez obrysů ve světě podle pobřeží.
+# Hranice států a krajů v OSM vedou po moři (pobřežní vody 12 mil); redakce chce obrysy jen po pevnině.
+PEVNINA_URL = 'https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip'
 
 
 def log(*a):
@@ -491,9 +496,12 @@ def stat_ze_sveta(s, slozka):
         obrys_g = jen_plochy(unary_union([p['geom'] for p in celky[nejvyssi]]))
         uroven_statu = nejvyssi - 1
         zapis_prubeh(f'{s["id"]}: obrys státu složen z celků admin_level {nejvyssi} ({len(celky[nejvyssi])})')
-    meta = {'stat': {'nazev': 'Obrys státu', 'skupina': 'Správní členění', **uloz_vrstvu(slozka, 'stat', [{'vlastnosti': {'id': s['id'], 'nazev': s['nazev']}, 'geom': obrys_g}], LIMIT_PLNE_SVET)}}
-
     okoli = obrys_g.buffer(0.01)
+    obrys_pevnina = na_pevninu(obrys_g)
+    if obrys_pevnina.is_empty:
+        obrys_pevnina = obrys_g  # stát bez pevniny v datech (např. jen útesy) – nechat, jak je
+    meta = {'stat': {'nazev': 'Obrys státu', 'skupina': 'Správní členění', **uloz_vrstvu(slozka, 'stat', [{'vlastnosti': {'id': s['id'], 'nazev': s['nazev']}, 'geom': obrys_pevnina}], LIMIT_PLNE_SVET)}}
+
     uvnitr = defaultdict(list)
     for p in vse:
         u = p['tagy'].get('admin_level', '')
@@ -511,7 +519,10 @@ def stat_ze_sveta(s, slozka):
                 continue
             videne.add(p['osm'])
             kod = p['tagy'].get('ISO3166-2') or p['tagy'].get('ref') or p['osm']
-            prvky.append({'vlastnosti': {'id': kod, 'nazev': cesky_nazev(p['tagy'])}, 'geom': p['geom']})
+            geom = na_pevninu(p['geom'])
+            if geom.is_empty:
+                continue  # celek jen na moři
+            prvky.append({'vlastnosti': {'id': kod, 'nazev': cesky_nazev(p['tagy'])}, 'geom': geom})
         if i == 2 and predchozi:
             doplnit_nadrazene(prvky, predchozi, 'uroven1')
         typ = Counter(p['tagy'].get('border_type', '') for p in uvnitr[uroven]).most_common(1)
@@ -522,6 +533,68 @@ def stat_ze_sveta(s, slozka):
         }
         predchozi = prvky
     return meta
+
+
+_pevnina = None
+
+
+def pevnina():
+    """Všechny kousky pevniny (~800 tisíc polygonů do 1°) ve stromu STRtree. Načte se jednou za běh."""
+    global _pevnina
+    if _pevnina is not None:
+        return _pevnina
+    import shapely
+    slozka = PRACOVNI / 'pevnina'
+    shp = next(slozka.rglob('land_polygons.shp'), None) if slozka.exists() else None
+    if shp is None:
+        if os.environ.get('BEZ_OREZU'):
+            _pevnina = False
+            return _pevnina
+        slozka.mkdir(parents=True, exist_ok=True)
+        zip_ = slozka / 'land.zip'
+        log('Stahuji pevninu z osmdata.openstreetmap.de…')
+        stahni(PEVNINA_URL, zip_, timeout=3600)
+        subprocess.run(['unzip', '-q', '-o', str(zip_), '-d', str(slozka)], check=True)
+        zip_.unlink()
+        shp = next(slozka.rglob('land_polygons.shp'))
+    import pyogrio
+    _, _, wkb_, _ = pyogrio.raw.read(str(shp), columns=[])
+    kusy = shapely.from_wkb(wkb_)
+    _pevnina = (kusy, shapely.STRtree(kusy))
+    log(f'  pevnina: {len(kusy)} kousků')
+    return _pevnina
+
+
+def na_pevninu(g):
+    """Ořízne plochu podle pobřeží. Kousky pevniny celé uvnitř se jen spojí (rychlé),
+    přesně se počítají jen ty, které hranici plochy kříží."""
+    p = pevnina()
+    if not p or g.is_empty:
+        return g
+    import shapely
+    kusy, strom = p
+    uvnitr = strom.query(g, predicate='contains')
+    kandidati = strom.query(g, predicate='intersects')
+    hranicni = np_setdiff(kandidati, uvnitr)
+    casti = []
+    if len(uvnitr):
+        try:
+            casti.append(shapely.coverage_union_all(kusy[uvnitr]))
+        except Exception:  # noqa: BLE001 – kousky nejsou čisté pokrytí
+            casti.append(shapely.union_all(kusy[uvnitr]))
+    for i in hranicni:
+        kus = kusy[i]
+        vyrez = shapely.clip_by_rect(g, *kus.bounds)
+        if not vyrez.is_empty:
+            casti.append(vyrez.intersection(kus))
+    if not casti:
+        return Polygon()
+    return jen_plochy(shapely.union_all(casti))
+
+
+def np_setdiff(a, b):
+    import numpy as np
+    return np.setdiff1d(a, b, assume_unique=False)
 
 
 def obrys_natural_earth(iso3):
@@ -612,7 +685,7 @@ def sporna():
                     zprava.append(f'- {o["nazev"]}: {popis} – beze změny')
                     continue
                 zprava.append(f'- {o["nazev"]}: {popis}')
-                zprava += prevest(pr['z'], pr['do'], g, o['nazev'])
+                zprava += prevest(pr['z'], pr['do'], na_pevninu(g), o['nazev'])
         elif pr['druh'] == 'rovnobezka':
             zprava += rovnobezka(pr)
         zprava.append('')

@@ -8,9 +8,10 @@ Sporná území jsou upravená podle pravidel redakce ČT (stejných jako v edit
   Obce a další celky mají i sloupce s nadřazenými celky (POÚ, ORP, okres, kraj), takže je jde
   v editoru sloučit podle sloupce. Senátní obvody a povodí v OSM nejsou.
 - **Svět** – obrysy států, 1. a 2. úroveň správních celků (úrovně se volí automaticky podle OSM).
+  Obrysy jsou oříznuté podle pobřeží (pevnina z OSM, osmdata.openstreetmap.de) – bez pobřežních vod.
 
 Každá vrstva má dvě podoby: **zjednodušenou** (`.json`, GeoJSON, rychlá) a **plnou** (`.topojson`, sousedé sdílejí hranice).
-Ve světě se plná verze ukládá jen do 25 MB na soubor, aby se celý web vešel do limitu GitHub Pages (1 GB).
+Ve světě se plná verze ukládá jen do 15 MB na soubor, aby se celý web vešel do limitu GitHub Pages (1 GB).
 Sloupce: `id` (kód RÚIAN, ISO 3166-2 nebo id z OSM), `nazev` (česky, kde český název v OSM je).
 
 Seznam všeho je v [`index.json`](https://mek2424.github.io/mapova-data/index.json), zprávy z generování ve složce `zpravy/`.

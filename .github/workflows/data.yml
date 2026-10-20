@@ -44,7 +44,7 @@ jobs:
           # Výřezy Geofabriku jsou velké (USA ~10 GB) – pracovní složka na větším disku /mnt.
           sudo mkdir -p /mnt/prac && sudo chown "$USER" /mnt/prac
           df -h / /mnt
-          pip install osmium==4.3.2 'shapely>=2.0,<3'
+          pip install osmium==4.3.2 'shapely>=2.0,<3' pyogrio
           npm install -g mapshaper@0.7.90
 
       - name: Dosavadní data z větve data
