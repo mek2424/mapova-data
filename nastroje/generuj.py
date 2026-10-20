@@ -432,7 +432,11 @@ def extrakt_pro(s):
     obsahuji = [f for f in idx if f.get('geometry') and shape(f['geometry']).contains(stred)]
     if not obsahuji:
         raise RuntimeError('pro stát není výřez Geofabriku')
-    return min(obsahuji, key=lambda f: shape(f['geometry']).area)['properties']
+    nejmensi = min(obsahuji, key=lambda f: shape(f['geometry']).area)['properties']
+    if not nejmensi.get('parent'):
+        # Jen celý kontinent (Afrika má přes 6 GB) – zpracování by zabralo hodiny běhu.
+        raise RuntimeError(f'stát nemá vlastní výřez Geofabriku, jen celý kontinent ({nejmensi["id"]}) – vynecháno')
+    return nejmensi
 
 
 def hranice_extraktu(vlastnosti):
