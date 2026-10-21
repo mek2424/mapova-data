@@ -656,8 +656,16 @@ def zapis_prubeh(radek):
         f.write(f'- {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} {radek}\n')
 
 
-def svet(minut, znovu=False):
+def svet(minut, znovu=False, doplnit_plne=False):
     global PREPSANE_UROVNE
+    if doplnit_plne:
+        # Státy, u kterých se některá plná verze nevešla do limitu – vygenerovat znovu
+        # (od zavedení jemného zjednodušení jsou plné verze menší). Stará data zůstanou, dokud se nepřepíšou.
+        for meta_soubor in sorted((DATA / 'svet').glob('*/meta.json')):
+            meta = json.loads(meta_soubor.read_text(encoding='utf-8'))
+            if any(isinstance(v, dict) and 'soubory' in v and 'plna' not in v['soubory'] for v in meta.values()):
+                log(f'Znovu kvůli plné verzi: {meta_soubor.parent.name}')
+                meta_soubor.unlink()
     if znovu:
         log('Mažu dosavadní data světa – generuje se od začátku.')
         shutil.rmtree(DATA / 'svet', ignore_errors=True)
@@ -889,7 +897,7 @@ def index():
 
 def main():
     a = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'sporna', 'zmensit', 'index', 'vse'])
+    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'svet-plne', 'sporna', 'zmensit', 'index', 'vse'])
     a.add_argument('--minut', type=float, default=300, help='časový limit pro svět')
     arg = a.parse_args()
     PRACOVNI.mkdir(parents=True, exist_ok=True)
@@ -897,8 +905,8 @@ def main():
         pruzkum()
     if arg.co in ('cesko', 'vse'):
         cesko()
-    if arg.co in ('svet', 'svet-znovu', 'vse'):
-        svet(arg.minut, znovu=arg.co == 'svet-znovu')
+    if arg.co in ('svet', 'svet-znovu', 'svet-plne', 'vse'):
+        svet(arg.minut, znovu=arg.co == 'svet-znovu', doplnit_plne=arg.co == 'svet-plne')
     if arg.co == 'zmensit':
         zmensi_svet()
     if arg.co in ('sporna', 'vse'):
