@@ -57,6 +57,9 @@ MAPSHAPER = ['mapshaper'] if shutil.which('mapshaper') else ['npx', '-y', 'mapsh
 # Zjednodušení podle cílového rozlišení (jako obrázek 4000 × 4000 px přes rozsah vrstvy): u malých států
 # i u Ruska vypadá stejně podrobně a jednoduché tvary (obdélník) se nezdeformují, což procenta bodů dělala.
 ZJEDNODUSENI = 'resolution=4000x4000'
+# Plné verze ve světě: jemné zjednodušení s tolerancí 20 m (pobřeží z OSM má body po pár metrech,
+# bez toho by se databáze nevešla do 1 GB GitHub Pages). Česko zůstává bez zjednodušení.
+PLNA_SVET = ['-simplify', 'interval=20', 'keep-shapes']
 PRESNOST_ZJEDNODUSENE = '0.00001'   # ~1 m
 PRESNOST_PLNE = '0.000001'          # ~10 cm
 LIMIT_SOUBORU = 95 * 1024 * 1024    # GitHub nepřijme soubor nad 100 MB
@@ -176,7 +179,8 @@ def uloz_vrstvu(slozka, klic, prvky, limit_plne=LIMIT_SOUBORU):
     mapshaper('-i', str(surovy), 'encoding=utf8', '-simplify', ZJEDNODUSENI, 'keep-shapes',
               '-o', str(zjednodusena), 'format=geojson', 'geojson-type=FeatureCollection', f'precision={PRESNOST_ZJEDNODUSENE}')
     # Kvantování na milion kroků přes rozsah vrstvy: přesnost ~1 m u státu, soubor několikrát menší.
-    mapshaper('-i', str(surovy), 'encoding=utf8', '-o', str(plna), 'format=topojson', 'quantization=1000000')
+    jemne = PLNA_SVET if 'svet' in slozka.relative_to(DATA).parts else []
+    mapshaper('-i', str(surovy), 'encoding=utf8', *jemne, '-o', str(plna), 'format=topojson', 'quantization=1000000')
     if plna.stat().st_size > limit_plne:
         log(f'  {klic}: plná verze má {plna.stat().st_size >> 20} MB, je nad limitem {limit_plne >> 20} MB – zůstane jen zjednodušená')
         plna.unlink()
@@ -192,6 +196,26 @@ def uloz_vrstvu(slozka, klic, prvky, limit_plne=LIMIT_SOUBORU):
         meta['soubory']['plna'] = str(plna.relative_to(KOREN))
         meta['velikost']['plna'] = plna.stat().st_size
     return meta
+
+
+def zmensi_svet():
+    """Jednorázově zjednoduší už vygenerované plné verze ve světě (tolerance 20 m) a opraví velikosti v meta.json."""
+    pred = po = 0
+    for meta_soubor in sorted((DATA / 'svet').rglob('meta.json')):
+        meta = json.loads(meta_soubor.read_text(encoding='utf-8'))
+        for klic, v in meta.items():
+            plna = v.get('soubory', {}).get('plna') if isinstance(v, dict) else None
+            if not plna:
+                continue
+            cesta = KOREN / plna
+            pred += cesta.stat().st_size
+            docasny = cesta.with_suffix('.novy.topojson')
+            mapshaper('-i', str(cesta), *PLNA_SVET, '-o', str(docasny), 'format=topojson', 'quantization=1000000')
+            docasny.replace(cesta)
+            v['velikost']['plna'] = cesta.stat().st_size
+            po += cesta.stat().st_size
+        meta_soubor.write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding='utf-8')
+    log(f'Plné verze světa: {pred >> 20} MB → {po >> 20} MB')
 
 
 def nacti_vrstvu(cesta):
@@ -865,7 +889,7 @@ def index():
 
 def main():
     a = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'sporna', 'index', 'vse'])
+    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'sporna', 'zmensit', 'index', 'vse'])
     a.add_argument('--minut', type=float, default=300, help='časový limit pro svět')
     arg = a.parse_args()
     PRACOVNI.mkdir(parents=True, exist_ok=True)
@@ -875,6 +899,8 @@ def main():
         cesko()
     if arg.co in ('svet', 'svet-znovu', 'vse'):
         svet(arg.minut, znovu=arg.co == 'svet-znovu')
+    if arg.co == 'zmensit':
+        zmensi_svet()
     if arg.co in ('sporna', 'vse'):
         sporna()
     if arg.co != 'pruzkum':
