@@ -679,7 +679,8 @@ def svet(minut, znovu=False, doplnit_plne=False, vybrane=()):
         meta_soubor = DATA / 'svet' / kod / 'meta.json'
         if meta_soubor.exists():
             log(f'Znovu na vyžádání: {kod}')
-            meta_soubor.unlink()
+            # Záloha: když nové generování selže (např. výpadek zdroje), vrátí se stará data.
+            meta_soubor.replace(meta_soubor.with_name('meta.zaloha.json'))
     if doplnit_plne:
         # Státy, u kterých se některá plná verze nevešla do limitu – vygenerovat znovu
         # (od zavedení jemného zjednodušení jsou plné verze menší). Stará data zůstanou, dokud se nepřepíšou.
@@ -687,7 +688,7 @@ def svet(minut, znovu=False, doplnit_plne=False, vybrane=()):
             meta = json.loads(meta_soubor.read_text(encoding='utf-8'))
             if any(isinstance(v, dict) and 'soubory' in v and 'plna' not in v['soubory'] for v in meta.values()):
                 log(f'Znovu kvůli plné verzi: {meta_soubor.parent.name}')
-                meta_soubor.unlink()
+                meta_soubor.replace(meta_soubor.with_name('meta.zaloha.json'))
     if znovu:
         log('Mažu dosavadní data světa – generuje se od začátku.')
         shutil.rmtree(DATA / 'svet', ignore_errors=True)
@@ -717,9 +718,15 @@ def svet(minut, znovu=False, doplnit_plne=False, vybrane=()):
             zapis_prubeh(f'{s["id"]} {s["nazev"]}: CHYBA po {time.time() - zacatek:.0f} s – {e}')
             chyby.parent.mkdir(parents=True, exist_ok=True)
             chyby.write_text(json.dumps(z, ensure_ascii=False, indent=1), encoding='utf-8')
+            zaloha = slozka / 'meta.zaloha.json'
+            if zaloha.exists():
+                zaloha.replace(slozka / 'meta.json')
+                log('  vrácena předchozí data státu')
+                zapis_prubeh(f'{s["id"]}: vrácena předchozí data')
             continue
         meta['vytvoreno'] = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
         (slozka / 'meta.json').write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding='utf-8')
+        (slozka / 'meta.zaloha.json').unlink(missing_ok=True)
         hotovo += 1
         chyby = DATA / 'svet' / 'chyby.json'
         if chyby.exists():
