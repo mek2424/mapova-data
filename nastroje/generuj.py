@@ -643,7 +643,11 @@ def pevnina():
         slozka.mkdir(parents=True, exist_ok=True)
         zip_ = slozka / 'land.zip'
         log('Stahuji pevninu z osmdata.openstreetmap.de…')
-        stahni(PEVNINA_URL, zip_, timeout=3600)
+        try:
+            stahni(PEVNINA_URL, zip_, timeout=3600)
+        except Exception:
+            zip_.unlink(missing_ok=True)  # nedostažený soubor nesmí zůstat (ani v mezipaměti Actions)
+            raise
         subprocess.run(['unzip', '-q', '-o', str(zip_), '-d', str(slozka)], check=True)
         zip_.unlink()
         shp = next(slozka.rglob('land_polygons.shp'))

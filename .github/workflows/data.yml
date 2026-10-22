@@ -50,6 +50,14 @@ jobs:
           pip install osmium==4.3.2 'shapely>=2.0,<3' pyogrio
           npm install -g mapshaper@0.7.90
 
+      - name: Pevnina z mezipaměti
+        # Pobřeží z osmdata.openstreetmap.de (~1 GB) se ukládá do mezipaměti Actions, aby výpadek zdroje
+        # nezastavil generování (22. 10. 2026 nebyl několik hodin dostupný). Novou verzi vynutí změna klíče.
+        uses: actions/cache/restore@v4
+        with:
+          path: /mnt/prac/mapova-data/pevnina
+          key: pevnina-1
+
       - name: Dosavadní data z větve data
         run: |
           mkdir -p vystup
@@ -67,6 +75,22 @@ jobs:
           VYSTUP: ${{ github.workspace }}/vystup
           PRACOVNI: /mnt/prac
         run: python nastroje/generuj.py "${{ inputs.co }}" --minut "${{ inputs.minut }}" --staty "${{ inputs.staty }}"
+
+      - name: Je pevnina stažená?
+        id: pevnina
+        if: always()
+        run: |
+          if find /mnt/prac/mapova-data/pevnina -name land_polygons.shp 2>/dev/null | grep -q .; then
+            echo "hotova=ano" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Uložit pevninu do mezipaměti
+        if: always() && steps.pevnina.outputs.hotova == 'ano'
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: /mnt/prac/mapova-data/pevnina
+          key: pevnina-1
 
       - name: Index (i po přerušení)
         if: always()
