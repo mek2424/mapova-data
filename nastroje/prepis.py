@@ -59,14 +59,14 @@ ZAKLAD = {
 MEKKE = {'д': 'ď', 'т': 'ť', 'н': 'ň'}
 TVRDE = {'д': 'd', 'т': 't', 'н': 'n'}
 
-# Kód státu (ISO 3166-1 alpha-3) → jazyk přepisu. Ostatní státy s cyrilicí: ruská tabulka,
-# ale jen když název nemá písmena mimo ruskou abecedu (kazašská, kyrgyzská, mongolská…).
+# Kód státu (ISO 3166-1 alpha-3) → jazyk přepisu. Jiné jazyky s cyrilicí (kazaština, kyrgyzština,
+# tádžičtina, mongolština…) příručka nepokrývá – u nich se přepisuje jen ruský název z OSM (name:ru).
 JAZYK_STATU = {'RUS': 'ru', 'UKR': 'uk', 'BLR': 'be', 'BGR': 'bg', 'MKD': 'mk',
                'SRB': 'sr', 'MNE': 'sr', 'BIH': 'sr', 'XKX': 'sr'}
 
 
 def jazyk_statu(iso3):
-    return JAZYK_STATU.get(iso3, 'ru')
+    return JAZYK_STATU.get(iso3)
 
 
 def ma_cyrilici(text):

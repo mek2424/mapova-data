@@ -181,7 +181,9 @@ def prevod_nazvu(jmeno, iso3, tagy=None):
     vysledek = None
     if ma_cyrilici(jmeno):
         jazyk = jazyk_statu(iso3)
-        for kandidat, jaz in ((tagy.get(f'name:{jazyk}') or jmeno, jazyk), (tagy.get('name:ru'), 'ru'), (jmeno, 'ru')):
+        kandidati = [(tagy.get(f'name:{jazyk}') or jmeno, jazyk)] if jazyk else []
+        kandidati.append((tagy.get('name:ru'), 'ru'))  # jiné jazyky s cyrilicí: jen ruský název
+        for kandidat, jaz in kandidati:
             if kandidat and ma_cyrilici(kandidat):
                 vysledek = prepis(kandidat, jaz)
                 if vysledek:
