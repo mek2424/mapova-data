@@ -10,11 +10,14 @@ on:
       co:
         description: Co vygenerovat (napoprvé „pruzkum“, pak „cesko“, „svet“ – i opakovaně, navazuje –, nakonec „sporna“)
         type: choice
-        options: [pruzkum, cesko, svet, svet-znovu, svet-plne, sporna, zmensit, index, vse]
+        options: [pruzkum, cesko, svet, svet-znovu, svet-plne, svet-vybrane, sporna, zmensit, index, vse]
         default: pruzkum
       minut:
         description: Časový limit pro svět v minutách (běh pak skončí a příště pokračuje)
         default: '230'
+      staty:
+        description: Pro „svet-vybrane“ – kódy států oddělené čárkou (např. PRT,MKD)
+        default: ''
 
 permissions:
   contents: write
@@ -63,7 +66,7 @@ jobs:
         env:
           VYSTUP: ${{ github.workspace }}/vystup
           PRACOVNI: /mnt/prac
-        run: python nastroje/generuj.py "${{ inputs.co }}" --minut "${{ inputs.minut }}"
+        run: python nastroje/generuj.py "${{ inputs.co }}" --minut "${{ inputs.minut }}" --staty "${{ inputs.staty }}"
 
       - name: Index (i po přerušení)
         if: always()

@@ -6,6 +6,7 @@ Spouští se v GitHub Actions (.github/workflows/data.yml), kde je přístup k G
   python nastroje/generuj.py pruzkum   – zjistí, jak jsou hranice v OSM označené (zpravy/*.md)
   python nastroje/generuj.py cesko     – vrstvy Česka podle nastroje/vrstvy-cesko.json
   python nastroje/generuj.py svet      – státy + 1. a 2. úroveň správních celků (navazuje, kde skončil)
+  python nastroje/generuj.py svet-vybrane --staty PRT,MKD – znovu jen vybrané státy
   python nastroje/generuj.py sporna    – redakční úpravy sporných území (nastroje/sporna-uzemi.json)
   python nastroje/generuj.py index     – index.json pro editor
 
@@ -371,7 +372,7 @@ def pruzkum():
 
 
 def najdi_oblast(jmena, kody=()):
-    """Sporná oblast podle name:en ve výřezech Geofabriku států `kody` (např. Rusko a Ukrajina).
+    """Sporná oblast podle name:en (nebo name, int_name) ve výřezech Geofabriku států `kody` (např. Rusko a Ukrajina).
     Vrací (geometrie, popis nalezeného) nebo (None, důvod). Overpass se nepoužívá – z GitHubu nefunguje."""
     staty = {x['id']: x for x in jedinecne_staty()}
     nalezene = []; videne = set()
@@ -381,7 +382,8 @@ def najdi_oblast(jmena, kody=()):
         for p in hranice_extraktu(extrakt_pro(staty[kod])):
             if p['osm'] in videne:
                 continue
-            if p['tagy'].get('name:en') in jmena or p['tagy'].get('int_name') in jmena:
+            # Indické státy mají anglický název jen v „name“ (bez name:en) – proto i ten.
+            if any(p['tagy'].get(k) in jmena for k in ('name:en', 'int_name', 'name')):
                 videne.add(p['osm']); nalezene.append(p)
     if not nalezene:
         return None, f've výřezech {", ".join(kody)} nenalezeno'
@@ -485,14 +487,21 @@ def hranice_extraktu(vlastnosti):
     return vysledek
 
 
-def zvol_urovne(pocty, iso3):
+MIN_POKRYTI = 0.85  # úroveň musí pokrýt aspoň tolik plochy státu (Portugalsko: na úrovni 4 jsou jen Azory a Madeira)
+
+
+def zvol_urovne(pocty, iso3, pokryti=None):
     if iso3 in PREPSANE_UROVNE:
         return PREPSANE_UROVNE[iso3]
+    pokryti = pokryti or {}
+    dost = lambda u: pokryti.get(u, 1.0) >= MIN_POKRYTI
     urovne = sorted(pocty)
-    l1 = next((u for u in urovne if pocty[u] >= 2), None)
+    l1 = next((u for u in urovne if pocty[u] >= 2 and dost(u)), None)
+    if l1 is None:
+        l1 = next((u for u in urovne if pocty[u] >= 2), None)
     if l1 is None:
         return []
-    l2 = next((u for u in urovne if u > l1 and pocty[u] > pocty[l1] and pocty[u] <= 6000), None)
+    l2 = next((u for u in urovne if u > l1 and pocty[u] > pocty[l1] and pocty[u] <= 6000 and dost(u)), None)
     return [l1] if l2 is None else [l1, l2]
 
 
@@ -532,12 +541,19 @@ def stat_ze_sveta(s, slozka):
 
     uvnitr = defaultdict(list)
     for p in vse:
+        # Jen relace: uzavřené cesty se značkami hranice jsou úseky hranic nebo ostrůvky
+        # (Portugalsko jich mělo 466 jako „celky“ 1. úrovně), ne správní celky.
+        if not p['osm'].startswith('r'):
+            continue
         u = p['tagy'].get('admin_level', '')
         if u.isdigit() and uroven_statu < int(u) <= 10 and okoli.contains(p['geom'].representative_point()):
             uvnitr[int(u)].append(p)
     pocty = {u: len(ps) for u, ps in uvnitr.items()}
-    urovne = zvol_urovne(pocty, s['id'])
-    meta['_urovne'] = {'pocty': dict(sorted(pocty.items())), 'zvolene': urovne, 'vyrez': vlastnosti['id']}
+    plocha_statu = obrys_g.area or 1
+    pokryti = {u: min(1.0, sum(p['geom'].area for p in ps) / plocha_statu) for u, ps in uvnitr.items()}
+    urovne = zvol_urovne(pocty, s['id'], pokryti)
+    meta['_urovne'] = {'pocty': dict(sorted(pocty.items())), 'pokryti': {u: round(v, 3) for u, v in sorted(pokryti.items())},
+                       'zvolene': urovne, 'vyrez': vlastnosti['id']}
     predchozi = None
     for i, uroven in enumerate(urovne, start=1):
         prvky = []
@@ -656,8 +672,14 @@ def zapis_prubeh(radek):
         f.write(f'- {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} {radek}\n')
 
 
-def svet(minut, znovu=False, doplnit_plne=False):
+def svet(minut, znovu=False, doplnit_plne=False, vybrane=()):
     global PREPSANE_UROVNE
+    for kod in vybrane:
+        # Znovu vygenerovat jen tyto státy. Stará data zůstanou, dokud se nepřepíšou.
+        meta_soubor = DATA / 'svet' / kod / 'meta.json'
+        if meta_soubor.exists():
+            log(f'Znovu na vyžádání: {kod}')
+            meta_soubor.unlink()
     if doplnit_plne:
         # Státy, u kterých se některá plná verze nevešla do limitu – vygenerovat znovu
         # (od zavedení jemného zjednodušení jsou plné verze menší). Stará data zůstanou, dokud se nepřepíšou.
@@ -706,10 +728,14 @@ def svet(minut, znovu=False, doplnit_plne=False):
                 chyby.write_text(json.dumps(z, ensure_ascii=False, indent=1), encoding='utf-8')
         zapis_prubeh(f'{s["id"]} {s["nazev"]}: {time.time() - zacatek:.0f} s, úrovně {meta["_urovne"]["zvolene"]}, '
                      + ', '.join(f'{k} {v["prvku"]}' for k, v in meta.items() if isinstance(v, dict) and 'prvku' in v))
-    zbyva = [s['id'] for s in staty if not (DATA / 'svet' / s['id'] / 'meta.json').exists()]
+    # Státy, které skončily chybou (bez vlastního výřezu apod.), se znovu zkoušejí v dalších bězích,
+    # ale nesmějí blokovat vrstvu „Státy“ – ta se složí z toho, co je hotové.
+    chyby = DATA / 'svet' / 'chyby.json'
+    s_chybou = set(json.loads(chyby.read_text(encoding='utf-8'))) if chyby.exists() else set()
+    zbyva = [s['id'] for s in staty if not (DATA / 'svet' / s['id'] / 'meta.json').exists() and s['id'] not in s_chybou]
     if not zbyva:
         staty_sveta(staty)
-    log(f'Zbývá {len(zbyva)} států.')
+    log(f'Zbývá {len(zbyva)} států (a {len(s_chybou)} s chybou).')
 
 
 def staty_sveta(staty):
@@ -897,16 +923,20 @@ def index():
 
 def main():
     a = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'svet-plne', 'sporna', 'zmensit', 'index', 'vse'])
+    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'svet-plne', 'svet-vybrane', 'sporna', 'zmensit', 'index', 'vse'])
     a.add_argument('--minut', type=float, default=300, help='časový limit pro svět')
+    a.add_argument('--staty', default='', help='pro svet-vybrane: kódy států oddělené čárkou nebo mezerou (např. PRT,MKD)')
     arg = a.parse_args()
     PRACOVNI.mkdir(parents=True, exist_ok=True)
     if arg.co == 'pruzkum':
         pruzkum()
     if arg.co in ('cesko', 'vse'):
         cesko()
-    if arg.co in ('svet', 'svet-znovu', 'svet-plne', 'vse'):
-        svet(arg.minut, znovu=arg.co == 'svet-znovu', doplnit_plne=arg.co == 'svet-plne')
+    if arg.co in ('svet', 'svet-znovu', 'svet-plne', 'svet-vybrane', 'vse'):
+        vybrane = [k.strip().upper() for k in re.split(r'[,\s]+', arg.staty) if k.strip()] if arg.co == 'svet-vybrane' else []
+        if arg.co == 'svet-vybrane' and not vybrane:
+            a.error('svet-vybrane potřebuje --staty')
+        svet(arg.minut, znovu=arg.co == 'svet-znovu', doplnit_plne=arg.co == 'svet-plne', vybrane=vybrane)
     if arg.co == 'zmensit':
         zmensi_svet()
     if arg.co in ('sporna', 'vse'):

@@ -1,5 +1,5 @@
 {
-  "_popis": "Redakční úpravy sporných území pro databázi. Musí odpovídat pravidlům v editoru (mek2424/mapovy-editor, js/styl.js, oddíl „sporná území“). Oblast se v OSM hledá podle anglického názvu (name:en); co se našlo, zapíše průzkum do zpravy/pruzkum-sporna.md. 'prevest' = oblast se odebere státu 'z' (obrys i celky) a přidá státu 'do'. 'rovnobezka' = část státu jižně od zeměpisné šířky se oddělí jako samostatné území.",
+  "_popis": "Redakční úpravy sporných území pro databázi. Musí odpovídat pravidlům v editoru (mek2424/mapovy-editor, js/styl.js, oddíl „sporná území“). Oblast se v OSM hledá podle anglického názvu (name:en, int_name nebo name); co se našlo, zapíše průzkum do zpravy/pruzkum-sporna.md. 'prevest' = oblast se odebere státu 'z' (obrys i celky) a přidá státu 'do'. 'rovnobezka' = část státu jižně od zeměpisné šířky se oddělí jako samostatné území.",
   "pravidla": [
     { "nazev": "Krym a Sevastopol patří Ukrajině", "druh": "prevest", "z": "RUS", "do": "UKR",
       "oblasti": [
@@ -13,7 +13,7 @@
       ] },
     { "nazev": "Golanské výšiny patří Sýrii (okupováno Izraelem)", "druh": "prevest", "z": "ISR", "do": "SYR",
       "oblasti": [
-        { "name:en": ["Golan Heights"], "nazev": "Golanské výšiny, okupováno Izraelem" }
+        { "name:en": ["Golan Heights", "Golan", "Golan Subdistrict", "Golan Sub-District", "Golan District", "Golan Regional Council"], "nazev": "Golanské výšiny, okupováno Izraelem" }
       ] },
     { "nazev": "Arunáčalpradéš patří Indii", "druh": "prevest", "z": "CHN", "do": "IND",
       "oblasti": [
