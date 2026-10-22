@@ -7,6 +7,7 @@ Spouští se v GitHub Actions (.github/workflows/data.yml), kde je přístup k G
   python nastroje/generuj.py cesko     – vrstvy Česka podle nastroje/vrstvy-cesko.json
   python nastroje/generuj.py svet      – státy + 1. a 2. úroveň správních celků (navazuje, kde skončil)
   python nastroje/generuj.py svet-vybrane --staty PRT,MKD – znovu jen vybrané státy
+  python nastroje/generuj.py nazvy     – názvy v hotových datech světa do češtiny (bez stahování)
   python nastroje/generuj.py sporna    – redakční úpravy sporných území (nastroje/sporna-uzemi.json)
   python nastroje/generuj.py index     – index.json pro editor
 
@@ -24,6 +25,7 @@ import subprocess
 import sys
 import tempfile
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -35,6 +37,8 @@ from shapely import make_valid
 from shapely.geometry import GeometryCollection, MultiPolygon, Polygon, box, mapping, shape
 from shapely.ops import unary_union
 from shapely.strtree import STRtree
+
+from prepis import jazyk_statu, ma_cyrilici, prepis
 
 NASTROJE = Path(__file__).resolve().parent
 # Výstup jde do složky VYSTUP (v Actions je to větev „data“, kterou servírují GitHub Pages).
@@ -52,6 +56,7 @@ OVERPASS = [
 GEOFABRIK_CESKO = 'https://download.geofabrik.de/europe/czech-republic-latest.osm.pbf'
 STATY_EDITORU = 'https://raw.githubusercontent.com/mek2424/mapovy-editor/main/data/oblasti/staty.json'
 SPORNA_EDITORU = 'https://raw.githubusercontent.com/mek2424/mapovy-editor/main/data/sporna_uzemi.geojson'
+NAZVY_EDITORU = 'https://raw.githubusercontent.com/mek2424/mapovy-editor/main/js/nazvy.js'
 MAPSHAPER = ['mapshaper'] if shutil.which('mapshaper') else ['npx', '-y', 'mapshaper@0.7.90']
 
 # Zjednodušená verze: kolik bodů zůstane (mapshaper -simplify) a přesnost souřadnic.
@@ -152,8 +157,47 @@ def jen_plochy(g):
     return Polygon()
 
 
-def cesky_nazev(tagy):
-    return tagy.get('name:cs') or tagy.get('name') or tagy.get('name:en') or ''
+_opravy = None
+
+
+def opravy_editoru():
+    """Opravy názvů z editoru (js/nazvy.js, OPRAVY): {chybný tvar: správný}, např. Republika Krym."""
+    global _opravy
+    if _opravy is None:
+        text = stahni(NAZVY_EDITORU).decode('utf-8')
+        _opravy = dict(re.findall(r'"([^"]+)"\s*:\s*"([^"]+)"', re.search(r'export const OPRAVY = \{(.*?)\};', text, re.S).group(1)))
+    return _opravy
+
+
+def je_latinka(text):
+    return all(not z.isalpha() or unicodedata.name(z, '').startswith('LATIN') for z in text)
+
+
+def prevod_nazvu(jmeno, iso3, tagy=None):
+    """Název celku ve světě do češtiny: z cyrilice přepis podle ÚJČ (nastroje/prepis.py), u jiných písem
+    anglický název latinkou, nakonec opravy z editoru. Český název z OSM (name:cs) má přednost už v cesky_nazev.
+    Slovník regionů z editoru se nepoužívá: dával by v jedné vrstvě vedle sebe české exonymum a přepis."""
+    tagy = tagy or {}
+    vysledek = None
+    if ma_cyrilici(jmeno):
+        jazyk = jazyk_statu(iso3)
+        for kandidat, jaz in ((tagy.get(f'name:{jazyk}') or jmeno, jazyk), (tagy.get('name:ru'), 'ru'), (jmeno, 'ru')):
+            if kandidat and ma_cyrilici(kandidat):
+                vysledek = prepis(kandidat, jaz)
+                if vysledek:
+                    break
+    if vysledek is None and jmeno and not je_latinka(jmeno):
+        vysledek = next((tagy[k] for k in ('name:en', 'int_name', 'name:latin') if tagy.get(k) and je_latinka(tagy[k])), None)
+    vysledek = vysledek or jmeno
+    return opravy_editoru().get(vysledek, vysledek)
+
+
+def cesky_nazev(tagy, iso3=None):
+    if iso3 is None:
+        return tagy.get('name:cs') or tagy.get('name') or tagy.get('name:en') or ''
+    if tagy.get('name:cs'):
+        return opravy_editoru().get(tagy['name:cs'], tagy['name:cs'])
+    return prevod_nazvu(tagy.get('name') or tagy.get('name:en') or '', iso3, tagy)
 
 
 # ------------------------------------------------------------------ výstup
@@ -566,7 +610,7 @@ def stat_ze_sveta(s, slozka):
             geom = na_pevninu(p['geom'])
             if geom.is_empty:
                 continue  # celek jen na moři
-            prvky.append({'vlastnosti': {'id': kod, 'nazev': cesky_nazev(p['tagy'])}, 'geom': geom})
+            prvky.append({'vlastnosti': {'id': kod, 'nazev': cesky_nazev(p['tagy'], s['id'])}, 'geom': geom})
         if i == 2 and predchozi:
             doplnit_nadrazene(prvky, predchozi, 'uroven1')
         typ = Counter(p['tagy'].get('border_type', '') for p in uvnitr[uroven]).most_common(1)
@@ -782,6 +826,94 @@ def sporna():
     (ZPRAVY / 'sporna-uzemi.md').write_text('\n'.join(zprava) + '\n', encoding='utf-8')
 
 
+def prejmenuj_vrstvu(slozka, klic, uprav):
+    """Změní jen vlastnosti prvků (názvy) v obou souborech vrstvy – geometrie zůstává beze změny,
+    nic se znovu nezjednodušuje. uprav(vlastnosti) vrací True, když něco změnila. Vrací počet změněných prvků."""
+    zmeneno = 0
+    velikosti = {}
+    for druh, soubor in (('zjednodusena', slozka / f'{klic}.json'), ('plna', slozka / f'{klic}.topojson')):
+        if not soubor.exists():
+            continue
+        data = json.loads(soubor.read_text(encoding='utf-8'))
+        if 'features' in data:
+            vlastnosti = [f.setdefault('properties', {}) for f in data['features']]
+        else:
+            vlastnosti = [g.setdefault('properties', {}) for o in data.get('objects', {}).values() for g in o.get('geometries', [])]
+        pocet = sum(1 for v in vlastnosti if v is not None and uprav(v))
+        if pocet:
+            soubor.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+            velikosti[druh] = soubor.stat().st_size
+        zmeneno = max(zmeneno, pocet)
+    if velikosti:
+        meta_soubor = slozka / 'meta.json'
+        meta = json.loads(meta_soubor.read_text(encoding='utf-8'))
+        if isinstance(meta.get(klic), dict):
+            meta[klic].setdefault('velikost', {}).update(velikosti)
+            meta_soubor.write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding='utf-8')
+    return zmeneno
+
+
+def nazvy():
+    """Převede názvy celků v hotových datech světa do češtiny (prevod_nazvu) bez nového generování.
+    Názvy v jiném písmu než latinka a cyrilice tu zůstanou – anglický název se doplní až při generování státu."""
+    zprava = ['# Převod názvů ve světě do češtiny', '',
+              f'Provedeno {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} UTC. Cyrilice podle Internetové jazykové příručky ÚJČ '
+              '(nastroje/prepis.py), opravy podle editoru (js/nazvy.js, OPRAVY).', '']
+    celkem = 0
+    jine_pismo = {}
+    for meta_soubor in sorted((DATA / 'svet').glob('*/meta.json')):
+        slozka = meta_soubor.parent
+        iso3 = slozka.name
+        prevody = {}
+
+        def uprav(prvni):
+            def f(v):
+                zmena = False
+                stary = v.get('nazev') or ''
+                novy = prevody.get(stary) if prvni and stary in prevody else prevod_nazvu(stary, iso3)
+                if novy != stary:
+                    if prvni:
+                        prevody[stary] = novy
+                    v['nazev'] = novy
+                    zmena = True
+                if not prvni and v.get('uroven1'):
+                    rodic = v['uroven1']
+                    novy_rodic = prevody.get(rodic) or prevod_nazvu(rodic, iso3)
+                    if novy_rodic != rodic:
+                        v['uroven1'] = novy_rodic
+                        zmena = True
+                return zmena
+            return f
+
+        zmeny = {}
+        priklady = []
+        for klic, prvni in (('uroven1', True), ('uroven2', False)):
+            pred = dict(prevody)
+            n = prejmenuj_vrstvu(slozka, klic, uprav(prvni))
+            if n:
+                zmeny[klic] = n
+            if prvni:
+                priklady += [f'{a} → {b}' for a, b in list(prevody.items())[:4] if a not in pred]
+        zjednodusena = slozka / 'uroven2.json'
+        for soubor in (slozka / 'uroven1.json', zjednodusena):
+            if soubor.exists():
+                jine = sum(1 for f in json.loads(soubor.read_text(encoding='utf-8'))['features']
+                           if not je_latinka((f.get('properties') or {}).get('nazev') or ''))
+                if jine:
+                    jine_pismo[iso3] = jine_pismo.get(iso3, 0) + jine
+        if zmeny:
+            celkem += sum(zmeny.values())
+            zprava.append(f'- {iso3}: ' + ', '.join(f'{k} {v}' for k, v in zmeny.items())
+                          + (f' (např. {"; ".join(priklady)})' if priklady else ''))
+            log(f'{iso3}: {zmeny}')
+    zprava += ['', f'Celkem změněno {celkem} názvů.', '',
+               '## Zbývá v jiném písmu', '',
+               'Tyto názvy převede až nové generování státu (doplní se anglický název z OSM):', '']
+    zprava += [f'- {k}: {v}' for k, v in sorted(jine_pismo.items())] or ['- nic']
+    ZPRAVY.mkdir(exist_ok=True)
+    (ZPRAVY / 'nazvy.md').write_text('\n'.join(zprava) + '\n', encoding='utf-8')
+
+
 def prepis_vrstvu(iso3, klic, uprav):
     slozka = DATA / 'svet' / iso3
     meta_soubor = slozka / 'meta.json'
@@ -930,7 +1062,7 @@ def index():
 
 def main():
     a = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'svet-plne', 'svet-vybrane', 'sporna', 'zmensit', 'index', 'vse'])
+    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'svet-plne', 'svet-vybrane', 'sporna', 'nazvy', 'zmensit', 'index', 'vse'])
     a.add_argument('--minut', type=float, default=300, help='časový limit pro svět')
     a.add_argument('--staty', default='', help='pro svet-vybrane: kódy států oddělené čárkou nebo mezerou (např. PRT,MKD)')
     arg = a.parse_args()
@@ -946,6 +1078,8 @@ def main():
         svet(arg.minut, znovu=arg.co == 'svet-znovu', doplnit_plne=arg.co == 'svet-plne', vybrane=vybrane)
     if arg.co == 'zmensit':
         zmensi_svet()
+    if arg.co == 'nazvy':
+        nazvy()
     if arg.co in ('sporna', 'vse'):
         sporna()
     if arg.co != 'pruzkum':
