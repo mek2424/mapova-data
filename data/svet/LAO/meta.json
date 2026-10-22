@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/LAO/stat.json",
+   "plna": "data/svet/LAO/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 180904,
+   "plna": 270836
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 18,
+   "6": 148,
+   "7": 2,
+   "8": 3,
+   "10": 4
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "laos"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 18,
+  "soubory": {
+   "zjednodusena": "data/svet/LAO/uroven1.json",
+   "plna": "data/svet/LAO/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 454640,
+   "plna": 423095
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 148,
+  "soubory": {
+   "zjednodusena": "data/svet/LAO/uroven2.json",
+   "plna": "data/svet/LAO/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 821156,
+   "plna": 622231
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:11:39+00:00"
+}

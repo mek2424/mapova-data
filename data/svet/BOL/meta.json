@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BOL/stat.json",
+   "plna": "data/svet/BOL/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 114079,
+   "plna": 220822
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 9,
+   "6": 140,
+   "7": 1,
+   "8": 335,
+   "9": 212,
+   "10": 23
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "bolivia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 9,
+  "soubory": {
+   "zjednodusena": "data/svet/BOL/uroven1.json",
+   "plna": "data/svet/BOL/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 386216,
+   "plna": 422067
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 140,
+  "soubory": {
+   "zjednodusena": "data/svet/BOL/uroven2.json",
+   "plna": "data/svet/BOL/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1211118,
+   "plna": 1253752
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:48:05+00:00"
+}

@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PSX/stat.json",
+   "plna": "data/svet/PSX/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 70863,
+   "plna": 38386
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 150,
+   "5": 5,
+   "6": 5,
+   "8": 382,
+   "9": 43,
+   "10": 2
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "israel-and-palestine"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 150,
+  "soubory": {
+   "zjednodusena": "data/svet/PSX/uroven1.json",
+   "plna": "data/svet/PSX/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 696242,
+   "plna": 191167
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 382,
+  "soubory": {
+   "zjednodusena": "data/svet/PSX/uroven2.json",
+   "plna": "data/svet/PSX/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 651979,
+   "plna": 235543
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:34:19+00:00"
+}

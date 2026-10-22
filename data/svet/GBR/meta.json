@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GBR/stat.json",
+   "plna": "data/svet/GBR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 507847,
+   "plna": 2315601
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 4,
+   "5": 22,
+   "6": 1833,
+   "7": 11,
+   "8": 232,
+   "9": 13,
+   "10": 21384
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "united-kingdom"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 4,
+  "soubory": {
+   "zjednodusena": "data/svet/GBR/uroven1.json",
+   "plna": "data/svet/GBR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 544943,
+   "plna": 2367241
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 22,
+  "soubory": {
+   "zjednodusena": "data/svet/GBR/uroven2.json",
+   "plna": "data/svet/GBR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 308000,
+   "plna": 434527
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-21T09:04:17+00:00"
+}

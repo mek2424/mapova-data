@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/FJI/stat.json",
+   "plna": "data/svet/FJI/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1605,
+   "plna": 418976
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 5,
+   "6": 17
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "fiji"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 5,
+  "soubory": {
+   "zjednodusena": "data/svet/FJI/uroven1.json",
+   "plna": "data/svet/FJI/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 3772,
+   "plna": 435383
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 17,
+  "soubory": {
+   "zjednodusena": "data/svet/FJI/uroven2.json",
+   "plna": "data/svet/FJI/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 10828,
+   "plna": 505968
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:04:51+00:00"
+}

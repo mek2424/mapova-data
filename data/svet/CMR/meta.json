@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CMR/stat.json",
+   "plna": "data/svet/CMR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 117811,
+   "plna": 286837
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 10,
+   "6": 58,
+   "7": 16,
+   "8": 360,
+   "10": 66
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "cameroon"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/CMR/uroven1.json",
+   "plna": "data/svet/CMR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 300056,
+   "plna": 477840
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 58,
+  "soubory": {
+   "zjednodusena": "data/svet/CMR/uroven2.json",
+   "plna": "data/svet/CMR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 612114,
+   "plna": 828316
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:32:02+00:00"
+}

@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GIN/stat.json",
+   "plna": "data/svet/GIN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 210165,
+   "plna": 392003
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 10,
+   "6": 33,
+   "8": 25,
+   "10": 397
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "guinea"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/GIN/uroven1.json",
+   "plna": "data/svet/GIN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 360517,
+   "plna": 501268
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 33,
+  "soubory": {
+   "zjednodusena": "data/svet/GIN/uroven2.json",
+   "plna": "data/svet/GIN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 505327,
+   "plna": 588528
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:24:11+00:00"
+}

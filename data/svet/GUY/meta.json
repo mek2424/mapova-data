@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GUY/stat.json",
+   "plna": "data/svet/GUY/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 111103,
+   "plna": 177430
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 10,
+   "6": 115,
+   "8": 145,
+   "10": 77
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "guyana"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (region)",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/GUY/uroven1.json",
+   "plna": "data/svet/GUY/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 162016,
+   "plna": 200824
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 115,
+  "soubory": {
+   "zjednodusena": "data/svet/GUY/uroven2.json",
+   "plna": "data/svet/GUY/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 431112,
+   "plna": 393918
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:28:20+00:00"
+}

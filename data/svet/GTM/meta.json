@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GTM/stat.json",
+   "plna": "data/svet/GTM/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 75541,
+   "plna": 78693
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 22,
+   "6": 316,
+   "8": 44,
+   "9": 2,
+   "10": 1
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "guatemala"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 22,
+  "soubory": {
+   "zjednodusena": "data/svet/GTM/uroven1.json",
+   "plna": "data/svet/GTM/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 384565,
+   "plna": 238182
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 316,
+  "soubory": {
+   "zjednodusena": "data/svet/GTM/uroven2.json",
+   "plna": "data/svet/GTM/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1073885,
+   "plna": 595586
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:28:08+00:00"
+}

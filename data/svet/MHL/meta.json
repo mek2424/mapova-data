@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MHL/stat.json",
+   "plna": "data/svet/MHL/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 30716,
+   "plna": 211071
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 2,
+   "8": 24
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "marshall-islands"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/MHL/uroven1.json",
+   "plna": "data/svet/MHL/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 30730,
+   "plna": 211277
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 24,
+  "soubory": {
+   "zjednodusena": "data/svet/MHL/uroven2.json",
+   "plna": "data/svet/MHL/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 33755,
+   "plna": 213722
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:20:10+00:00"
+}

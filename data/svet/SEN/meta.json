@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SEN/stat.json",
+   "plna": "data/svet/SEN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 116393,
+   "plna": 151866
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 14,
+   "5": 46,
+   "7": 129,
+   "8": 549,
+   "9": 14,
+   "10": 3
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "senegal-and-gambia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 14,
+  "soubory": {
+   "zjednodusena": "data/svet/SEN/uroven1.json",
+   "plna": "data/svet/SEN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 236807,
+   "plna": 217363
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 46,
+  "soubory": {
+   "zjednodusena": "data/svet/SEN/uroven2.json",
+   "plna": "data/svet/SEN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 417410,
+   "plna": 318703
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:50:00+00:00"
+}

@@ -1,0 +1,49 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BWA/stat.json",
+   "plna": "data/svet/BWA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 98450,
+   "plna": 172415
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 16,
+   "6": 2,
+   "8": 1
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "botswana"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 16,
+  "soubory": {
+   "zjednodusena": "data/svet/BWA/uroven1.json",
+   "plna": "data/svet/BWA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 155262,
+   "plna": 225661
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:54:10+00:00"
+}

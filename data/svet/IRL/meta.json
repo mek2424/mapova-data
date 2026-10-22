@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/IRL/stat.json",
+   "plna": "data/svet/IRL/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 591955,
+   "plna": 928874
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "5": 4,
+   "6": 26,
+   "7": 20,
+   "8": 98,
+   "9": 3622,
+   "10": 51749
+  },
+  "zvolene": [
+   5,
+   6
+  ],
+  "vyrez": "ireland-and-northern-ireland"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 4,
+  "soubory": {
+   "zjednodusena": "data/svet/IRL/uroven1.json",
+   "plna": "data/svet/IRL/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 697405,
+   "plna": 964116
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 26,
+  "soubory": {
+   "zjednodusena": "data/svet/IRL/uroven2.json",
+   "plna": "data/svet/IRL/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1021738,
+   "plna": 1162085
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:41:30+00:00"
+}

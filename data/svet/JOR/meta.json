@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/JOR/stat.json",
+   "plna": "data/svet/JOR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 45788,
+   "plna": 49786
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 12,
+   "5": 51,
+   "6": 89,
+   "8": 1,
+   "9": 1
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "jordan"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 12,
+  "soubory": {
+   "zjednodusena": "data/svet/JOR/uroven1.json",
+   "plna": "data/svet/JOR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 121432,
+   "plna": 86208
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 51,
+  "soubory": {
+   "zjednodusena": "data/svet/JOR/uroven2.json",
+   "plna": "data/svet/JOR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 150060,
+   "plna": 102924
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:48:30+00:00"
+}

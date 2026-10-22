@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/HND/stat.json",
+   "plna": "data/svet/HND/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 131479,
+   "plna": 238658
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 15,
+   "6": 266,
+   "7": 1,
+   "8": 24,
+   "9": 66,
+   "10": 333
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "honduras"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 15,
+  "soubory": {
+   "zjednodusena": "data/svet/HND/uroven1.json",
+   "plna": "data/svet/HND/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 270150,
+   "plna": 344309
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 266,
+  "soubory": {
+   "zjednodusena": "data/svet/HND/uroven2.json",
+   "plna": "data/svet/HND/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 958042,
+   "plna": 834693
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:28:52+00:00"
+}

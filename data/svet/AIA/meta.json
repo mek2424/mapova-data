@@ -1,0 +1,25 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/AIA/stat.json",
+   "plna": "data/svet/AIA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 63750,
+   "plna": 14595
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {},
+  "zvolene": [],
+  "vyrez": "central-america"
+ },
+ "vytvoreno": "2026-10-20T05:27:30+00:00"
+}

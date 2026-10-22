@@ -1,0 +1,478 @@
+- 2026-10-20 05:26 ABW Aruba: 132 s, úrovně [8], stat 1, uroven1 3
+- 2026-10-20 05:27 AFG Afghánistán: 15 s, úrovně [4, 5], stat 1, uroven1 34, uroven2 397
+- 2026-10-20 05:27 AGO Angola: 17 s, úrovně [4, 6], stat 1, uroven1 19, uroven2 30
+- 2026-10-20 05:27 AIA Anguilla: 0 s, úrovně [], stat 1
+- 2026-10-20 05:27 ALB Albánie: 9 s, úrovně [4, 6], stat 1, uroven1 2, uroven2 13
+- 2026-10-20 05:30 ALD Ålandy: 144 s, úrovně [7, 8], stat 1, uroven1 10, uroven2 28
+- 2026-10-20 05:30 AND Andorra: 3 s, úrovně [7], stat 1, uroven1 7
+- 2026-10-20 05:30 ARE Spojené arabské emiráty: 30 s, úrovně [4, 7], stat 1, uroven1 7, uroven2 15
+- 2026-10-20 05:31 ARG Argentina: 69 s, úrovně [4, 5], stat 1, uroven1 24, uroven2 528
+- 2026-10-20 05:31 ARM: obrys státu složen z celků admin_level 4 (10)
+- 2026-10-20 05:31 ARM Arménie: 9 s, úrovně [4, 5], stat 1, uroven1 10, uroven2 77
+- 2026-10-20 05:31 ASM Americká Samoa: 4 s, úrovně [6, 7], stat 1, uroven1 5, uroven2 14
+- 2026-10-20 05:32 ATA Antarktida: CHYBA po 5 s – obrys státu ve výřezu antarctica nenalezen ani z jeho celků
+- 2026-10-20 09:16 ATF Francouzská jižní území: CHYBA po 13459 s – obrys státu ve výřezu africa nenalezen ani z jeho celků
+- 2026-10-20 09:16 ATG Antigua a Barbuda: 11 s, úrovně [4, 6], stat 1, uroven1 3, uroven2 8
+- 2026-10-20 09:19 AUS Austrálie: 176 s, úrovně [4, 6], stat 1, uroven1 15, uroven2 600
+- 2026-10-20 09:21 AUT Rakousko: 132 s, úrovně [4, 6], stat 1, uroven1 9, uroven2 93
+- 2026-10-20 09:21 AZE: obrys státu složen z celků admin_level 4 (1)
+- 2026-10-20 09:21 AZE Ázerbájdžán: 8 s, úrovně [6], stat 1, uroven1 8
+- 2026-10-20 09:22 BDI Burundi: 23 s, úrovně [4, 6], stat 1, uroven1 18, uroven2 28
+- 2026-10-20 09:24 BEL Belgie: 157 s, úrovně [4, 6], stat 1, uroven1 3, uroven2 10
+- 2026-10-20 10:38 ATA Antarktida: CHYBA po 8 s – obrys státu ve výřezu antarctica nenalezen ani z jeho celků
+- 2026-10-20 10:38 ATF Francouzská jižní území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (africa) – vynecháno
+- 2026-10-20 10:40 BEN Benin: 64 s, úrovně [4, 6], stat 1, uroven1 12, uroven2 77
+- 2026-10-20 10:40 BFA: obrys státu složen z celků admin_level 4 (12)
+- 2026-10-20 10:40 BFA Burkina Faso: 16 s, úrovně [4, 5], stat 1, uroven1 12, uroven2 40
+- 2026-10-20 10:41 BGD Bangladéš: 54 s, úrovně [4, 5], stat 1, uroven1 8, uroven2 65
+- 2026-10-20 10:41 BGR Bulharsko: 31 s, úrovně [4, 5], stat 1, uroven1 28, uroven2 265
+- 2026-10-20 10:45 BHR Bahrajn: 225 s, úrovně [4], stat 1, uroven1 4
+- 2026-10-20 10:45 BHS Bahamy: 19 s, úrovně [8], stat 1, uroven1 34
+- 2026-10-20 10:46 BIH Bosna a Hercegovina: 24 s, úrovně [4, 5], stat 1, uroven1 3, uroven2 10
+- 2026-10-20 10:46 BLM Svatý Bartoloměj: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 10:47 BLR Bělorusko: 63 s, úrovně [4, 6], stat 1, uroven1 9, uroven2 129
+- 2026-10-20 10:47 BLZ: obrys státu složen z celků admin_level 4 (4)
+- 2026-10-20 10:47 BLZ Belize: 8 s, úrovně [4, 8], stat 1, uroven1 4, uroven2 12
+- 2026-10-20 10:47 BMU Bermudy: 4 s, úrovně [6], stat 1, uroven1 11
+- 2026-10-20 10:48 BOL Bolívie: 38 s, úrovně [4, 6], stat 1, uroven1 9, uroven2 140
+- 2026-10-20 10:53 BRA Brazílie: 298 s, úrovně [3, 4], stat 1, uroven1 5, uroven2 27
+- 2026-10-20 10:53 BRB Barbados: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 10:53 BRN Brunej: 41 s, úrovně [4, 6], stat 1, uroven1 4, uroven2 27
+- 2026-10-20 10:53 BTN: obrys státu složen z celků admin_level 4 (19)
+- 2026-10-20 10:53 BTN Bhútán: 9 s, úrovně [4, 6], stat 1, uroven1 19, uroven2 195
+- 2026-10-20 10:54 BWA Botswana: 17 s, úrovně [4], stat 1, uroven1 16
+- 2026-10-20 10:54 CAF Středoafrická republika: 14 s, úrovně [4, 9], stat 1, uroven1 17, uroven2 47
+- 2026-10-20 11:16 CAN Kanada: CHYBA po 1345 s – TopologyException: Ring edge missing at -76.999069420501655 57.837448860866203
+- 2026-10-20 11:17 CHE Švýcarsko: 66 s, úrovně [4, 6], stat 1, uroven1 31, uroven2 135
+- 2026-10-20 11:26 CHL Chile: 495 s, úrovně [4, 8], stat 1, uroven1 174, uroven2 346
+- 2026-10-20 11:30 CHN: obrys státu složen z celků admin_level 4 (57)
+- 2026-10-20 11:31 CHN Čína: 298 s, úrovně [4, 5], stat 1, uroven1 57, uroven2 392
+- 2026-10-20 11:31 CIV Pobřeží slonoviny: 19 s, úrovně [4, 5], stat 1, uroven1 14, uroven2 31
+- 2026-10-20 11:32 CMR Kamerun: 34 s, úrovně [4, 6], stat 1, uroven1 10, uroven2 58
+- 2026-10-20 11:33 COD Demokratická republika Kongo: 58 s, úrovně [4, 6], stat 1, uroven1 26, uroven2 74
+- 2026-10-20 11:33 COG Kongo: 19 s, úrovně [4, 6], stat 1, uroven1 12, uroven2 54
+- 2026-10-20 11:33 COK Cookovy ostrovy: 3 s, úrovně [4], stat 1, uroven1 11
+- 2026-10-20 11:38 COL Kolumbie: 315 s, úrovně [3, 4], stat 1, uroven1 8, uroven2 33
+- 2026-10-20 11:38 COM Komory: 5 s, úrovně [4, 6], stat 1, uroven1 3, uroven2 17
+- 2026-10-20 11:38 CPV Kapverdy: 6 s, úrovně [6], stat 1, uroven1 22
+- 2026-10-20 11:39 CRI Kostarika: 58 s, úrovně [4, 6], stat 1, uroven1 7, uroven2 86
+- 2026-10-20 11:40 CUB Kuba: 25 s, úrovně [4, 6], stat 1, uroven1 16, uroven2 167
+- 2026-10-20 11:40 CUW Curaçao: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 11:40 CYM Kajmanské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 11:40 CYP Kypr: 10 s, úrovně [3, 5], stat 1, uroven1 2, uroven2 11
+- 2026-10-20 11:42 CZE Česko: 131 s, úrovně [4, 5], stat 1, uroven1 14, uroven2 86
+- 2026-10-20 11:47 DEU Německo: 296 s, úrovně [4, 6], stat 1, uroven1 23, uroven2 450
+- 2026-10-20 11:47 DJI Džibutsko: 7 s, úrovně [4, 6], stat 1, uroven1 7, uroven2 9
+- 2026-10-20 11:47 DMA Dominika: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 11:48 DNK Dánsko: 66 s, úrovně [4, 7], stat 1, uroven1 5, uroven2 98
+- 2026-10-20 11:49 DOM Dominikánská republika: 68 s, úrovně [4, 6], stat 1, uroven1 67, uroven2 157
+- 2026-10-20 11:50 DZA Alžírsko: 52 s, úrovně [4, 6], stat 1, uroven1 70, uroven2 549
+- 2026-10-20 11:51 ECU Ekvádor: 76 s, úrovně [4, 6], stat 1, uroven1 30, uroven2 221
+- 2026-10-20 11:52 EGY Egypt: 22 s, úrovně [4], stat 1, uroven1 27
+- 2026-10-20 11:52 ERI Eritrea: 11 s, úrovně [4], stat 1, uroven1 6
+- 2026-10-20 11:55 ESP: obrys státu složen z celků admin_level 4 (18)
+- 2026-10-20 11:56 ESP Španělsko: 248 s, úrovně [4, 6], stat 1, uroven1 18, uroven2 51
+- 2026-10-20 11:57 EST Estonsko: 40 s, úrovně [6, 7], stat 1, uroven1 15, uroven2 85
+- 2026-10-20 11:57 ETH: obrys státu složen z celků admin_level 4 (14)
+- 2026-10-20 11:57 ETH Etiopie: 20 s, úrovně [4, 5], stat 1, uroven1 14, uroven2 74
+- 2026-10-20 12:04 FIN Finsko: 413 s, úrovně [3, 4], stat 1, uroven1 2, uroven2 19
+- 2026-10-20 12:04 FJI Fidži: 20 s, úrovně [4, 6], stat 1, uroven1 5, uroven2 17
+- 2026-10-20 12:05 FLK Falklandské ostrovy: 13 s, úrovně [10], stat 1, uroven1 108
+- 2026-10-20 12:14 FRA: obrys státu složen z celků admin_level 3 (1)
+- 2026-10-20 12:15 FRA Francie: 636 s, úrovně [4, 6], stat 1, uroven1 13, uroven2 102
+- 2026-10-20 12:15 FRO Faerské ostrovy: 7 s, úrovně [6, 7], stat 1, uroven1 6, uroven2 29
+- 2026-10-20 12:15 FSM Mikronésie: 5 s, úrovně [4, 8], stat 1, uroven1 4, uroven2 77
+- 2026-10-20 12:16 GAB Gabon: 11 s, úrovně [4, 6], stat 1, uroven1 9, uroven2 49
+- 2026-10-20 12:21 GBR Spojené království: 350 s, úrovně [4, 5], stat 1, uroven1 4, uroven2 22
+- 2026-10-20 12:22 GEO Gruzie: 45 s, úrovně [3, 4], stat 1, uroven1 2, uroven2 12
+- 2026-10-20 12:22 GGY Guernsey: 8 s, úrovně [4, 8], stat 1, uroven1 3, uroven2 10
+- 2026-10-20 12:23 GHA Ghana: 21 s, úrovně [4, 6], stat 1, uroven1 16, uroven2 261
+- 2026-10-20 12:23 GIB Gibraltar: 26 s, úrovně [], stat 1
+- 2026-10-20 12:24 GIN Guinea: 39 s, úrovně [4, 6], stat 1, uroven1 10, uroven2 33
+- 2026-10-20 12:24 GMB Gambie: 15 s, úrovně [4, 5], stat 1, uroven1 7, uroven2 8
+- 2026-10-20 12:24 GNB Guinea-Bissau: 7 s, úrovně [3, 4], stat 1, uroven1 4, uroven2 8
+- 2026-10-20 12:24 GNQ Rovníková Guinea: 5 s, úrovně [3, 4], stat 1, uroven1 2, uroven2 9
+- 2026-10-20 12:26 GRC Řecko: 124 s, úrovně [4, 5], stat 1, uroven1 7, uroven2 13
+- 2026-10-20 12:26 GRD Grenada: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 12:27 GRL Grónsko: CHYBA po 61 s – TopologyException: Ring edge missing at -67.997858171215128 76.517958799711039
+- 2026-10-20 12:28 GTM Guatemala: 24 s, úrovně [4, 6], stat 1, uroven1 22, uroven2 316
+- 2026-10-20 12:28 GUM Guam: 4 s, úrovně [6], stat 1, uroven1 19
+- 2026-10-20 12:28 GUY Guyana: 7 s, úrovně [4, 6], stat 1, uroven1 10, uroven2 115
+- 2026-10-20 12:28 HKG: obrys státu složen z celků admin_level 4 (1)
+- 2026-10-20 12:28 HKG Hongkong – ZAO Číny: 12 s, úrovně [5, 6], stat 1, uroven1 3, uroven2 18
+- 2026-10-20 12:28 HMD Heardův ostrov a McDonaldovy ostrovy: 2 s, úrovně [], stat 1
+- 2026-10-20 12:28 HND: obrys státu složen z celků admin_level 4 (15)
+- 2026-10-20 12:28 HND Honduras: 18 s, úrovně [4, 6], stat 1, uroven1 15, uroven2 266
+- 2026-10-20 12:29 HRV Chorvatsko: 52 s, úrovně [4, 7], stat 1, uroven1 21, uroven2 556
+- 2026-10-20 12:29 HTI: obrys státu složen z celků admin_level 4 (10)
+- 2026-10-20 12:29 HTI Haiti: 6 s, úrovně [4, 5], stat 1, uroven1 10, uroven2 42
+- 2026-10-20 12:30 HUN Maďarsko: 41 s, úrovně [6, 7], stat 1, uroven1 20, uroven2 174
+- 2026-10-20 12:33 IDN: obrys státu složen z celků admin_level 4 (23)
+- 2026-10-20 12:34 IDN Indonésie: 263 s, úrovně [4, 5], stat 1, uroven1 23, uroven2 656
+- 2026-10-20 12:34 IMN Ostrov Man: 5 s, úrovně [6, 8], stat 1, uroven1 6, uroven2 24
+- 2026-10-20 12:38 IND: obrys státu složen z celků admin_level 4 (43)
+- 2026-10-20 12:39 IND Indie: 301 s, úrovně [4, 5], stat 1, uroven1 43, uroven2 762
+- 2026-10-20 12:39 IOT Britské indickooceánské území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (asia) – vynecháno
+- 2026-10-20 12:41 IRL Irsko: 91 s, úrovně [5, 6], stat 1, uroven1 4, uroven2 26
+- 2026-10-20 12:42 IRN: obrys státu složen z celků admin_level 4 (30)
+- 2026-10-20 12:42 IRN Írán: 38 s, úrovně [4, 5], stat 1, uroven1 30, uroven2 470
+- 2026-10-20 12:42 IRQ Irák: 20 s, úrovně [4, 6], stat 1, uroven1 19, uroven2 140
+- 2026-10-20 12:42 ISL Island: 28 s, úrovně [5, 6], stat 1, uroven1 8, uroven2 61
+- 2026-10-20 12:43 ISR Izrael: 22 s, úrovně [4, 8], stat 1, uroven1 33, uroven2 268
+- 2026-10-20 12:47 ITA Itálie: 280 s, úrovně [4, 6], stat 1, uroven1 50, uroven2 115
+- 2026-10-20 12:48 JAM Jamajka: 9 s, úrovně [5, 6], stat 1, uroven1 3, uroven2 14
+- 2026-10-20 12:48 JEY Jersey: CHYBA po 0 s – obrys státu ve výřezu guernsey-jersey nenalezen ani z jeho celků
+- 2026-10-20 12:48 JOR Jordánsko: 22 s, úrovně [4, 5], stat 1, uroven1 12, uroven2 51
+- 2026-10-20 13:06 JPN Japonsko: 1061 s, úrovně [4, 6], stat 1, uroven1 52, uroven2 467
+- 2026-10-20 13:08 KAZ Kazachstán: 110 s, úrovně [4, 6], stat 1, uroven1 20, uroven2 234
+- 2026-10-20 13:09 KEN Keňa: 80 s, úrovně [4, 6], stat 1, uroven1 47, uroven2 338
+- 2026-10-20 13:09 KGZ: obrys státu složen z celků admin_level 4 (8)
+- 2026-10-20 13:09 KGZ Kyrgyzstán: 25 s, úrovně [4, 6], stat 1, uroven1 8, uroven2 52
+- 2026-10-20 13:10 KHM Kambodža: 18 s, úrovně [4, 6], stat 1, uroven1 25, uroven2 205
+- 2026-10-20 13:10 KIR Kiribati: 5 s, úrovně [4, 8], stat 1, uroven1 3, uroven2 24
+- 2026-10-20 13:10 KNA Svatý Kryštof a Nevis: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 13:11 KOR Jižní Korea: 61 s, úrovně [4, 6], stat 1, uroven1 16, uroven2 231
+- 2026-10-20 13:11 KOS Kosovo: 14 s, úrovně [5, 6], stat 1, uroven1 7, uroven2 38
+- 2026-10-20 13:11 KWT Kuvajt: 4 s, úrovně [4, 6], stat 1, uroven1 6, uroven2 192
+- 2026-10-20 13:11 LAO Laos: 11 s, úrovně [4, 6], stat 1, uroven1 18, uroven2 148
+- 2026-10-20 13:11 LBN Libanon: 9 s, úrovně [4, 5], stat 1, uroven1 9, uroven2 25
+- 2026-10-20 13:12 LBR Libérie: 47 s, úrovně [4, 6], stat 1, uroven1 15, uroven2 141
+- 2026-10-20 13:12 LBY Libye: 23 s, úrovně [4], stat 1, uroven1 23
+- 2026-10-20 13:12 LCA Svatá Lucie: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 13:13 LIE Lichtenštejnsko: 4 s, úrovně [6, 8], stat 1, uroven1 2, uroven2 15
+- 2026-10-20 13:13 LKA Srí Lanka: 20 s, úrovně [4, 5], stat 1, uroven1 9, uroven2 25
+- 2026-10-20 13:13 LSO Lesotho: 32 s, úrovně [5], stat 1, uroven1 10
+- 2026-10-20 13:14 LTU Litva: 40 s, úrovně [4, 5], stat 1, uroven1 10, uroven2 60
+- 2026-10-20 13:14 LUX Lucembursko: 13 s, úrovně [6, 8], stat 1, uroven1 13, uroven2 104
+- 2026-10-20 13:15 LVA Lotyšsko: 34 s, úrovně [5, 7], stat 1, uroven1 42, uroven2 75
+- 2026-10-20 13:15 MAC: obrys státu složen z celků admin_level 5 (1)
+- 2026-10-20 13:15 MAC Macao – ZAO Číny: 4 s, úrovně [6], stat 1, uroven1 2
+- 2026-10-20 13:15 MAF Svatý Martin (Francie): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 13:16 MAR Maroko: 36 s, úrovně [4, 5], stat 1, uroven1 11, uroven2 74
+- 2026-10-20 13:16 MCO Monako: 3 s, úrovně [10], stat 1, uroven1 9
+- 2026-10-20 13:16 MDA Moldavsko: 25 s, úrovně [4, 8], stat 1, uroven1 37, uroven2 982
+- 2026-10-20 13:17 MDG Madagaskar: 83 s, úrovně [3, 4], stat 1, uroven1 7, uroven2 24
+- 2026-10-20 13:17 MDV Maledivy: 5 s, úrovně [4], stat 1, uroven1 21
+- 2026-10-20 13:20 MEX Mexiko: 127 s, úrovně [4, 6], stat 1, uroven1 84, uroven2 2517
+- 2026-10-20 13:20 MHL Marshallovy ostrovy: 6 s, úrovně [4, 8], stat 1, uroven1 2, uroven2 24
+- 2026-10-20 13:20 MKD Severní Makedonie: 12 s, úrovně [7, 8], stat 1, uroven1 80, uroven2 1751
+- 2026-10-20 13:20 MLI Mali: 36 s, úrovně [4, 6], stat 1, uroven1 21, uroven2 49
+- 2026-10-20 13:21 MLT Malta: 6 s, úrovně [7, 8], stat 1, uroven1 15, uroven2 68
+- 2026-10-20 13:21 MMR Myanmar: 54 s, úrovně [3, 4], stat 1, uroven1 4, uroven2 127
+- 2026-10-20 13:22 MNE Černá Hora: 9 s, úrovně [6, 8], stat 1, uroven1 25, uroven2 236
+- 2026-10-20 13:22 MNG Mongolsko: 14 s, úrovně [4, 6], stat 1, uroven1 22, uroven2 342
+- 2026-10-20 13:22 MNP Severní Mariany: 1 s, úrovně [6], stat 1, uroven1 14
+- 2026-10-20 13:23 MOZ Mosambik: 56 s, úrovně [3, 4], stat 1, uroven1 3, uroven2 11
+- 2026-10-20 13:23 MRT Mauritánie: 7 s, úrovně [4], stat 1, uroven1 15
+- 2026-10-20 13:23 MSR Montserrat: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 13:23 MUS Mauricius: 6 s, úrovně [3, 4], stat 1, uroven1 3, uroven2 9
+- 2026-10-20 13:24 MWI Malawi: 29 s, úrovně [3, 4], stat 1, uroven1 3, uroven2 28
+- 2026-10-20 13:24 MYS: obrys státu složen z celků admin_level 4 (27)
+- 2026-10-20 13:24 MYS Malajsie: 10 s, úrovně [4, 6], stat 1, uroven1 40, uroven2 122
+- 2026-10-20 13:24 NAM Namibie: 14 s, úrovně [4, 8], stat 1, uroven1 14, uroven2 25
+- 2026-10-20 13:24 NCL Nová Kaledonie: 13 s, úrovně [6, 8], stat 1, uroven1 3, uroven2 33
+- 2026-10-20 13:24 NER Niger: 16 s, úrovně [4, 6], stat 1, uroven1 8, uroven2 41
+- 2026-10-20 13:24 NFK Norfolk: 3 s, úrovně [], stat 1
+- 2026-10-20 13:26 NGA: obrys státu složen z celků admin_level 4 (36)
+- 2026-10-20 13:26 NGA Nigérie: 109 s, úrovně [4, 6], stat 1, uroven1 36, uroven2 760
+- 2026-10-20 13:27 NIC Nikaragua: 18 s, úrovně [4, 6], stat 1, uroven1 17, uroven2 153
+- 2026-10-20 13:27 NIU Niue: 4 s, úrovně [8], stat 1, uroven1 13
+- 2026-10-20 14:06 NLD: obrys státu složen z celků admin_level 4 (12)
+- 2026-10-20 14:06 NLD Nizozemsko: 2369 s, úrovně [4, 8], stat 1, uroven1 12, uroven2 343
+- 2026-10-20 14:09 NOR: obrys státu složen z celků admin_level 4 (16)
+- 2026-10-20 14:14 NOR Norsko: 460 s, úrovně [4, 7], stat 1, uroven1 16, uroven2 329
+- 2026-10-20 14:15 NPL Nepál: 50 s, úrovně [4, 6], stat 1, uroven1 7, uroven2 77
+- 2026-10-20 14:15 NRU Nauru: 3 s, úrovně [4, 6], stat 1, uroven1 8, uroven2 14
+- 2026-10-20 14:16 NZL Nový Zéland: 80 s, úrovně [4, 6], stat 1, uroven1 17, uroven2 70
+- 2026-10-20 14:16 OMN Omán: 8 s, úrovně [4, 6], stat 1, uroven1 11, uroven2 67
+- 2026-10-20 14:17 PAK Pákistán: 39 s, úrovně [4, 5], stat 1, uroven1 7, uroven2 39
+- 2026-10-20 14:17 PAN: obrys státu složen z celků admin_level 4 (11)
+- 2026-10-20 14:17 PAN Panama: 13 s, úrovně [4, 6], stat 1, uroven1 11, uroven2 49
+- 2026-10-20 14:17 PCN Pitcairnovy ostrovy: 3 s, úrovně [], stat 1
+- 2026-10-20 14:18 PER Peru: 53 s, úrovně [4, 6], stat 1, uroven1 30, uroven2 197
+- 2026-10-20 14:19 PHL: obrys státu složen z celků admin_level 3 (21)
+- 2026-10-20 14:20 PHL Filipíny: 140 s, úrovně [3, 4], stat 1, uroven1 27, uroven2 83
+- 2026-10-20 14:20 PLW Palau: 3 s, úrovně [4], stat 1, uroven1 16
+- 2026-10-20 14:21 PNG: obrys státu složen z celků admin_level 3 (1)
+- 2026-10-20 14:21 PNG Papua-Nová Guinea: 18 s, úrovně [4, 5], stat 1, uroven1 7, uroven2 34
+- 2026-10-20 15:31 POL Polsko: 4196 s, úrovně [4, 6], stat 1, uroven1 16, uroven2 380
+- 2026-10-20 16:01 ATA Antarktida: CHYBA po 20 s – obrys státu ve výřezu antarctica nenalezen ani z jeho celků
+- 2026-10-20 16:01 ATF Francouzská jižní území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (africa) – vynecháno
+- 2026-10-20 16:01 BLM Svatý Bartoloměj: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 16:01 BRB Barbados: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 16:28 CAN Kanada: 1568 s, úrovně [4, 5], stat 1, uroven1 64, uroven2 76
+- 2026-10-20 16:28 CUW Curaçao: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 16:28 CYM Kajmanské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 16:28 DMA Dominika: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 16:28 GRD Grenada: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 16:29 GRL Grónsko: 71 s, úrovně [4], stat 1, uroven1 6
+- 2026-10-20 16:29 IOT Britské indickooceánské území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (asia) – vynecháno
+- 2026-10-20 16:29 JEY Jersey: CHYBA po 4 s – obrys státu ve výřezu guernsey-jersey nenalezen ani z jeho celků
+- 2026-10-20 16:29 KNA Svatý Kryštof a Nevis: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 16:29 LCA Svatá Lucie: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 16:29 MAF Svatý Martin (Francie): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 16:29 MSR Montserrat: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 16:29 PRI Portoriko: 17 s, úrovně [6, 9], stat 1, uroven1 83, uroven2 903
+- 2026-10-20 16:30 PRK: obrys státu složen z celků admin_level 4 (12)
+- 2026-10-20 16:30 PRK Severní Korea: 52 s, úrovně [4, 6], stat 1, uroven1 12, uroven2 172
+- 2026-10-20 16:33 PRT Portugalsko: 185 s, úrovně [4, 8], stat 1, uroven1 503, uroven2 3263
+- 2026-10-20 16:34 PRY Paraguay: 27 s, úrovně [3, 4], stat 1, uroven1 2, uroven2 18
+- 2026-10-20 16:34 PSX: obrys státu složen z celků admin_level 4 (150)
+- 2026-10-20 16:34 PSX Palestinská území: 17 s, úrovně [4, 8], stat 1, uroven1 150, uroven2 382
+- 2026-10-20 16:34 PYF Francouzská Polynésie: 39 s, úrovně [6, 8], stat 1, uroven1 5, uroven2 48
+- 2026-10-20 16:35 QAT Katar: 34 s, úrovně [4, 10], stat 1, uroven1 9, uroven2 59
+- 2026-10-20 16:36 ROU Rumunsko: 57 s, úrovně [4, 8], stat 1, uroven1 42, uroven2 3200
+- 2026-10-20 16:44 RUS: obrys státu složen z celků admin_level 3 (13)
+- 2026-10-20 16:47 RUS Rusko: 648 s, úrovně [3, 4], stat 1, uroven1 13, uroven2 99
+- 2026-10-20 16:47 RWA Rwanda: 19 s, úrovně [4, 6], stat 1, uroven1 5, uroven2 30
+- 2026-10-20 16:48 SAH: obrys státu složen z celků admin_level 4 (1)
+- 2026-10-20 16:48 SAH Západní Sahara: 49 s, úrovně [5, 6], stat 1, uroven1 4, uroven2 10
+- 2026-10-20 16:48 SAU Saúdská Arábie: 11 s, úrovně [4, 6], stat 1, uroven1 13, uroven2 149
+- 2026-10-20 16:49 SDN Súdán: 43 s, úrovně [4, 6], stat 1, uroven1 18, uroven2 128
+- 2026-10-20 16:49 SDS: obrys státu složen z celků admin_level 4 (11)
+- 2026-10-20 16:49 SDS Jižní Súdán: 22 s, úrovně [4, 5], stat 1, uroven1 11, uroven2 67
+- 2026-10-20 16:50 SEN Senegal: 20 s, úrovně [4, 5], stat 1, uroven1 14, uroven2 46
+- 2026-10-20 16:50 SGP Singapur: 35 s, úrovně [5, 6], stat 1, uroven1 5, uroven2 55
+- 2026-10-20 16:50 SGS Jižní Georgie a Jižní Sandwichovy ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (south-america) – vynecháno
+- 2026-10-20 16:50 SHN Svatá Helena: 4 s, úrovně [3, 4], stat 1, uroven1 3, uroven2 4
+- 2026-10-20 16:51 SLB Šalamounovy ostrovy: 22 s, úrovně [4, 5], stat 1, uroven1 10, uroven2 66
+- 2026-10-20 16:51 SLE Sierra Leone: 16 s, úrovně [4, 5], stat 1, uroven1 7, uroven2 15
+- 2026-10-20 16:51 SLV Salvador: 16 s, úrovně [4, 5], stat 1, uroven1 14, uroven2 44
+- 2026-10-20 16:58 SMR San Marino: 410 s, úrovně [8], stat 1, uroven1 9
+- 2026-10-20 16:59 SOM Somálsko: 47 s, úrovně [4, 5], stat 1, uroven1 6, uroven2 19
+- 2026-10-20 16:59 SPM Saint-Pierre a Miquelon: 14 s, úrovně [8], stat 1, uroven1 2
+- 2026-10-20 17:00 SRB Srbsko: 39 s, úrovně [4, 6], stat 1, uroven1 2, uroven2 26
+- 2026-10-20 17:00 STP Svatý Tomáš a Princův ostrov: 4 s, úrovně [6, 7], stat 1, uroven1 7, uroven2 17
+- 2026-10-20 17:00 SUR: obrys státu složen z celků admin_level 4 (8)
+- 2026-10-20 17:00 SUR Surinam: 11 s, úrovně [4, 6], stat 1, uroven1 8, uroven2 50
+- 2026-10-20 17:01 SVK Slovensko: 101 s, úrovně [4, 6], stat 1, uroven1 8, uroven2 79
+- 2026-10-20 17:03 SVN Slovinsko: 96 s, úrovně [7, 8], stat 1, uroven1 11, uroven2 244
+- 2026-10-20 17:11 SWE Švédsko: 466 s, úrovně [4, 7], stat 1, uroven1 62, uroven2 877
+- 2026-10-20 17:11 SWZ Eswatini: 8 s, úrovně [4, 6], stat 1, uroven1 4, uroven2 53
+- 2026-10-20 17:11 SXM Svatý Martin (Nizozemsko): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 17:11 SYC Seychely: 5 s, úrovně [4, 6], stat 1, uroven1 3, uroven2 27
+- 2026-10-20 17:11 SYR Sýrie: 15 s, úrovně [4, 5], stat 1, uroven1 14, uroven2 69
+- 2026-10-20 17:11 TCA Turks a Caicos: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 17:12 TCD Čad: 39 s, úrovně [4, 10], stat 1, uroven1 23, uroven2 39
+- 2026-10-20 17:12 TGO Togo: 12 s, úrovně [4, 6], stat 1, uroven1 5, uroven2 15
+- 2026-10-20 17:13 THA Thajsko: 73 s, úrovně [4, 6], stat 1, uroven1 77, uroven2 1182
+- 2026-10-20 17:14 TJK Tádžikistán: 11 s, úrovně [4, 6], stat 1, uroven1 5, uroven2 61
+- 2026-10-20 17:14 TKM Turkmenistán: 8 s, úrovně [4, 5], stat 1, uroven1 6, uroven2 49
+- 2026-10-20 17:14 TLS Východní Timor: 7 s, úrovně [4, 5], stat 1, uroven1 14, uroven2 70
+- 2026-10-20 17:14 TON: obrys státu složen z celků admin_level 4 (4)
+- 2026-10-20 17:14 TON Tonga: 6 s, úrovně [4, 5], stat 1, uroven1 4, uroven2 16
+- 2026-10-20 17:14 TTO Trinidad a Tobago: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 17:14 TUN Tunisko: 20 s, úrovně [4, 5], stat 1, uroven1 24, uroven2 266
+- 2026-10-20 17:16 TUR Turecko: 88 s, úrovně [3, 4], stat 1, uroven1 7, uroven2 81
+- 2026-10-20 17:16 TUV Tuvalu: 3 s, úrovně [8], stat 1, uroven1 8
+- 2026-10-20 17:17 TZA: obrys státu složen z celků admin_level 3 (7)
+- 2026-10-20 17:18 TZA Tanzanie: 110 s, úrovně [3, 4], stat 1, uroven1 7, uroven2 33
+- 2026-10-20 17:19 UGA Uganda: 69 s, úrovně [3, 4], stat 1, uroven1 4, uroven2 146
+- 2026-10-20 17:21 UKR Ukrajina: 118 s, úrovně [4, 6], stat 1, uroven1 30, uroven2 161
+- 2026-10-20 17:21 UMI Menší odlehlé ostrovy USA: CHYBA po 28 s – obrys státu ve výřezu mali nenalezen ani z jeho celků
+- 2026-10-20 17:21 URY Uruguay: 18 s, úrovně [4, 8], stat 1, uroven1 19, uroven2 638
+- 2026-10-20 17:46 USA: obrys státu složen z celků admin_level 4 (59)
+- 2026-10-20 17:51 USA Spojené státy: 1746 s, úrovně [4, 6], stat 1, uroven1 61, uroven2 3132
+- 2026-10-20 17:51 UZB: obrys státu složen z celků admin_level 3 (1)
+- 2026-10-20 17:51 UZB Uzbekistán: 16 s, úrovně [6], stat 1, uroven1 17
+- 2026-10-20 17:51 VAT Vatikán: 40 s, úrovně [], stat 1
+- 2026-10-20 17:51 VCT Svatý Vincenc a Grenadiny: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 17:52 VEN Venezuela: 45 s, úrovně [4, 6], stat 1, uroven1 34, uroven2 353
+- 2026-10-20 17:52 VGB Britské Panenské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-20 17:52 VIR Americké Panenské ostrovy: 4 s, úrovně [6, 8], stat 1, uroven1 2, uroven2 7
+- 2026-10-20 17:53 VNM: obrys státu složen z celků admin_level 4 (30)
+- 2026-10-20 17:53 VNM Vietnam: 66 s, úrovně [4, 6], stat 1, uroven1 30, uroven2 2878
+- 2026-10-20 17:53 VUT Vanuatu: CHYBA po 3 s – obrys státu ve výřezu polynesie-francaise nenalezen ani z jeho celků
+- 2026-10-20 17:54 WLF Wallis a Futuna: 3 s, úrovně [8], stat 1, uroven1 3
+- 2026-10-20 17:54 WSM Samoa: 4 s, úrovně [4], stat 1, uroven1 31
+- 2026-10-20 17:54 YEM Jemen: 12 s, úrovně [4, 6], stat 1, uroven1 22, uroven2 338
+- 2026-10-20 17:55 ZAF Jihoafrická republika: 61 s, úrovně [4, 6], stat 1, uroven1 9, uroven2 64
+- 2026-10-20 17:56 ZMB Zambie: 61 s, úrovně [4, 5], stat 1, uroven1 10, uroven2 116
+- 2026-10-20 17:56 ZWE Zimbabwe: 25 s, úrovně [4, 6], stat 1, uroven1 10, uroven2 59
+- 2026-10-21 07:13 ATA Antarktida: CHYBA po 6 s – obrys státu ve výřezu antarctica nenalezen ani z jeho celků
+- 2026-10-21 07:13 ATF Francouzská jižní území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (africa) – vynecháno
+- 2026-10-21 07:17 AUS Austrálie: 251 s, úrovně [4, 6], stat 1, uroven1 15, uroven2 600
+- 2026-10-21 07:17 BLM Svatý Bartoloměj: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 07:17 BRB Barbados: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 07:38 CAN Kanada: 1241 s, úrovně [4, 5], stat 1, uroven1 64, uroven2 76
+- 2026-10-21 08:47 CHL Chile: 4163 s, úrovně [4, 8], stat 1, uroven1 174, uroven2 346
+- 2026-10-21 08:47 CUW Curaçao: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 08:47 CYM Kajmanské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 08:47 DMA Dominika: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 08:58 FIN Finsko: 636 s, úrovně [3, 4], stat 1, uroven1 2, uroven2 19
+- 2026-10-21 09:04 GBR Spojené království: 378 s, úrovně [4, 5], stat 1, uroven1 4, uroven2 22
+- 2026-10-21 09:04 GRD Grenada: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 09:04 IOT Britské indickooceánské území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (asia) – vynecháno
+- 2026-10-21 09:04 JEY Jersey: CHYBA po 3 s – obrys státu ve výřezu guernsey-jersey nenalezen ani z jeho celků
+- 2026-10-21 09:10 JPN Japonsko: 393 s, úrovně [4, 6], stat 1, uroven1 52, uroven2 467
+- 2026-10-21 09:10 KNA Svatý Kryštof a Nevis: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 09:10 LCA Svatá Lucie: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 09:10 MAF Svatý Martin (Francie): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 09:13 MEX Mexiko: 137 s, úrovně [4, 6], stat 1, uroven1 84, uroven2 2517
+- 2026-10-21 09:13 MSR Montserrat: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 09:15 NOR: obrys státu složen z celků admin_level 4 (16)
+- 2026-10-21 09:20 NOR Norsko: 441 s, úrovně [4, 7], stat 1, uroven1 16, uroven2 329
+- 2026-10-21 09:20 SGS Jižní Georgie a Jižní Sandwichovy ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (south-america) – vynecháno
+- 2026-10-21 09:25 SWE Švédsko: 285 s, úrovně [4, 7], stat 1, uroven1 62, uroven2 877
+- 2026-10-21 09:25 SXM Svatý Martin (Nizozemsko): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 09:25 TCA Turks a Caicos: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 09:27 THA Thajsko: 111 s, úrovně [4, 6], stat 1, uroven1 77, uroven2 1182
+- 2026-10-21 09:27 TTO Trinidad a Tobago: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 09:27 UMI Menší odlehlé ostrovy USA: CHYBA po 40 s – obrys státu ve výřezu mali nenalezen ani z jeho celků
+- 2026-10-21 09:46 USA: obrys státu složen z celků admin_level 4 (59)
+- 2026-10-21 09:51 USA Spojené státy: 1446 s, úrovně [4, 6], stat 1, uroven1 61, uroven2 3130
+- 2026-10-21 09:51 VCT Svatý Vincenc a Grenadiny: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 09:51 VGB Britské Panenské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-21 09:52 VUT Vanuatu: CHYBA po 8 s – obrys státu ve výřezu polynesie-francaise nenalezen ani z jeho celků
+- 2026-10-22 05:56 ATA Antarktida: CHYBA po 37 s – obrys státu ve výřezu antarctica nenalezen ani z jeho celků
+- 2026-10-22 05:56 ATF Francouzská jižní území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (africa) – vynecháno
+- 2026-10-22 05:56 BLM Svatý Bartoloměj: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 05:56 BRB Barbados: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 05:56 CUW Curaçao: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 05:56 CYM Kajmanské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 05:56 DMA Dominika: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 05:56 GRD Grenada: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 05:56 IOT Britské indickooceánské území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (asia) – vynecháno
+- 2026-10-22 05:56 JEY Jersey: CHYBA po 23 s – obrys státu ve výřezu guernsey-jersey nenalezen ani z jeho celků
+- 2026-10-22 05:56 KNA Svatý Kryštof a Nevis: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 05:56 LCA Svatá Lucie: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 05:56 MAF Svatý Martin (Francie): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:09 MKD Severní Makedonie: CHYBA po 781 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 06:09 MSR Montserrat: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:23 PRT Portugalsko: CHYBA po 790 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 06:23 SGS Jižní Georgie a Jižní Sandwichovy ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (south-america) – vynecháno
+- 2026-10-22 06:23 SXM Svatý Martin (Nizozemsko): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:23 TCA Turks a Caicos: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:23 TTO Trinidad a Tobago: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:23 UMI Menší odlehlé ostrovy USA: CHYBA po 20 s – obrys státu ve výřezu mali nenalezen ani z jeho celků
+- 2026-10-22 06:23 VCT Svatý Vincenc a Grenadiny: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:23 VGB Britské Panenské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:23 VUT Vanuatu: CHYBA po 8 s – obrys státu ve výřezu polynesie-francaise nenalezen ani z jeho celků
+- 2026-10-22 06:34 ATA Antarktida: CHYBA po 8 s – obrys státu ve výřezu antarctica nenalezen ani z jeho celků
+- 2026-10-22 06:34 ATF Francouzská jižní území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (africa) – vynecháno
+- 2026-10-22 06:34 BLM Svatý Bartoloměj: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:34 BRB Barbados: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:34 CUW Curaçao: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:34 CYM Kajmanské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:34 DMA Dominika: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:34 GRD Grenada: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:34 IOT Britské indickooceánské území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (asia) – vynecháno
+- 2026-10-22 06:35 JEY Jersey: CHYBA po 63 s – obrys státu ve výřezu guernsey-jersey nenalezen ani z jeho celků
+- 2026-10-22 06:35 KNA Svatý Kryštof a Nevis: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:35 LCA Svatá Lucie: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:35 MAF Svatý Martin (Francie): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 06:48 MKD Severní Makedonie: CHYBA po 778 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 06:48 MSR Montserrat: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 07:01 PRT Portugalsko: CHYBA po 795 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 07:01 SGS Jižní Georgie a Jižní Sandwichovy ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (south-america) – vynecháno
+- 2026-10-22 07:01 SXM Svatý Martin (Nizozemsko): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 07:01 TCA Turks a Caicos: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 07:01 TTO Trinidad a Tobago: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 07:03 UMI Menší odlehlé ostrovy USA: CHYBA po 84 s – obrys státu ve výřezu mali nenalezen ani z jeho celků
+- 2026-10-22 07:03 VCT Svatý Vincenc a Grenadiny: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 07:03 VGB Britské Panenské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 07:03 VUT Vanuatu: CHYBA po 24 s – obrys státu ve výřezu polynesie-francaise nenalezen ani z jeho celků
+- 2026-10-22 09:19 ATA Antarktida: CHYBA po 36 s – obrys státu ve výřezu antarctica nenalezen ani z jeho celků
+- 2026-10-22 09:19 ATF Francouzská jižní území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (africa) – vynecháno
+- 2026-10-22 09:19 BLM Svatý Bartoloměj: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:19 BRB Barbados: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:19 CUW Curaçao: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:19 CYM Kajmanské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:19 DMA Dominika: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:19 GRD Grenada: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:19 IOT Britské indickooceánské území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (asia) – vynecháno
+- 2026-10-22 09:19 JEY Jersey: CHYBA po 3 s – obrys státu ve výřezu guernsey-jersey nenalezen ani z jeho celků
+- 2026-10-22 09:19 KNA Svatý Kryštof a Nevis: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:19 LCA Svatá Lucie: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:19 MAF Svatý Martin (Francie): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:32 MKD Severní Makedonie: CHYBA po 757 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 09:32 MKD: vrácena předchozí data
+- 2026-10-22 09:32 MSR Montserrat: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:45 PRT Portugalsko: CHYBA po 778 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 09:45 PRT: vrácena předchozí data
+- 2026-10-22 09:45 SGS Jižní Georgie a Jižní Sandwichovy ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (south-america) – vynecháno
+- 2026-10-22 09:45 SXM Svatý Martin (Nizozemsko): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:45 TCA Turks a Caicos: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:45 TTO Trinidad a Tobago: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:46 UMI Menší odlehlé ostrovy USA: CHYBA po 30 s – obrys státu ve výřezu mali nenalezen ani z jeho celků
+- 2026-10-22 09:46 VCT Svatý Vincenc a Grenadiny: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:46 VGB Britské Panenské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 09:46 VUT Vanuatu: CHYBA po 7 s – obrys státu ve výřezu polynesie-francaise nenalezen ani z jeho celků
+- 2026-10-22 11:59 ATA Antarktida: CHYBA po 16 s – obrys státu ve výřezu antarctica nenalezen ani z jeho celků
+- 2026-10-22 11:59 ATF Francouzská jižní území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (africa) – vynecháno
+- 2026-10-22 11:59 BLM Svatý Bartoloměj: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 11:59 BRB Barbados: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 11:59 CUW Curaçao: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 11:59 CYM Kajmanské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 11:59 DMA Dominika: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 11:59 GRD Grenada: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 11:59 IOT Britské indickooceánské území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (asia) – vynecháno
+- 2026-10-22 11:59 JEY Jersey: CHYBA po 3 s – obrys státu ve výřezu guernsey-jersey nenalezen ani z jeho celků
+- 2026-10-22 11:59 KNA Svatý Kryštof a Nevis: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 11:59 LCA Svatá Lucie: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 11:59 MAF Svatý Martin (Francie): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 12:11 MKD Severní Makedonie: CHYBA po 762 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 12:11 MKD: vrácena předchozí data
+- 2026-10-22 12:11 MSR Montserrat: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 12:26 PRT Portugalsko: CHYBA po 893 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 12:26 PRT: vrácena předchozí data
+- 2026-10-22 12:26 SGS Jižní Georgie a Jižní Sandwichovy ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (south-america) – vynecháno
+- 2026-10-22 12:26 SXM Svatý Martin (Nizozemsko): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 12:26 TCA Turks a Caicos: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 12:26 TTO Trinidad a Tobago: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 12:27 UMI Menší odlehlé ostrovy USA: CHYBA po 21 s – obrys státu ve výřezu mali nenalezen ani z jeho celků
+- 2026-10-22 12:27 VCT Svatý Vincenc a Grenadiny: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 12:27 VGB Britské Panenské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 12:30 VUT Vanuatu: CHYBA po 234 s – obrys státu ve výřezu polynesie-francaise nenalezen ani z jeho celků
+- 2026-10-22 14:47 ATA Antarktida: CHYBA po 10 s – obrys státu ve výřezu antarctica nenalezen ani z jeho celků
+- 2026-10-22 14:47 ATF Francouzská jižní území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (africa) – vynecháno
+- 2026-10-22 14:47 BLM Svatý Bartoloměj: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 14:47 BRB Barbados: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 14:47 CUW Curaçao: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 14:47 CYM Kajmanské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 14:47 DMA Dominika: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 14:47 GRD Grenada: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 14:47 IOT Britské indickooceánské území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (asia) – vynecháno
+- 2026-10-22 14:47 JEY Jersey: CHYBA po 3 s – obrys státu ve výřezu guernsey-jersey nenalezen ani z jeho celků
+- 2026-10-22 14:47 KNA Svatý Kryštof a Nevis: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 14:47 LCA Svatá Lucie: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 14:47 MAF Svatý Martin (Francie): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 14:59 MKD Severní Makedonie: CHYBA po 750 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 14:59 MKD: vrácena předchozí data
+- 2026-10-22 14:59 MSR Montserrat: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 15:13 PRT Portugalsko: CHYBA po 799 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 15:13 PRT: vrácena předchozí data
+- 2026-10-22 15:13 SGS Jižní Georgie a Jižní Sandwichovy ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (south-america) – vynecháno
+- 2026-10-22 15:13 SXM Svatý Martin (Nizozemsko): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 15:13 TCA Turks a Caicos: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 15:13 TTO Trinidad a Tobago: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 15:13 UMI Menší odlehlé ostrovy USA: CHYBA po 36 s – obrys státu ve výřezu mali nenalezen ani z jeho celků
+- 2026-10-22 15:13 VCT Svatý Vincenc a Grenadiny: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 15:13 VGB Britské Panenské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 15:13 VUT Vanuatu: CHYBA po 9 s – obrys státu ve výřezu polynesie-francaise nenalezen ani z jeho celků
+- 2026-10-22 17:26 ATA Antarktida: CHYBA po 8 s – obrys státu ve výřezu antarctica nenalezen ani z jeho celků
+- 2026-10-22 17:26 ATF Francouzská jižní území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (africa) – vynecháno
+- 2026-10-22 17:26 BLM Svatý Bartoloměj: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:26 BRB Barbados: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:26 CUW Curaçao: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:26 CYM Kajmanské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:26 DMA Dominika: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:26 GRD Grenada: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:26 IOT Britské indickooceánské území: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (asia) – vynecháno
+- 2026-10-22 17:26 JEY Jersey: CHYBA po 3 s – obrys státu ve výřezu guernsey-jersey nenalezen ani z jeho celků
+- 2026-10-22 17:26 KNA Svatý Kryštof a Nevis: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:26 LCA Svatá Lucie: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:26 MAF Svatý Martin (Francie): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:39 MKD Severní Makedonie: CHYBA po 751 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 17:39 MKD: vrácena předchozí data
+- 2026-10-22 17:39 MSR Montserrat: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:52 PRT Portugalsko: CHYBA po 786 s – https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip: <urlopen error [Errno 110] Connection timed out>
+- 2026-10-22 17:52 PRT: vrácena předchozí data
+- 2026-10-22 17:52 SGS Jižní Georgie a Jižní Sandwichovy ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (south-america) – vynecháno
+- 2026-10-22 17:52 SXM Svatý Martin (Nizozemsko): CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:52 TCA Turks a Caicos: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:52 TTO Trinidad a Tobago: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:52 UMI Menší odlehlé ostrovy USA: CHYBA po 27 s – obrys státu ve výřezu mali nenalezen ani z jeho celků
+- 2026-10-22 17:52 VCT Svatý Vincenc a Grenadiny: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:52 VGB Britské Panenské ostrovy: CHYBA po 0 s – stát nemá vlastní výřez Geofabriku, jen celý kontinent (central-america) – vynecháno
+- 2026-10-22 17:52 VUT Vanuatu: CHYBA po 7 s – obrys státu ve výřezu polynesie-francaise nenalezen ani z jeho celků

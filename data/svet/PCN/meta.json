@@ -1,0 +1,25 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PCN/stat.json",
+   "plna": "data/svet/PCN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 3167,
+   "plna": 5913
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {},
+  "zvolene": [],
+  "vyrez": "pitcairn-islands"
+ },
+ "vytvoreno": "2026-10-20T14:17:32+00:00"
+}

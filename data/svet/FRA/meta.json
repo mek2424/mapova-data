@@ -1,0 +1,74 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/FRA/stat.json",
+   "plna": "data/svet/FRA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 251549,
+   "plna": 916227
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 1,
+   "4": 13,
+   "5": 2,
+   "6": 102,
+   "7": 321,
+   "8": 34776,
+   "9": 3691,
+   "10": 1490
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "france"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 13,
+  "soubory": {
+   "zjednodusena": "data/svet/FRA/uroven1.json",
+   "plna": "data/svet/FRA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 660753,
+   "plna": 1441608
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6 (departement)",
+  "prvku": 102,
+  "soubory": {
+   "zjednodusena": "data/svet/FRA/uroven2.json",
+   "plna": "data/svet/FRA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1634114,
+   "plna": 2704243
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:15:40+00:00"
+}

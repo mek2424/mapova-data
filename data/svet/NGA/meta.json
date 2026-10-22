@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/NGA/stat.json",
+   "plna": "data/svet/NGA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 81650,
+   "plna": 187842
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 36,
+   "6": 760,
+   "7": 21,
+   "8": 2778
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "nigeria"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 36,
+  "soubory": {
+   "zjednodusena": "data/svet/NGA/uroven1.json",
+   "plna": "data/svet/NGA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 434221,
+   "plna": 367423
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 760,
+  "soubory": {
+   "zjednodusena": "data/svet/NGA/uroven2.json",
+   "plna": "data/svet/NGA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1659800,
+   "plna": 1027965
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:26:45+00:00"
+}

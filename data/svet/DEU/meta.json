@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/DEU/stat.json",
+   "plna": "data/svet/DEU/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 240488,
+   "plna": 528169
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 23,
+   "5": 19,
+   "6": 457,
+   "7": 1324,
+   "8": 11183,
+   "9": 10619,
+   "10": 9875
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "germany"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (state)",
+  "prvku": 23,
+  "soubory": {
+   "zjednodusena": "data/svet/DEU/uroven1.json",
+   "plna": "data/svet/DEU/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 742621,
+   "plna": 1007817
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 450,
+  "soubory": {
+   "zjednodusena": "data/svet/DEU/uroven2.json",
+   "plna": "data/svet/DEU/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 3247168,
+   "plna": 3491077
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:47:28+00:00"
+}

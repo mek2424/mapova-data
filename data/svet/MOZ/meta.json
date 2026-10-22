@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MOZ/stat.json",
+   "plna": "data/svet/MOZ/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 124433,
+   "plna": 493373
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 3,
+   "4": 11,
+   "5": 163,
+   "6": 121,
+   "7": 2,
+   "8": 98
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "mozambique"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3",
+  "prvku": 3,
+  "soubory": {
+   "zjednodusena": "data/svet/MOZ/uroven1.json",
+   "plna": "data/svet/MOZ/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 163351,
+   "plna": 544731
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 11,
+  "soubory": {
+   "zjednodusena": "data/svet/MOZ/uroven2.json",
+   "plna": "data/svet/MOZ/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 279735,
+   "plna": 693309
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:23:18+00:00"
+}

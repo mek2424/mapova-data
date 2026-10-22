@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SVK/stat.json",
+   "plna": "data/svet/SVK/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 107009,
+   "plna": 121630
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 8,
+   "5": 2,
+   "6": 79,
+   "8": 2897,
+   "9": 39,
+   "10": 19
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "slovakia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (region)",
+  "prvku": 8,
+  "soubory": {
+   "zjednodusena": "data/svet/SVK/uroven1.json",
+   "plna": "data/svet/SVK/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 315225,
+   "plna": 243657
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6 (district)",
+  "prvku": 79,
+  "soubory": {
+   "zjednodusena": "data/svet/SVK/uroven2.json",
+   "plna": "data/svet/SVK/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 880145,
+   "plna": 588808
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:01:59+00:00"
+}

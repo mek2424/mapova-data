@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/NLD/stat.json",
+   "plna": "data/svet/NLD/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 141988,
+   "plna": 144147
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 12,
+   "8": 343,
+   "9": 2,
+   "10": 2518
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "netherlands"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 12,
+  "soubory": {
+   "zjednodusena": "data/svet/NLD/uroven1.json",
+   "plna": "data/svet/NLD/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 268703,
+   "plna": 206479
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 343,
+  "soubory": {
+   "zjednodusena": "data/svet/NLD/uroven2.json",
+   "plna": "data/svet/NLD/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1060491,
+   "plna": 624825
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T14:06:37+00:00"
+}

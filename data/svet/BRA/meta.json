@@ -1,0 +1,74 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BRA/stat.json",
+   "plna": "data/svet/BRA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 206742,
+   "plna": 1913296
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 5,
+   "4": 27,
+   "5": 131,
+   "6": 86,
+   "7": 510,
+   "8": 5619,
+   "9": 6968,
+   "10": 19689
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "brazil"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3",
+  "prvku": 5,
+  "soubory": {
+   "zjednodusena": "data/svet/BRA/uroven1.json",
+   "plna": "data/svet/BRA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 371393,
+   "plna": 2335839
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 27,
+  "soubory": {
+   "zjednodusena": "data/svet/BRA/uroven2.json",
+   "plna": "data/svet/BRA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 698415,
+   "plna": 3044805
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:53:03+00:00"
+}

@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BIH/stat.json",
+   "plna": "data/svet/BIH/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 118128,
+   "plna": 102893
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 3,
+   "5": 10,
+   "6": 34,
+   "7": 111,
+   "8": 160,
+   "9": 3611,
+   "10": 5
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "bosnia-herzegovina"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 3,
+  "soubory": {
+   "zjednodusena": "data/svet/BIH/uroven1.json",
+   "plna": "data/svet/BIH/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 236755,
+   "plna": 153076
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/BIH/uroven2.json",
+   "plna": "data/svet/BIH/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 210346,
+   "plna": 121719
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:46:12+00:00"
+}

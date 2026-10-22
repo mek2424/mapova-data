@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BEN/stat.json",
+   "plna": "data/svet/BEN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 66226,
+   "plna": 98318
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 12,
+   "6": 77,
+   "7": 21,
+   "8": 7
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "benin"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 12,
+  "soubory": {
+   "zjednodusena": "data/svet/BEN/uroven1.json",
+   "plna": "data/svet/BEN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 108158,
+   "plna": 118621
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 77,
+  "soubory": {
+   "zjednodusena": "data/svet/BEN/uroven2.json",
+   "plna": "data/svet/BEN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 251035,
+   "plna": 200693
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:40:02+00:00"
+}

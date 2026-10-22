@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/IDN/stat.json",
+   "plna": "data/svet/IDN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 320792,
+   "plna": 4161820
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 23,
+   "5": 656,
+   "6": 1649,
+   "7": 2910,
+   "8": 295,
+   "9": 1720,
+   "10": 564
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "indonesia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (province)",
+  "prvku": 23,
+  "soubory": {
+   "zjednodusena": "data/svet/IDN/uroven1.json",
+   "plna": "data/svet/IDN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 432256,
+   "plna": 4517649
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 656,
+  "soubory": {
+   "zjednodusena": "data/svet/IDN/uroven2.json",
+   "plna": "data/svet/IDN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1088648,
+   "plna": 6125672
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:34:53+00:00"
+}

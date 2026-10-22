@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ECU/stat.json",
+   "plna": "data/svet/ECU/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 121021,
+   "plna": 554065
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 31,
+   "6": 221,
+   "8": 1030,
+   "9": 110,
+   "10": 177
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "ecuador"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 30,
+  "soubory": {
+   "zjednodusena": "data/svet/ECU/uroven1.json",
+   "plna": "data/svet/ECU/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 374638,
+   "plna": 915715
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 221,
+  "soubory": {
+   "zjednodusena": "data/svet/ECU/uroven2.json",
+   "plna": "data/svet/ECU/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 906690,
+   "plna": 1679124
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:51:56+00:00"
+}

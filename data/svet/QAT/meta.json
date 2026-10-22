@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/QAT/stat.json",
+   "plna": "data/svet/QAT/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 167844,
+   "plna": 107680
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 9,
+   "10": 59
+  },
+  "zvolene": [
+   4,
+   10
+  ],
+  "vyrez": "gcc-states"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 9,
+  "soubory": {
+   "zjednodusena": "data/svet/QAT/uroven1.json",
+   "plna": "data/svet/QAT/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 185482,
+   "plna": 114631
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 10",
+  "prvku": 59,
+  "soubory": {
+   "zjednodusena": "data/svet/QAT/uroven2.json",
+   "plna": "data/svet/QAT/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 52036,
+   "plna": 20330
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:35:32+00:00"
+}

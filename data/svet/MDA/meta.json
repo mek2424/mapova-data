@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MDA/stat.json",
+   "plna": "data/svet/MDA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 110224,
+   "plna": 89572
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 1,
+   "4": 37,
+   "5": 10,
+   "7": 5,
+   "8": 982,
+   "9": 1562
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "moldova"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 37,
+  "soubory": {
+   "zjednodusena": "data/svet/MDA/uroven1.json",
+   "plna": "data/svet/MDA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 473711,
+   "plna": 258296
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 982,
+  "soubory": {
+   "zjednodusena": "data/svet/MDA/uroven2.json",
+   "plna": "data/svet/MDA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1745737,
+   "plna": 948816
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:16:29+00:00"
+}

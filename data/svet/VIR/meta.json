@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/VIR/stat.json",
+   "plna": "data/svet/VIR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 168291,
+   "plna": 52905
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 2,
+   "8": 7
+  },
+  "zvolene": [
+   6,
+   8
+  ],
+  "vyrez": "us/us-virgin-islands"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/VIR/uroven1.json",
+   "plna": "data/svet/VIR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 168380,
+   "plna": 52960
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/VIR/uroven2.json",
+   "plna": "data/svet/VIR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 14831,
+   "plna": 4315
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:52:48+00:00"
+}

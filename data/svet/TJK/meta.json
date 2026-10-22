@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/TJK/stat.json",
+   "plna": "data/svet/TJK/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 162195,
+   "plna": 164687
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 5,
+   "6": 61,
+   "7": 5,
+   "8": 29,
+   "10": 28
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "tajikistan"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 5,
+  "soubory": {
+   "zjednodusena": "data/svet/TJK/uroven1.json",
+   "plna": "data/svet/TJK/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 262365,
+   "plna": 204747
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 61,
+  "soubory": {
+   "zjednodusena": "data/svet/TJK/uroven2.json",
+   "plna": "data/svet/TJK/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 535408,
+   "plna": 341263
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:14:04+00:00"
+}

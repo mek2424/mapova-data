@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GEO/stat.json",
+   "plna": "data/svet/GEO/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 110615,
+   "plna": 119001
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 2,
+   "4": 12,
+   "6": 79,
+   "8": 70,
+   "10": 112
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "georgia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/GEO/uroven1.json",
+   "plna": "data/svet/GEO/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 74704,
+   "plna": 65163
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 13,
+  "soubory": {
+   "zjednodusena": "data/svet/GEO/uroven2.json",
+   "plna": "data/svet/GEO/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 302879,
+   "plna": 221643
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:22:38+00:00"
+}

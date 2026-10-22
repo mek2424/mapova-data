@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/AUS/stat.json",
+   "plna": "data/svet/AUS/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 153886,
+   "plna": 4287574
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 15,
+   "6": 601,
+   "7": 23,
+   "9": 15648,
+   "10": 1
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "australia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 15,
+  "soubory": {
+   "zjednodusena": "data/svet/AUS/uroven1.json",
+   "plna": "data/svet/AUS/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 194796,
+   "plna": 4525692
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 600,
+  "soubory": {
+   "zjednodusena": "data/svet/AUS/uroven2.json",
+   "plna": "data/svet/AUS/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1410868,
+   "plna": 7140679
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-21T07:17:19+00:00"
+}

@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SRB/stat.json",
+   "plna": "data/svet/SRB/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 133393,
+   "plna": 147571
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 2,
+   "6": 26,
+   "7": 28,
+   "8": 150,
+   "9": 4745,
+   "10": 334
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "serbia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/SRB/uroven1.json",
+   "plna": "data/svet/SRB/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 164793,
+   "plna": 164337
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 26,
+  "soubory": {
+   "zjednodusena": "data/svet/SRB/uroven2.json",
+   "plna": "data/svet/SRB/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 667384,
+   "plna": 505559
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:00:04+00:00"
+}

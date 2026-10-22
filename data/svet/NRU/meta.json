@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/NRU/stat.json",
+   "plna": "data/svet/NRU/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 8170,
+   "plna": 1904
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 8,
+   "6": 14
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "nauru"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 8,
+  "soubory": {
+   "zjednodusena": "data/svet/NRU/uroven1.json",
+   "plna": "data/svet/NRU/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 35333,
+   "plna": 6457
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 14,
+  "soubory": {
+   "zjednodusena": "data/svet/NRU/uroven2.json",
+   "plna": "data/svet/NRU/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 54456,
+   "plna": 10165
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T14:15:10+00:00"
+}

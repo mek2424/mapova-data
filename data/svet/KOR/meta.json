@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/KOR/stat.json",
+   "plna": "data/svet/KOR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 593809,
+   "plna": 1228056
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 16,
+   "6": 231,
+   "7": 39,
+   "8": 2116,
+   "9": 8,
+   "10": 1299
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "south-korea"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 16,
+  "soubory": {
+   "zjednodusena": "data/svet/KOR/uroven1.json",
+   "plna": "data/svet/KOR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 910976,
+   "plna": 1450436
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 231,
+  "soubory": {
+   "zjednodusena": "data/svet/KOR/uroven2.json",
+   "plna": "data/svet/KOR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1807046,
+   "plna": 2008679
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:11:10+00:00"
+}

@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SLE/stat.json",
+   "plna": "data/svet/SLE/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 152996,
+   "plna": 135479
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 7,
+   "5": 15,
+   "6": 15,
+   "8": 1,
+   "10": 1
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "sierra-leone"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/SLE/uroven1.json",
+   "plna": "data/svet/SLE/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 214245,
+   "plna": 154725
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 15,
+  "soubory": {
+   "zjednodusena": "data/svet/SLE/uroven2.json",
+   "plna": "data/svet/SLE/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 288441,
+   "plna": 186018
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:51:17+00:00"
+}

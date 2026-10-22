@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/LTU/stat.json",
+   "plna": "data/svet/LTU/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 105378,
+   "plna": 110228
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 10,
+   "5": 60,
+   "6": 508,
+   "8": 4563,
+   "9": 6,
+   "10": 83
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "lithuania"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (county)",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/LTU/uroven1.json",
+   "plna": "data/svet/LTU/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 320235,
+   "plna": 201600
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5 (municipality)",
+  "prvku": 60,
+  "soubory": {
+   "zjednodusena": "data/svet/LTU/uroven2.json",
+   "plna": "data/svet/LTU/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 670689,
+   "plna": 363345
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:14:34+00:00"
+}

@@ -1,0 +1,48 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BHR/stat.json",
+   "plna": "data/svet/BHR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 176565,
+   "plna": 73127
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 4,
+   "10": 1
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "gcc-states"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 4,
+  "soubory": {
+   "zjednodusena": "data/svet/BHR/uroven1.json",
+   "plna": "data/svet/BHR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 186528,
+   "plna": 76851
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:45:29+00:00"
+}

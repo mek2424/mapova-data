@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/LKA/stat.json",
+   "plna": "data/svet/LKA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 128605,
+   "plna": 184071
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 9,
+   "5": 25,
+   "6": 15,
+   "7": 6,
+   "8": 10,
+   "9": 38
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "sri-lanka"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 9,
+  "soubory": {
+   "zjednodusena": "data/svet/LKA/uroven1.json",
+   "plna": "data/svet/LKA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 360985,
+   "plna": 304626
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 25,
+  "soubory": {
+   "zjednodusena": "data/svet/LKA/uroven2.json",
+   "plna": "data/svet/LKA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 496887,
+   "plna": 377113
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:13:22+00:00"
+}

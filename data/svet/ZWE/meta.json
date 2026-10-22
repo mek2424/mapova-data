@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ZWE/stat.json",
+   "plna": "data/svet/ZWE/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 77665,
+   "plna": 96290
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 10,
+   "6": 59,
+   "8": 8,
+   "10": 59
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "zimbabwe"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/ZWE/uroven1.json",
+   "plna": "data/svet/ZWE/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 314119,
+   "plna": 227437
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 59,
+  "soubory": {
+   "zjednodusena": "data/svet/ZWE/uroven2.json",
+   "plna": "data/svet/ZWE/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 661544,
+   "plna": 444534
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:56:43+00:00"
+}

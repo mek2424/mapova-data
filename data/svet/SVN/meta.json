@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SVN/stat.json",
+   "plna": "data/svet/SVN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 151711,
+   "plna": 119864
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "7": 11,
+   "8": 244,
+   "9": 1,
+   "10": 102
+  },
+  "zvolene": [
+   7,
+   8
+  ],
+  "vyrez": "slovenia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 7",
+  "prvku": 11,
+  "soubory": {
+   "zjednodusena": "data/svet/SVN/uroven1.json",
+   "plna": "data/svet/SVN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 266689,
+   "plna": 94330
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 244,
+  "soubory": {
+   "zjednodusena": "data/svet/SVN/uroven2.json",
+   "plna": "data/svet/SVN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1491599,
+   "plna": 670115
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:03:35+00:00"
+}

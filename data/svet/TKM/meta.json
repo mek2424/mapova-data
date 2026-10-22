@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/TKM/stat.json",
+   "plna": "data/svet/TKM/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 92520,
+   "plna": 153278
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 6,
+   "5": 49,
+   "6": 43,
+   "7": 6,
+   "8": 65,
+   "9": 3,
+   "10": 2
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "turkmenistan"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 6,
+  "soubory": {
+   "zjednodusena": "data/svet/TKM/uroven1.json",
+   "plna": "data/svet/TKM/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 113734,
+   "plna": 165674
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 49,
+  "soubory": {
+   "zjednodusena": "data/svet/TKM/uroven2.json",
+   "plna": "data/svet/TKM/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 253193,
+   "plna": 265311
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:14:12+00:00"
+}

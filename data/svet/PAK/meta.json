@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PAK/stat.json",
+   "plna": "data/svet/PAK/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 169285,
+   "plna": 552994
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 7,
+   "5": 39,
+   "6": 167,
+   "7": 599,
+   "8": 30,
+   "9": 6,
+   "10": 109
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "pakistan"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (province)",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/PAK/uroven1.json",
+   "plna": "data/svet/PAK/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 266767,
+   "plna": 611980
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 39,
+  "soubory": {
+   "zjednodusena": "data/svet/PAK/uroven2.json",
+   "plna": "data/svet/PAK/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 601290,
+   "plna": 790078
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T14:17:17+00:00"
+}

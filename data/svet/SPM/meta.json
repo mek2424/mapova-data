@@ -1,0 +1,47 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SPM/stat.json",
+   "plna": "data/svet/SPM/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 104576,
+   "plna": 22797
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "8": 2
+  },
+  "zvolene": [
+   8
+  ],
+  "vyrez": "canada"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/SPM/uroven1.json",
+   "plna": "data/svet/SPM/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 102318,
+   "plna": 22739
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:59:25+00:00"
+}

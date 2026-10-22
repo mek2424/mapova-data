@@ -1,0 +1,74 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PHL/stat.json",
+   "plna": "data/svet/PHL/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 554934,
+   "plna": 2995846
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 27,
+   "4": 83,
+   "5": 12,
+   "6": 906,
+   "7": 39,
+   "8": 118,
+   "9": 54,
+   "10": 4956
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "philippines"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3 (region)",
+  "prvku": 27,
+  "soubory": {
+   "zjednodusena": "data/svet/PHL/uroven1.json",
+   "plna": "data/svet/PHL/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 657477,
+   "plna": 3145582
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (province)",
+  "prvku": 83,
+  "soubory": {
+   "zjednodusena": "data/svet/PHL/uroven2.json",
+   "plna": "data/svet/PHL/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 759360,
+   "plna": 3237320
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T14:20:45+00:00"
+}

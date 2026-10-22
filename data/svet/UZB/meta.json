@@ -1,0 +1,48 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/UZB/stat.json",
+   "plna": "data/svet/UZB/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 29547,
+   "plna": 25384
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 1,
+   "6": 17
+  },
+  "zvolene": [
+   6
+  ],
+  "vyrez": "uzbekistan"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 17,
+  "soubory": {
+   "zjednodusena": "data/svet/UZB/uroven1.json",
+   "plna": "data/svet/UZB/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 160250,
+   "plna": 87097
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:51:19+00:00"
+}

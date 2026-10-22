@@ -1,0 +1,47 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/FLK/stat.json",
+   "plna": "data/svet/FLK/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1070937,
+   "plna": 830755
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "10": 108
+  },
+  "zvolene": [
+   10
+  ],
+  "vyrez": "falklands"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 10",
+  "prvku": 108,
+  "soubory": {
+   "zjednodusena": "data/svet/FLK/uroven1.json",
+   "plna": "data/svet/FLK/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1041581,
+   "plna": 744783
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:05:04+00:00"
+}

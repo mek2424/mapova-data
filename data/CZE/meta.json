@@ -1,0 +1,238 @@
+{
+ "vytvoreno": "2026-10-22T05:51:20+00:00",
+ "vrstvy": {
+  "kraje": {
+   "nazev": "Kraje",
+   "skupina": "Správní členění",
+   "popis": "",
+   "prvku": 14,
+   "soubory": {
+    "zjednodusena": "data/CZE/kraje.json",
+    "plna": "data/CZE/kraje.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 559429,
+    "plna": 1924020
+   },
+   "sloupce": [
+    "id",
+    "nazev"
+   ]
+  },
+  "okresy": {
+   "nazev": "Okresy",
+   "skupina": "Správní členění",
+   "popis": "Bez Prahy – ta okresy nemá",
+   "prvku": 76,
+   "soubory": {
+    "zjednodusena": "data/CZE/okresy.json",
+    "plna": "data/CZE/okresy.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 1266024,
+    "plna": 3406377
+   },
+   "sloupce": [
+    "id",
+    "kraj",
+    "nazev"
+   ]
+  },
+  "orp": {
+   "nazev": "ORP",
+   "skupina": "Správní členění",
+   "popis": "Správní obvody obcí s rozšířenou působností",
+   "prvku": 205,
+   "soubory": {
+    "zjednodusena": "data/CZE/orp.json",
+    "plna": "data/CZE/orp.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 1938322,
+    "plna": 4774965
+   },
+   "sloupce": [
+    "id",
+    "kraj",
+    "nazev"
+   ]
+  },
+  "pou": {
+   "nazev": "Obce s pověřeným úřadem",
+   "skupina": "Správní členění",
+   "popis": "Správní obvody obcí s pověřeným obecním úřadem",
+   "prvku": 388,
+   "soubory": {
+    "zjednodusena": "data/CZE/pou.json",
+    "plna": "data/CZE/pou.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 2620824,
+    "plna": 6194362
+   },
+   "sloupce": [
+    "id",
+    "kraj",
+    "nazev",
+    "okres",
+    "orp"
+   ]
+  },
+  "obce": {
+   "nazev": "Obce",
+   "skupina": "Správní členění",
+   "popis": "",
+   "prvku": 6257,
+   "soubory": {
+    "zjednodusena": "data/CZE/obce.json",
+    "plna": "data/CZE/obce.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 9699294,
+    "plna": 19405156
+   },
+   "sloupce": [
+    "id",
+    "kraj",
+    "nazev",
+    "okres",
+    "orp",
+    "pou"
+   ]
+  },
+  "mestske_casti": {
+   "nazev": "Městské části a obvody",
+   "skupina": "Správní členění",
+   "popis": "Praha, Brno, Ostrava, Plzeň a další statutární města",
+   "prvku": 142,
+   "soubory": {
+    "zjednodusena": "data/CZE/mestske_casti.json",
+    "plna": "data/CZE/mestske_casti.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 226235,
+    "plna": 480435
+   },
+   "sloupce": [
+    "id",
+    "kraj",
+    "nazev",
+    "obec",
+    "okres"
+   ]
+  },
+  "spravni_obvody_prahy": {
+   "nazev": "Správní obvody Prahy",
+   "skupina": "Správní členění",
+   "popis": "Praha 1 až Praha 22",
+   "prvku": 22,
+   "soubory": {
+    "zjednodusena": "data/CZE/spravni_obvody_prahy.json",
+    "plna": "data/CZE/spravni_obvody_prahy.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 206245,
+    "plna": 112663
+   },
+   "sloupce": [
+    "id",
+    "nazev"
+   ]
+  },
+  "katastralni_uzemi": {
+   "nazev": "Katastrální území",
+   "skupina": "Správní členění",
+   "popis": "",
+   "prvku": 13082,
+   "soubory": {
+    "zjednodusena": "data/CZE/katastralni_uzemi.json",
+    "plna": "data/CZE/katastralni_uzemi.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 14441870,
+    "plna": 28151637
+   },
+   "sloupce": [
+    "id",
+    "kraj",
+    "nazev",
+    "obec",
+    "okres"
+   ]
+  },
+  "vojenske_ujezdy": {
+   "nazev": "Vojenské újezdy",
+   "skupina": "Správní členění",
+   "popis": "",
+   "prvku": 4,
+   "soubory": {
+    "zjednodusena": "data/CZE/vojenske_ujezdy.json",
+    "plna": "data/CZE/vojenske_ujezdy.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 40212,
+    "plna": 116573
+   },
+   "sloupce": [
+    "id",
+    "kraj",
+    "nazev",
+    "okres"
+   ]
+  },
+  "narodni_parky": {
+   "nazev": "Národní parky",
+   "skupina": "Příroda",
+   "popis": "",
+   "prvku": 4,
+   "soubory": {
+    "zjednodusena": "data/CZE/narodni_parky.json",
+    "plna": "data/CZE/narodni_parky.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 61169,
+    "plna": 209285
+   },
+   "sloupce": [
+    "id",
+    "nazev"
+   ]
+  },
+  "chko": {
+   "nazev": "CHKO",
+   "skupina": "Příroda",
+   "popis": "Chráněné krajinné oblasti",
+   "prvku": 26,
+   "soubory": {
+    "zjednodusena": "data/CZE/chko.json",
+    "plna": "data/CZE/chko.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 239313,
+    "plna": 836127
+   },
+   "sloupce": [
+    "id",
+    "nazev"
+   ]
+  },
+  "prirodni_parky": {
+   "nazev": "Přírodní parky",
+   "skupina": "Příroda",
+   "popis": "",
+   "prvku": 25,
+   "soubory": {
+    "zjednodusena": "data/CZE/prirodni_parky.json",
+    "plna": "data/CZE/prirodni_parky.topojson"
+   },
+   "velikost": {
+    "zjednodusena": 82945,
+    "plna": 295456
+   },
+   "sloupce": [
+    "id",
+    "nazev"
+   ]
+  }
+ }
+}

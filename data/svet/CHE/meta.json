@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CHE/stat.json",
+   "plna": "data/svet/CHE/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 142873,
+   "plna": 150724
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 31,
+   "5": 13,
+   "6": 135,
+   "7": 37,
+   "8": 2133,
+   "9": 242,
+   "10": 139
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "switzerland"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 31,
+  "soubory": {
+   "zjednodusena": "data/svet/CHE/uroven1.json",
+   "plna": "data/svet/CHE/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 577749,
+   "plna": 383584
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 135,
+  "soubory": {
+   "zjednodusena": "data/svet/CHE/uroven2.json",
+   "plna": "data/svet/CHE/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1112555,
+   "plna": 704463
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:17:56+00:00"
+}

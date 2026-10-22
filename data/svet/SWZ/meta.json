@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SWZ/stat.json",
+   "plna": "data/svet/SWZ/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 13540,
+   "plna": 8581
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 4,
+   "6": 53
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "swaziland"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 4,
+  "soubory": {
+   "zjednodusena": "data/svet/SWZ/uroven1.json",
+   "plna": "data/svet/SWZ/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 65230,
+   "plna": 24669
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 53,
+  "soubory": {
+   "zjednodusena": "data/svet/SWZ/uroven2.json",
+   "plna": "data/svet/SWZ/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 280766,
+   "plna": 95931
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:11:29+00:00"
+}

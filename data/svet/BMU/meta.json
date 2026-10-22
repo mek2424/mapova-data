@@ -1,0 +1,47 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BMU/stat.json",
+   "plna": "data/svet/BMU/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 246318,
+   "plna": 34003
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 11
+  },
+  "zvolene": [
+   6
+  ],
+  "vyrez": "bermuda"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6 (parish)",
+  "prvku": 11,
+  "soubory": {
+   "zjednodusena": "data/svet/BMU/uroven1.json",
+   "plna": "data/svet/BMU/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 237543,
+   "plna": 36646
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:47:27+00:00"
+}

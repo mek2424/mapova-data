@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SLV/stat.json",
+   "plna": "data/svet/SLV/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 165412,
+   "plna": 134013
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 14,
+   "5": 44,
+   "6": 263,
+   "7": 128,
+   "8": 7,
+   "9": 17,
+   "10": 2
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "el-salvador"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 14,
+  "soubory": {
+   "zjednodusena": "data/svet/SLV/uroven1.json",
+   "plna": "data/svet/SLV/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 366855,
+   "plna": 209227
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 44,
+  "soubory": {
+   "zjednodusena": "data/svet/SLV/uroven2.json",
+   "plna": "data/svet/SLV/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 558822,
+   "plna": 284945
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:51:33+00:00"
+}

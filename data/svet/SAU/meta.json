@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SAU/stat.json",
+   "plna": "data/svet/SAU/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 100507,
+   "plna": 594842
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 13,
+   "6": 149,
+   "7": 1,
+   "9": 11,
+   "10": 2316
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "gcc-states"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 13,
+  "soubory": {
+   "zjednodusena": "data/svet/SAU/uroven1.json",
+   "plna": "data/svet/SAU/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 307841,
+   "plna": 735978
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 149,
+  "soubory": {
+   "zjednodusena": "data/svet/SAU/uroven2.json",
+   "plna": "data/svet/SAU/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 937593,
+   "plna": 1288609
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:48:35+00:00"
+}

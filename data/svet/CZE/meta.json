@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CZE/stat.json",
+   "plna": "data/svet/CZE/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 135781,
+   "plna": 183751
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 14,
+   "5": 86,
+   "6": 227,
+   "7": 388,
+   "8": 6275,
+   "9": 156,
+   "10": 1368
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "czech-republic"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (region)",
+  "prvku": 14,
+  "soubory": {
+   "zjednodusena": "data/svet/CZE/uroven1.json",
+   "plna": "data/svet/CZE/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 562991,
+   "plna": 475292
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5 (district)",
+  "prvku": 86,
+  "soubory": {
+   "zjednodusena": "data/svet/CZE/uroven2.json",
+   "plna": "data/svet/CZE/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1301291,
+   "plna": 985201
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:42:32+00:00"
+}

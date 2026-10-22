@@ -1,0 +1,47 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ABW/stat.json",
+   "plna": "data/svet/ABW/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 124974,
+   "plna": 13359
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "8": 3
+  },
+  "zvolene": [
+   8
+  ],
+  "vyrez": "central-america"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 3,
+  "soubory": {
+   "zjednodusena": "data/svet/ABW/uroven1.json",
+   "plna": "data/svet/ABW/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 41026,
+   "plna": 7259
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T05:26:57+00:00"
+}

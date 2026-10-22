@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ROU/stat.json",
+   "plna": "data/svet/ROU/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 107300,
+   "plna": 143816
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 42,
+   "7": 7,
+   "8": 3200,
+   "9": 44,
+   "10": 3
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "romania"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 42,
+  "soubory": {
+   "zjednodusena": "data/svet/ROU/uroven1.json",
+   "plna": "data/svet/ROU/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 876314,
+   "plna": 774653
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 3200,
+  "soubory": {
+   "zjednodusena": "data/svet/ROU/uroven2.json",
+   "plna": "data/svet/ROU/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 6668595,
+   "plna": 5703210
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:36:29+00:00"
+}

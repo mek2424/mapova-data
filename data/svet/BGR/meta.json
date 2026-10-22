@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BGR/stat.json",
+   "plna": "data/svet/BGR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 120278,
+   "plna": 154046
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 28,
+   "5": 265,
+   "6": 35,
+   "8": 2003,
+   "9": 139,
+   "10": 8
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "bulgaria"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 28,
+  "soubory": {
+   "zjednodusena": "data/svet/BGR/uroven1.json",
+   "plna": "data/svet/BGR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 720621,
+   "plna": 578864
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5 (municipality)",
+  "prvku": 265,
+  "soubory": {
+   "zjednodusena": "data/svet/BGR/uroven2.json",
+   "plna": "data/svet/BGR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1984637,
+   "plna": 1468256
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:41:44+00:00"
+}

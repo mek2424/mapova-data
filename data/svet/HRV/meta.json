@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/HRV/stat.json",
+   "plna": "data/svet/HRV/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 568584,
+   "plna": 792047
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 21,
+   "7": 556,
+   "8": 6767,
+   "9": 271,
+   "10": 221
+  },
+  "zvolene": [
+   4,
+   7
+  ],
+  "vyrez": "croatia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 21,
+  "soubory": {
+   "zjednodusena": "data/svet/HRV/uroven1.json",
+   "plna": "data/svet/HRV/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 856767,
+   "plna": 967556
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 7",
+  "prvku": 556,
+  "soubory": {
+   "zjednodusena": "data/svet/HRV/uroven2.json",
+   "plna": "data/svet/HRV/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 2201084,
+   "plna": 1804903
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:29:43+00:00"
+}

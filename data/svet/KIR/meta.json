@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/KIR/stat.json",
+   "plna": "data/svet/KIR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 325,
+   "plna": 162161
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 3,
+   "8": 24
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "kiribati"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 3,
+  "soubory": {
+   "zjednodusena": "data/svet/KIR/uroven1.json",
+   "plna": "data/svet/KIR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1120,
+   "plna": 162491
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 24,
+  "soubory": {
+   "zjednodusena": "data/svet/KIR/uroven2.json",
+   "plna": "data/svet/KIR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 7324,
+   "plna": 150148
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:10:09+00:00"
+}

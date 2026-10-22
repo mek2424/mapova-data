@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/HUN/stat.json",
+   "plna": "data/svet/HUN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 108990,
+   "plna": 127119
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 20,
+   "7": 174,
+   "8": 3168,
+   "9": 28,
+   "10": 271
+  },
+  "zvolene": [
+   6,
+   7
+  ],
+  "vyrez": "hungary"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 20,
+  "soubory": {
+   "zjednodusena": "data/svet/HUN/uroven1.json",
+   "plna": "data/svet/HUN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 421997,
+   "plna": 286889
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 7",
+  "prvku": 174,
+  "soubory": {
+   "zjednodusena": "data/svet/HUN/uroven2.json",
+   "plna": "data/svet/HUN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1130701,
+   "plna": 658514
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:30:30+00:00"
+}

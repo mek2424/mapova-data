@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SDN/stat.json",
+   "plna": "data/svet/SDN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 63047,
+   "plna": 210284
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 18,
+   "5": 8,
+   "6": 128,
+   "8": 33,
+   "9": 7,
+   "10": 6
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "sudan"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 18,
+  "soubory": {
+   "zjednodusena": "data/svet/SDN/uroven1.json",
+   "plna": "data/svet/SDN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 126751,
+   "plna": 245256
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 128,
+  "soubory": {
+   "zjednodusena": "data/svet/SDN/uroven2.json",
+   "plna": "data/svet/SDN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 231062,
+   "plna": 191425
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:49:19+00:00"
+}

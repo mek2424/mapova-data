@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ALB/stat.json",
+   "plna": "data/svet/ALB/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 93795,
+   "plna": 91672
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 2,
+   "6": 13,
+   "7": 61,
+   "8": 386,
+   "9": 21,
+   "10": 21
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "albania"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/ALB/uroven1.json",
+   "plna": "data/svet/ALB/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 8407,
+   "plna": 1964
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 13,
+  "soubory": {
+   "zjednodusena": "data/svet/ALB/uroven2.json",
+   "plna": "data/svet/ALB/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 275379,
+   "plna": 176538
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T05:27:39+00:00"
+}

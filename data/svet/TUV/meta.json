@@ -1,0 +1,47 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/TUV/stat.json",
+   "plna": "data/svet/TUV/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 11695,
+   "plna": 22055
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "8": 8
+  },
+  "zvolene": [
+   8
+  ],
+  "vyrez": "tuvalu"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 8,
+  "soubory": {
+   "zjednodusena": "data/svet/TUV/uroven1.json",
+   "plna": "data/svet/TUV/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 12041,
+   "plna": 22370
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:16:16+00:00"
+}

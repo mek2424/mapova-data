@@ -1,0 +1,69 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GAB/stat.json",
+   "plna": "data/svet/GAB/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 158325,
+   "plna": 265511
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 9,
+   "6": 49,
+   "9": 2
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "gabon"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 9,
+  "soubory": {
+   "zjednodusena": "data/svet/GAB/uroven1.json",
+   "plna": "data/svet/GAB/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 317387,
+   "plna": 357599
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 49,
+  "soubory": {
+   "zjednodusena": "data/svet/GAB/uroven2.json",
+   "plna": "data/svet/GAB/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 743278,
+   "plna": 708624
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:16:04+00:00"
+}

@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/KEN/stat.json",
+   "plna": "data/svet/KEN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 64868,
+   "plna": 185847
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 47,
+   "6": 338,
+   "7": 14,
+   "8": 1140,
+   "9": 31,
+   "10": 221
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "kenya"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 47,
+  "soubory": {
+   "zjednodusena": "data/svet/KEN/uroven1.json",
+   "plna": "data/svet/KEN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 475466,
+   "plna": 398757
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 338,
+  "soubory": {
+   "zjednodusena": "data/svet/KEN/uroven2.json",
+   "plna": "data/svet/KEN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1365151,
+   "plna": 1392722
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:09:21+00:00"
+}

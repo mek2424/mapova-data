@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/NPL/stat.json",
+   "plna": "data/svet/NPL/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 112596,
+   "plna": 150351
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 7,
+   "6": 77,
+   "7": 750,
+   "9": 6737,
+   "10": 14
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "nepal"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/NPL/uroven1.json",
+   "plna": "data/svet/NPL/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 281087,
+   "plna": 239385
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 77,
+  "soubory": {
+   "zjednodusena": "data/svet/NPL/uroven2.json",
+   "plna": "data/svet/NPL/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 768314,
+   "plna": 533525
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T14:15:07+00:00"
+}

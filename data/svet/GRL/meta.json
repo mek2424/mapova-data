@@ -1,0 +1,48 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GRL/stat.json",
+   "plna": "data/svet/GRL/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 875482,
+   "plna": 6079163
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 6,
+   "5": 1
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "greenland"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 6,
+  "soubory": {
+   "zjednodusena": "data/svet/GRL/uroven1.json",
+   "plna": "data/svet/GRL/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 769064,
+   "plna": 5175278
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:29:16+00:00"
+}

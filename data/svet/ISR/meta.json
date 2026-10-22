@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ISR/stat.json",
+   "plna": "data/svet/ISR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 50343,
+   "plna": 55667
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 33,
+   "5": 15,
+   "7": 2,
+   "8": 268,
+   "9": 11,
+   "10": 108
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "israel-and-palestine"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 33,
+  "soubory": {
+   "zjednodusena": "data/svet/ISR/uroven1.json",
+   "plna": "data/svet/ISR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 100776,
+   "plna": 85893
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 268,
+  "soubory": {
+   "zjednodusena": "data/svet/ISR/uroven2.json",
+   "plna": "data/svet/ISR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 743051,
+   "plna": 503405
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:43:18+00:00"
+}

@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GGY/stat.json",
+   "plna": "data/svet/GGY/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 131658,
+   "plna": 22669
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 3,
+   "8": 10,
+   "9": 2,
+   "10": 4
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "guernsey-jersey"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 3,
+  "soubory": {
+   "zjednodusena": "data/svet/GGY/uroven1.json",
+   "plna": "data/svet/GGY/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 122513,
+   "plna": 22253
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/GGY/uroven2.json",
+   "plna": "data/svet/GGY/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 98390,
+   "plna": 20059
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:22:45+00:00"
+}

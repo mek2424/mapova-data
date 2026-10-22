@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MDG/stat.json",
+   "plna": "data/svet/MDG/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 140656,
+   "plna": 521056
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 7,
+   "4": 24,
+   "6": 120,
+   "7": 1,
+   "8": 578,
+   "9": 7,
+   "10": 418
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "madagascar"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/MDG/uroven1.json",
+   "plna": "data/svet/MDG/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 350489,
+   "plna": 671297
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 24,
+  "soubory": {
+   "zjednodusena": "data/svet/MDG/uroven2.json",
+   "plna": "data/svet/MDG/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 640311,
+   "plna": 977350
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:17:52+00:00"
+}

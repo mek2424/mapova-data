@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PER/stat.json",
+   "plna": "data/svet/PER/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 143462,
+   "plna": 516863
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 30,
+   "5": 1,
+   "6": 197,
+   "8": 1896,
+   "9": 2,
+   "10": 6
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "peru"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 30,
+  "soubory": {
+   "zjednodusena": "data/svet/PER/uroven1.json",
+   "plna": "data/svet/PER/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 667744,
+   "plna": 1216169
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 197,
+  "soubory": {
+   "zjednodusena": "data/svet/PER/uroven2.json",
+   "plna": "data/svet/PER/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1619682,
+   "plna": 2516099
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T14:18:25+00:00"
+}

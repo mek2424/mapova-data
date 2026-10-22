@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/VEN/stat.json",
+   "plna": "data/svet/VEN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 203867,
+   "plna": 753106
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 34,
+   "5": 2,
+   "6": 353,
+   "7": 1215,
+   "8": 948,
+   "9": 895,
+   "10": 742
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "venezuela"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (entidad federal)",
+  "prvku": 34,
+  "soubory": {
+   "zjednodusena": "data/svet/VEN/uroven1.json",
+   "plna": "data/svet/VEN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 613939,
+   "plna": 1421961
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 353,
+  "soubory": {
+   "zjednodusena": "data/svet/VEN/uroven2.json",
+   "plna": "data/svet/VEN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1719971,
+   "plna": 3304668
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:52:44+00:00"
+}

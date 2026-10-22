@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MAR/stat.json",
+   "plna": "data/svet/MAR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 75572,
+   "plna": 169735
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 11,
+   "5": 74,
+   "6": 454,
+   "7": 683,
+   "8": 1507,
+   "9": 21,
+   "10": 100
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "morocco"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/MAR/uroven1.json",
+   "plna": "data/svet/MAR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 238729,
+   "plna": 256710
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 71,
+  "soubory": {
+   "zjednodusena": "data/svet/MAR/uroven2.json",
+   "plna": "data/svet/MAR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 488367,
+   "plna": 433856
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:16:01+00:00"
+}

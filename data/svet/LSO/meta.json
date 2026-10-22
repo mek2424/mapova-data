@@ -1,0 +1,47 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/LSO/stat.json",
+   "plna": "data/svet/LSO/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 129356,
+   "plna": 89369
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "5": 10
+  },
+  "zvolene": [
+   5
+  ],
+  "vyrez": "lesotho"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/LSO/uroven1.json",
+   "plna": "data/svet/LSO/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 635957,
+   "plna": 271110
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:13:53+00:00"
+}

@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/NER/stat.json",
+   "plna": "data/svet/NER/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 38215,
+   "plna": 78641
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 8,
+   "6": 41,
+   "7": 2,
+   "8": 32,
+   "9": 1
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "niger"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 8,
+  "soubory": {
+   "zjednodusena": "data/svet/NER/uroven1.json",
+   "plna": "data/svet/NER/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 72882,
+   "plna": 98708
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 41,
+  "soubory": {
+   "zjednodusena": "data/svet/NER/uroven2.json",
+   "plna": "data/svet/NER/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 158767,
+   "plna": 151340
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:24:54+00:00"
+}

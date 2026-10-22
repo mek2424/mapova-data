@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/LUX/stat.json",
+   "plna": "data/svet/LUX/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 85838,
+   "plna": 33831
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 13,
+   "8": 104,
+   "9": 198,
+   "10": 3
+  },
+  "zvolene": [
+   6,
+   8
+  ],
+  "vyrez": "luxembourg"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 13,
+  "soubory": {
+   "zjednodusena": "data/svet/LUX/uroven1.json",
+   "plna": "data/svet/LUX/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 360539,
+   "plna": 95895
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 104,
+  "soubory": {
+   "zjednodusena": "data/svet/LUX/uroven2.json",
+   "plna": "data/svet/LUX/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 798188,
+   "plna": 201587
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:14:47+00:00"
+}

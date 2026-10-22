@@ -1,0 +1,74 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/TZA/stat.json",
+   "plna": "data/svet/TZA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 169002,
+   "plna": 474447
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 7,
+   "4": 33,
+   "5": 196,
+   "6": 3,
+   "7": 20,
+   "8": 1,
+   "9": 180,
+   "10": 163
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "tanzania"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3 (zone)",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/TZA/uroven1.json",
+   "plna": "data/svet/TZA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 378889,
+   "plna": 608661
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 33,
+  "soubory": {
+   "zjednodusena": "data/svet/TZA/uroven2.json",
+   "plna": "data/svet/TZA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 763235,
+   "plna": 1132979
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:18:05+00:00"
+}

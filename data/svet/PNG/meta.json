@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PNG/stat.json",
+   "plna": "data/svet/PNG/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 49844,
+   "plna": 41419
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 1,
+   "4": 7,
+   "5": 34,
+   "6": 5
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "papua-new-guinea"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/PNG/uroven1.json",
+   "plna": "data/svet/PNG/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 153018,
+   "plna": 101021
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 34,
+  "soubory": {
+   "zjednodusena": "data/svet/PNG/uroven2.json",
+   "plna": "data/svet/PNG/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 321227,
+   "plna": 192614
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T14:21:06+00:00"
+}

@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/KHM/stat.json",
+   "plna": "data/svet/KHM/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 182283,
+   "plna": 235400
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 25,
+   "6": 205,
+   "8": 100,
+   "9": 1
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "cambodia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 25,
+  "soubory": {
+   "zjednodusena": "data/svet/KHM/uroven1.json",
+   "plna": "data/svet/KHM/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 613477,
+   "plna": 488916
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6 (district)",
+  "prvku": 205,
+  "soubory": {
+   "zjednodusena": "data/svet/KHM/uroven2.json",
+   "plna": "data/svet/KHM/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1271318,
+   "plna": 847576
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:10:04+00:00"
+}

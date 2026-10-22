@@ -1,0 +1,49 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MDV/stat.json",
+   "plna": "data/svet/MDV/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 66567,
+   "plna": 234378
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 21,
+   "8": 3,
+   "9": 4
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "maldives"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 21,
+  "soubory": {
+   "zjednodusena": "data/svet/MDV/uroven1.json",
+   "plna": "data/svet/MDV/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 69519,
+   "plna": 237148
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:17:57+00:00"
+}

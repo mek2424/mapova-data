@@ -1,0 +1,48 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/COK/stat.json",
+   "plna": "data/svet/COK/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 8253,
+   "plna": 67329
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 11,
+   "8": 5
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "cook-islands"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 11,
+  "soubory": {
+   "zjednodusena": "data/svet/COK/uroven1.json",
+   "plna": "data/svet/COK/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 9608,
+   "plna": 67772
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:33:22+00:00"
+}

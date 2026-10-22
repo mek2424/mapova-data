@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/RWA/stat.json",
+   "plna": "data/svet/RWA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 91031,
+   "plna": 63717
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 5,
+   "6": 30,
+   "8": 386,
+   "9": 24
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "rwanda"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 5,
+  "soubory": {
+   "zjednodusena": "data/svet/RWA/uroven1.json",
+   "plna": "data/svet/RWA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 203318,
+   "plna": 104494
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 30,
+  "soubory": {
+   "zjednodusena": "data/svet/RWA/uroven2.json",
+   "plna": "data/svet/RWA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 407449,
+   "plna": 177907
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:47:36+00:00"
+}

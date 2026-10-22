@@ -1,0 +1,17 @@
+{
+ "staty": {
+  "nazev": "Státy",
+  "skupina": "Správní členění",
+  "prvku": 216,
+  "soubory": {
+   "zjednodusena": "data/svet/staty.json"
+  },
+  "velikost": {
+   "zjednodusena": 8087194
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ }
+}

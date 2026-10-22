@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CAF/stat.json",
+   "plna": "data/svet/CAF/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 106925,
+   "plna": 204157
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 17,
+   "8": 4,
+   "9": 47,
+   "10": 1
+  },
+  "zvolene": [
+   4,
+   9
+  ],
+  "vyrez": "central-african-republic"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 17,
+  "soubory": {
+   "zjednodusena": "data/svet/CAF/uroven1.json",
+   "plna": "data/svet/CAF/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 218532,
+   "plna": 291666
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 9",
+  "prvku": 47,
+  "soubory": {
+   "zjednodusena": "data/svet/CAF/uroven2.json",
+   "plna": "data/svet/CAF/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 21550,
+   "plna": 12403
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:54:24+00:00"
+}

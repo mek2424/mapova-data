@@ -1,0 +1,27 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/NFK/stat.json",
+   "plna": "data/svet/NFK/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 49107,
+   "plna": 7589
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "9": 1
+  },
+  "zvolene": [],
+  "vyrez": "norfolk-island"
+ },
+ "vytvoreno": "2026-10-20T13:24:56+00:00"
+}

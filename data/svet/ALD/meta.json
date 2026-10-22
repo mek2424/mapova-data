@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ALD/stat.json",
+   "plna": "data/svet/ALD/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 2259890,
+   "plna": 1038317
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 1,
+   "7": 10,
+   "8": 29,
+   "9": 30
+  },
+  "zvolene": [
+   7,
+   8
+  ],
+  "vyrez": "finland"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 7",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/ALD/uroven1.json",
+   "plna": "data/svet/ALD/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 2273974,
+   "plna": 1050233
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 28,
+  "soubory": {
+   "zjednodusena": "data/svet/ALD/uroven2.json",
+   "plna": "data/svet/ALD/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 2292505,
+   "plna": 1065433
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T05:30:03+00:00"
+}

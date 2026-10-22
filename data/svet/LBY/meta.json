@@ -1,0 +1,47 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/LBY/stat.json",
+   "plna": "data/svet/LBY/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 54934,
+   "plna": 169567
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 23
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "libya"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 23,
+  "soubory": {
+   "zjednodusena": "data/svet/LBY/uroven1.json",
+   "plna": "data/svet/LBY/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 90972,
+   "plna": 197531
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:12:58+00:00"
+}

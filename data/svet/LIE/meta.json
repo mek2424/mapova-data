@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/LIE/stat.json",
+   "plna": "data/svet/LIE/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 33817,
+   "plna": 6506
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 2,
+   "8": 15
+  },
+  "zvolene": [
+   6,
+   8
+  ],
+  "vyrez": "liechtenstein"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/LIE/uroven1.json",
+   "plna": "data/svet/LIE/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 37880,
+   "plna": 7171
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 15,
+  "soubory": {
+   "zjednodusena": "data/svet/LIE/uroven2.json",
+   "plna": "data/svet/LIE/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 150498,
+   "plna": 23299
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:13:01+00:00"
+}

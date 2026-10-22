@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/IMN/stat.json",
+   "plna": "data/svet/IMN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 96200,
+   "plna": 20548
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 6,
+   "8": 24
+  },
+  "zvolene": [
+   6,
+   8
+  ],
+  "vyrez": "isle-of-man"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 6,
+  "soubory": {
+   "zjednodusena": "data/svet/IMN/uroven1.json",
+   "plna": "data/svet/IMN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 124771,
+   "plna": 27584
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 24,
+  "soubory": {
+   "zjednodusena": "data/svet/IMN/uroven2.json",
+   "plna": "data/svet/IMN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 204812,
+   "plna": 44025
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:34:58+00:00"
+}

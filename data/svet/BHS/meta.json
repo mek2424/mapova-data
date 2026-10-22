@@ -1,0 +1,48 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BHS/stat.json",
+   "plna": "data/svet/BHS/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 489860,
+   "plna": 1336199
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "8": 34,
+   "9": 3
+  },
+  "zvolene": [
+   8
+  ],
+  "vyrez": "bahamas"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 34,
+  "soubory": {
+   "zjednodusena": "data/svet/BHS/uroven1.json",
+   "plna": "data/svet/BHS/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 496091,
+   "plna": 1341677
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:45:48+00:00"
+}

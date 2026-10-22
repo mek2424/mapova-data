@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/NAM/stat.json",
+   "plna": "data/svet/NAM/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 82433,
+   "plna": 228646
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 14,
+   "7": 1,
+   "8": 25,
+   "9": 2,
+   "10": 10
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "namibia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 14,
+  "soubory": {
+   "zjednodusena": "data/svet/NAM/uroven1.json",
+   "plna": "data/svet/NAM/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 176697,
+   "plna": 294707
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 25,
+  "soubory": {
+   "zjednodusena": "data/svet/NAM/uroven2.json",
+   "plna": "data/svet/NAM/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 15240,
+   "plna": 8981
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:24:24+00:00"
+}

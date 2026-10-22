@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/AGO/stat.json",
+   "plna": "data/svet/AGO/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 115780,
+   "plna": 341958
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 19,
+   "5": 1,
+   "6": 30,
+   "7": 8,
+   "8": 15
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "angola"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 19,
+  "soubory": {
+   "zjednodusena": "data/svet/AGO/uroven1.json",
+   "plna": "data/svet/AGO/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 558793,
+   "plna": 1020099
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 30,
+  "soubory": {
+   "zjednodusena": "data/svet/AGO/uroven2.json",
+   "plna": "data/svet/AGO/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 176688,
+   "plna": 228824
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T05:27:29+00:00"
+}

@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SWE/stat.json",
+   "plna": "data/svet/SWE/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 384207,
+   "plna": 3745694
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 62,
+   "6": 2,
+   "7": 877,
+   "8": 83,
+   "9": 528,
+   "10": 524
+  },
+  "zvolene": [
+   4,
+   7
+  ],
+  "vyrez": "sweden"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 62,
+  "soubory": {
+   "zjednodusena": "data/svet/SWE/uroven1.json",
+   "plna": "data/svet/SWE/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 554060,
+   "plna": 3928083
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 7",
+  "prvku": 877,
+  "soubory": {
+   "zjednodusena": "data/svet/SWE/uroven2.json",
+   "plna": "data/svet/SWE/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1409098,
+   "plna": 4755288
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-21T09:25:17+00:00"
+}

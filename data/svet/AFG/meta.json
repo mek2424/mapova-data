@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/AFG/stat.json",
+   "plna": "data/svet/AFG/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 116550,
+   "plna": 288769
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 34,
+   "5": 397,
+   "6": 1,
+   "7": 53,
+   "10": 1
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "afghanistan"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 34,
+  "soubory": {
+   "zjednodusena": "data/svet/AFG/uroven1.json",
+   "plna": "data/svet/AFG/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 524919,
+   "plna": 445765
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 397,
+  "soubory": {
+   "zjednodusena": "data/svet/AFG/uroven2.json",
+   "plna": "data/svet/AFG/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1528723,
+   "plna": 897807
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T05:27:12+00:00"
+}

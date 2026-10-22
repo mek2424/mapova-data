@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/USA/stat.json",
+   "plna": "data/svet/USA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 97145,
+   "plna": 6639954
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 61,
+   "5": 4,
+   "6": 3130,
+   "7": 5883,
+   "8": 28610,
+   "9": 335,
+   "10": 3120
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "us"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (state)",
+  "prvku": 61,
+  "soubory": {
+   "zjednodusena": "data/svet/USA/uroven1.json",
+   "plna": "data/svet/USA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 296990,
+   "plna": 7453512
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6 (county)",
+  "prvku": 3130,
+  "soubory": {
+   "zjednodusena": "data/svet/USA/uroven2.json",
+   "plna": "data/svet/USA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 2275900,
+   "plna": 14495095
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-21T09:51:55+00:00"
+}

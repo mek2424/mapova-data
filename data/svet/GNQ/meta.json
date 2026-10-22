@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GNQ/stat.json",
+   "plna": "data/svet/GNQ/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 31649,
+   "plna": 55584
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 2,
+   "4": 9,
+   "5": 3,
+   "6": 13,
+   "8": 28
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "equatorial-guinea"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/GNQ/uroven1.json",
+   "plna": "data/svet/GNQ/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 31697,
+   "plna": 55611
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 9,
+  "soubory": {
+   "zjednodusena": "data/svet/GNQ/uroven2.json",
+   "plna": "data/svet/GNQ/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 73072,
+   "plna": 83456
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:24:38+00:00"
+}

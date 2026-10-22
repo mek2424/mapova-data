@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/HTI/stat.json",
+   "plna": "data/svet/HTI/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 250893,
+   "plna": 215086
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 10,
+   "5": 42,
+   "8": 143,
+   "10": 571
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "haiti-and-domrep"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/HTI/uroven1.json",
+   "plna": "data/svet/HTI/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 392700,
+   "plna": 265580
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 42,
+  "soubory": {
+   "zjednodusena": "data/svet/HTI/uroven2.json",
+   "plna": "data/svet/HTI/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 569651,
+   "plna": 325072
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:29:49+00:00"
+}

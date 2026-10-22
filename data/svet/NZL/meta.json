@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/NZL/stat.json",
+   "plna": "data/svet/NZL/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 8590,
+   "plna": 1535883
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 17,
+   "6": 70,
+   "8": 47,
+   "10": 14
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "new-zealand"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 17,
+  "soubory": {
+   "zjednodusena": "data/svet/NZL/uroven1.json",
+   "plna": "data/svet/NZL/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 24681,
+   "plna": 1707712
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 70,
+  "soubory": {
+   "zjednodusena": "data/svet/NZL/uroven2.json",
+   "plna": "data/svet/NZL/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 58040,
+   "plna": 1914025
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T14:16:30+00:00"
+}

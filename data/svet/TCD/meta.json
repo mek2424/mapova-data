@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/TCD/stat.json",
+   "plna": "data/svet/TCD/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 63182,
+   "plna": 109043
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 23,
+   "6": 1,
+   "8": 7,
+   "9": 10,
+   "10": 39
+  },
+  "zvolene": [
+   4,
+   10
+  ],
+  "vyrez": "chad"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 23,
+  "soubory": {
+   "zjednodusena": "data/svet/TCD/uroven1.json",
+   "plna": "data/svet/TCD/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 109047,
+   "plna": 144539
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 10",
+  "prvku": 39,
+  "soubory": {
+   "zjednodusena": "data/svet/TCD/uroven2.json",
+   "plna": "data/svet/TCD/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 24330,
+   "plna": 13370
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:12:28+00:00"
+}

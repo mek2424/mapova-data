@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ZAF/stat.json",
+   "plna": "data/svet/ZAF/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 89015,
+   "plna": 506989
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 9,
+   "6": 65,
+   "8": 226,
+   "9": 62,
+   "10": 4252
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "south-africa"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 9,
+  "soubory": {
+   "zjednodusena": "data/svet/ZAF/uroven1.json",
+   "plna": "data/svet/ZAF/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 223849,
+   "plna": 704328
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 64,
+  "soubory": {
+   "zjednodusena": "data/svet/ZAF/uroven2.json",
+   "plna": "data/svet/ZAF/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 497472,
+   "plna": 1092461
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:55:16+00:00"
+}

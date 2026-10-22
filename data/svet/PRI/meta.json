@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PRI/stat.json",
+   "plna": "data/svet/PRI/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 135830,
+   "plna": 132884
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 83,
+   "9": 903
+  },
+  "zvolene": [
+   6,
+   9
+  ],
+  "vyrez": "us/puerto-rico"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 83,
+  "soubory": {
+   "zjednodusena": "data/svet/PRI/uroven1.json",
+   "plna": "data/svet/PRI/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 557267,
+   "plna": 312007
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 9",
+  "prvku": 903,
+  "soubory": {
+   "zjednodusena": "data/svet/PRI/uroven2.json",
+   "plna": "data/svet/PRI/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1711163,
+   "plna": 908808
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:29:38+00:00"
+}

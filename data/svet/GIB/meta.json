@@ -1,0 +1,25 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GIB/stat.json",
+   "plna": "data/svet/GIB/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 40396,
+   "plna": 3258
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {},
+  "zvolene": [],
+  "vyrez": "andalucia"
+ },
+ "vytvoreno": "2026-10-20T12:23:32+00:00"
+}

@@ -1,0 +1,48 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SMR/stat.json",
+   "plna": "data/svet/SMR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 19645,
+   "plna": 4796
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "8": 9,
+   "9": 2
+  },
+  "zvolene": [
+   8
+  ],
+  "vyrez": "italy"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 9,
+  "soubory": {
+   "zjednodusena": "data/svet/SMR/uroven1.json",
+   "plna": "data/svet/SMR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 72210,
+   "plna": 12227
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:58:23+00:00"
+}

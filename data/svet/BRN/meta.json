@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BRN/stat.json",
+   "plna": "data/svet/BRN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 87713,
+   "plna": 47293
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 4,
+   "6": 27,
+   "7": 1,
+   "8": 55,
+   "10": 236
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "malaysia-singapore-brunei"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 4,
+  "soubory": {
+   "zjednodusena": "data/svet/BRN/uroven1.json",
+   "plna": "data/svet/BRN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 90502,
+   "plna": 48513
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 27,
+  "soubory": {
+   "zjednodusena": "data/svet/BRN/uroven2.json",
+   "plna": "data/svet/BRN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 92985,
+   "plna": 39341
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:53:44+00:00"
+}

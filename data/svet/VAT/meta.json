@@ -1,0 +1,25 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/VAT/stat.json",
+   "plna": "data/svet/VAT/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 4923,
+   "plna": 786
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {},
+  "zvolene": [],
+  "vyrez": "centro"
+ },
+ "vytvoreno": "2026-10-20T17:51:59+00:00"
+}

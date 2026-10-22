@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/THA/stat.json",
+   "plna": "data/svet/THA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 216446,
+   "plna": 751368
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 77,
+   "6": 1207,
+   "7": 551,
+   "8": 853,
+   "9": 4,
+   "10": 212
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "thailand"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 77,
+  "soubory": {
+   "zjednodusena": "data/svet/THA/uroven1.json",
+   "plna": "data/svet/THA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 984589,
+   "plna": 2112068
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 1182,
+  "soubory": {
+   "zjednodusena": "data/svet/THA/uroven2.json",
+   "plna": "data/svet/THA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 3007242,
+   "plna": 5395007
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-21T09:27:08+00:00"
+}

@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ITA/stat.json",
+   "plna": "data/svet/ITA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 207425,
+   "plna": 827041
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 50,
+   "6": 115,
+   "7": 106,
+   "8": 8000,
+   "9": 11,
+   "10": 957
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "italy"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 50,
+  "soubory": {
+   "zjednodusena": "data/svet/ITA/uroven1.json",
+   "plna": "data/svet/ITA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 491439,
+   "plna": 1172574
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 115,
+  "soubory": {
+   "zjednodusena": "data/svet/ITA/uroven2.json",
+   "plna": "data/svet/ITA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1043520,
+   "plna": 1936575
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:47:58+00:00"
+}

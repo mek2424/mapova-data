@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CRI/stat.json",
+   "plna": "data/svet/CRI/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 110905,
+   "plna": 194250
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 7,
+   "5": 1,
+   "6": 87,
+   "8": 495,
+   "10": 514
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "costa-rica"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/CRI/uroven1.json",
+   "plna": "data/svet/CRI/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 261262,
+   "plna": 302144
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 86,
+  "soubory": {
+   "zjednodusena": "data/svet/CRI/uroven2.json",
+   "plna": "data/svet/CRI/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 637500,
+   "plna": 585095
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:39:46+00:00"
+}

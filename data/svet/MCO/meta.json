@@ -1,0 +1,48 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MCO/stat.json",
+   "plna": "data/svet/MCO/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 15584,
+   "plna": 2088
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "8": 1,
+   "10": 9
+  },
+  "zvolene": [
+   10
+  ],
+  "vyrez": "monaco"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 10",
+  "prvku": 9,
+  "soubory": {
+   "zjednodusena": "data/svet/MCO/uroven1.json",
+   "plna": "data/svet/MCO/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 24739,
+   "plna": 4130
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:16:04+00:00"
+}

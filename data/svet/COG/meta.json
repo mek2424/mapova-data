@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/COG/stat.json",
+   "plna": "data/svet/COG/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 140741,
+   "plna": 241263
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 12,
+   "5": 2,
+   "6": 54,
+   "7": 2,
+   "8": 4,
+   "9": 20,
+   "10": 9
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "congo-brazzaville"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 12,
+  "soubory": {
+   "zjednodusena": "data/svet/COG/uroven1.json",
+   "plna": "data/svet/COG/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 309095,
+   "plna": 383300
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 54,
+  "soubory": {
+   "zjednodusena": "data/svet/COG/uroven2.json",
+   "plna": "data/svet/COG/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 312729,
+   "plna": 366143
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:33:19+00:00"
+}

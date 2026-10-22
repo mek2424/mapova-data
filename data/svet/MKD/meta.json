@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MKD/stat.json",
+   "plna": "data/svet/MKD/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 106197,
+   "plna": 72718
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 1,
+   "7": 80,
+   "8": 1751,
+   "9": 19
+  },
+  "zvolene": [
+   7,
+   8
+  ],
+  "vyrez": "macedonia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 7",
+  "prvku": 80,
+  "soubory": {
+   "zjednodusena": "data/svet/MKD/uroven1.json",
+   "plna": "data/svet/MKD/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 963975,
+   "plna": 372373
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 1751,
+  "soubory": {
+   "zjednodusena": "data/svet/MKD/uroven2.json",
+   "plna": "data/svet/MKD/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 4442129,
+   "plna": 1789099
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:20:22+00:00"
+}

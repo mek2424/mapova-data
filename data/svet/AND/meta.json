@@ -1,0 +1,47 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/AND/stat.json",
+   "plna": "data/svet/AND/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 42537,
+   "plna": 12378
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "7": 7
+  },
+  "zvolene": [
+   7
+  ],
+  "vyrez": "andorra"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 7 (parròquia)",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/AND/uroven1.json",
+   "plna": "data/svet/AND/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 61345,
+   "plna": 17497
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T05:30:06+00:00"
+}

@@ -1,0 +1,47 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PLW/stat.json",
+   "plna": "data/svet/PLW/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 39494,
+   "plna": 98816
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 16
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "palau"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 16,
+  "soubory": {
+   "zjednodusena": "data/svet/PLW/uroven1.json",
+   "plna": "data/svet/PLW/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 50998,
+   "plna": 105801
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T14:20:48+00:00"
+}

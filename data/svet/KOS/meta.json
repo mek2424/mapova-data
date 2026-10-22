@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/KOS/stat.json",
+   "plna": "data/svet/KOS/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 108030,
+   "plna": 59904
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "5": 7,
+   "6": 38,
+   "8": 168,
+   "9": 59,
+   "10": 12
+  },
+  "zvolene": [
+   5,
+   6
+  ],
+  "vyrez": "kosovo"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/KOS/uroven1.json",
+   "plna": "data/svet/KOS/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 341749,
+   "plna": 125036
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 38,
+  "soubory": {
+   "zjednodusena": "data/svet/KOS/uroven2.json",
+   "plna": "data/svet/KOS/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 713125,
+   "plna": 233994
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:11:24+00:00"
+}

@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/UKR/stat.json",
+   "plna": "data/svet/UKR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 184351,
+   "plna": 579308
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 30,
+   "5": 4,
+   "6": 161,
+   "7": 1476,
+   "8": 459,
+   "9": 5546,
+   "10": 958
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "ukraine"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 30,
+  "soubory": {
+   "zjednodusena": "data/svet/UKR/uroven1.json",
+   "plna": "data/svet/UKR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 652748,
+   "plna": 1042943
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 162,
+  "soubory": {
+   "zjednodusena": "data/svet/UKR/uroven2.json",
+   "plna": "data/svet/UKR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1443260,
+   "plna": 1837054
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:21:12+00:00"
+}

@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PYF/stat.json",
+   "plna": "data/svet/PYF/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 67551,
+   "plna": 826093
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 5,
+   "8": 48,
+   "9": 98,
+   "10": 80
+  },
+  "zvolene": [
+   6,
+   8
+  ],
+  "vyrez": "polynesie-francaise"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 5,
+  "soubory": {
+   "zjednodusena": "data/svet/PYF/uroven1.json",
+   "plna": "data/svet/PYF/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 68211,
+   "plna": 824512
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 48,
+  "soubory": {
+   "zjednodusena": "data/svet/PYF/uroven2.json",
+   "plna": "data/svet/PYF/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 82871,
+   "plna": 847283
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:34:57+00:00"
+}

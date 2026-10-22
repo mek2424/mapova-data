@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BGD/stat.json",
+   "plna": "data/svet/BGD/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 364636,
+   "plna": 541469
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 8,
+   "5": 65,
+   "6": 479,
+   "8": 562,
+   "9": 44,
+   "10": 37
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "bangladesh"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 8,
+  "soubory": {
+   "zjednodusena": "data/svet/BGD/uroven1.json",
+   "plna": "data/svet/BGD/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 506097,
+   "plna": 612406
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 65,
+  "soubory": {
+   "zjednodusena": "data/svet/BGD/uroven2.json",
+   "plna": "data/svet/BGD/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1023536,
+   "plna": 840610
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:41:13+00:00"
+}

@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CHN/stat.json",
+   "plna": "data/svet/CHN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 224048,
+   "plna": 2325934
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 57,
+   "5": 392,
+   "6": 2827,
+   "7": 159,
+   "8": 19202,
+   "9": 393,
+   "10": 8789
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "china"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 57,
+  "soubory": {
+   "zjednodusena": "data/svet/CHN/uroven1.json",
+   "plna": "data/svet/CHN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 872936,
+   "plna": 3849911
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 392,
+  "soubory": {
+   "zjednodusena": "data/svet/CHN/uroven2.json",
+   "plna": "data/svet/CHN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 2390837,
+   "plna": 8472911
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:31:09+00:00"
+}

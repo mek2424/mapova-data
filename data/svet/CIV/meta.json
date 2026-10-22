@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CIV/stat.json",
+   "plna": "data/svet/CIV/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 145309,
+   "plna": 215867
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 14,
+   "5": 31,
+   "6": 9,
+   "7": 44,
+   "8": 43,
+   "9": 26,
+   "10": 27
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "ivory-coast"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (district)",
+  "prvku": 14,
+  "soubory": {
+   "zjednodusena": "data/svet/CIV/uroven1.json",
+   "plna": "data/svet/CIV/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 372762,
+   "plna": 327300
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 31,
+  "soubory": {
+   "zjednodusena": "data/svet/CIV/uroven2.json",
+   "plna": "data/svet/CIV/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 510263,
+   "plna": 396985
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:31:28+00:00"
+}

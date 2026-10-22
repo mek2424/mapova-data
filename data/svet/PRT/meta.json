@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PRT/stat.json",
+   "plna": "data/svet/PRT/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 51271,
+   "plna": 326413
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 505,
+   "6": 101,
+   "7": 308,
+   "8": 3263,
+   "9": 5
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "portugal"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (região_autónoma)",
+  "prvku": 503,
+  "soubory": {
+   "zjednodusena": "data/svet/PRT/uroven1.json",
+   "plna": "data/svet/PRT/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 184294,
+   "plna": 174409
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8 (freguesia)",
+  "prvku": 3263,
+  "soubory": {
+   "zjednodusena": "data/svet/PRT/uroven2.json",
+   "plna": "data/svet/PRT/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1795486,
+   "plna": 3459662
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:33:35+00:00"
+}

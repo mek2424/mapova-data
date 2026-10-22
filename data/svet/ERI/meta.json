@@ -1,0 +1,47 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ERI/stat.json",
+   "plna": "data/svet/ERI/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 182253,
+   "plna": 338378
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 6
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "eritrea"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 6,
+  "soubory": {
+   "zjednodusena": "data/svet/ERI/uroven1.json",
+   "plna": "data/svet/ERI/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 209674,
+   "plna": 356279
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:52:29+00:00"
+}

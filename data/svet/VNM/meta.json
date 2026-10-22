@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/VNM/stat.json",
+   "plna": "data/svet/VNM/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 207405,
+   "plna": 927125
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 30,
+   "6": 2878,
+   "8": 16,
+   "9": 2421
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "vietnam"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 30,
+  "soubory": {
+   "zjednodusena": "data/svet/VNM/uroven1.json",
+   "plna": "data/svet/VNM/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 486851,
+   "plna": 1329685
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 2878,
+  "soubory": {
+   "zjednodusena": "data/svet/VNM/uroven2.json",
+   "plna": "data/svet/VNM/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 3992929,
+   "plna": 6124059
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:53:54+00:00"
+}

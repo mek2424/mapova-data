@@ -1,0 +1,49 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MRT/stat.json",
+   "plna": "data/svet/MRT/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 61179,
+   "plna": 123729
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 15,
+   "6": 9,
+   "8": 10
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "mauritania"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 15,
+  "soubory": {
+   "zjednodusena": "data/svet/MRT/uroven1.json",
+   "plna": "data/svet/MRT/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 100910,
+   "plna": 145740
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:23:24+00:00"
+}

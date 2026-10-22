@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MEX/stat.json",
+   "plna": "data/svet/MEX/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 210474,
+   "plna": 2035142
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 90,
+   "5": 12,
+   "6": 2533,
+   "7": 140,
+   "8": 757,
+   "9": 105,
+   "10": 2762
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "mexico"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 84,
+  "soubory": {
+   "zjednodusena": "data/svet/MEX/uroven1.json",
+   "plna": "data/svet/MEX/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 621006,
+   "plna": 2891217
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 2517,
+  "soubory": {
+   "zjednodusena": "data/svet/MEX/uroven2.json",
+   "plna": "data/svet/MEX/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 3959242,
+   "plna": 9101926
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-21T09:13:11+00:00"
+}

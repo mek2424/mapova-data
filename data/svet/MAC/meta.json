@@ -1,0 +1,48 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MAC/stat.json",
+   "plna": "data/svet/MAC/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 15499,
+   "plna": 2494
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "5": 1,
+   "6": 2
+  },
+  "zvolene": [
+   6
+  ],
+  "vyrez": "macau"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/MAC/uroven1.json",
+   "plna": "data/svet/MAC/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 21496,
+   "plna": 3458
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:15:25+00:00"
+}

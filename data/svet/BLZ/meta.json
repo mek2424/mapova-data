@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BLZ/stat.json",
+   "plna": "data/svet/BLZ/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 131469,
+   "plna": 99809
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 4,
+   "7": 3,
+   "8": 12,
+   "9": 117,
+   "10": 26
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "belize"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 4,
+  "soubory": {
+   "zjednodusena": "data/svet/BLZ/uroven1.json",
+   "plna": "data/svet/BLZ/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 173358,
+   "plna": 115066
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 12,
+  "soubory": {
+   "zjednodusena": "data/svet/BLZ/uroven2.json",
+   "plna": "data/svet/BLZ/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 46583,
+   "plna": 30516
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:47:23+00:00"
+}

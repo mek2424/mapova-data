@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/UGA/stat.json",
+   "plna": "data/svet/UGA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 69639,
+   "plna": 115738
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 4,
+   "4": 146,
+   "5": 10,
+   "6": 12,
+   "8": 62,
+   "9": 51,
+   "10": 327
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "uganda"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3 (region)",
+  "prvku": 4,
+  "soubory": {
+   "zjednodusena": "data/svet/UGA/uroven1.json",
+   "plna": "data/svet/UGA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 174303,
+   "plna": 196590
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4 (district)",
+  "prvku": 146,
+  "soubory": {
+   "zjednodusena": "data/svet/UGA/uroven2.json",
+   "plna": "data/svet/UGA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1144890,
+   "plna": 954911
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:19:14+00:00"
+}

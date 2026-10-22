@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/HKG/stat.json",
+   "plna": "data/svet/HKG/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 508154,
+   "plna": 127276
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 1,
+   "5": 3,
+   "6": 18,
+   "7": 1,
+   "8": 5,
+   "9": 2,
+   "10": 1
+  },
+  "zvolene": [
+   5,
+   6
+  ],
+  "vyrez": "hong-kong"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 3,
+  "soubory": {
+   "zjednodusena": "data/svet/HKG/uroven1.json",
+   "plna": "data/svet/HKG/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 535187,
+   "plna": 131100
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 18,
+  "soubory": {
+   "zjednodusena": "data/svet/HKG/uroven2.json",
+   "plna": "data/svet/HKG/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 679891,
+   "plna": 156684
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:28:31+00:00"
+}

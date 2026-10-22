@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/EST/stat.json",
+   "plna": "data/svet/EST/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 294730,
+   "plna": 404384
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 15,
+   "7": 85,
+   "8": 3,
+   "9": 4715,
+   "10": 84
+  },
+  "zvolene": [
+   6,
+   7
+  ],
+  "vyrez": "estonia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 15,
+  "soubory": {
+   "zjednodusena": "data/svet/EST/uroven1.json",
+   "plna": "data/svet/EST/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 479696,
+   "plna": 493996
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 7",
+  "prvku": 85,
+  "soubory": {
+   "zjednodusena": "data/svet/EST/uroven2.json",
+   "plna": "data/svet/EST/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 847945,
+   "plna": 713243
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:57:17+00:00"
+}

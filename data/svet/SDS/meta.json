@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SDS/stat.json",
+   "plna": "data/svet/SDS/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 85615,
+   "plna": 200178
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 11,
+   "5": 67,
+   "6": 1,
+   "7": 2,
+   "8": 37
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "south-sudan"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 11,
+  "soubory": {
+   "zjednodusena": "data/svet/SDS/uroven1.json",
+   "plna": "data/svet/SDS/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 141929,
+   "plna": 263079
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 67,
+  "soubory": {
+   "zjednodusena": "data/svet/SDS/uroven2.json",
+   "plna": "data/svet/SDS/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 262737,
+   "plna": 409608
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:49:41+00:00"
+}

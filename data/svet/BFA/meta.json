@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/BFA/stat.json",
+   "plna": "data/svet/BFA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 97877,
+   "plna": 139505
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 12,
+   "5": 40,
+   "6": 215,
+   "8": 17
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "burkina-faso"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 12,
+  "soubory": {
+   "zjednodusena": "data/svet/BFA/uroven1.json",
+   "plna": "data/svet/BFA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 338729,
+   "plna": 286557
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 40,
+  "soubory": {
+   "zjednodusena": "data/svet/BFA/uroven2.json",
+   "plna": "data/svet/BFA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 477102,
+   "plna": 372386
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T10:40:18+00:00"
+}

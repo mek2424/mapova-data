@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PRY/stat.json",
+   "plna": "data/svet/PRY/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 113070,
+   "plna": 151756
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 2,
+   "4": 18,
+   "6": 10,
+   "7": 12,
+   "8": 118,
+   "9": 226,
+   "10": 388
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "paraguay"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/PRY/uroven1.json",
+   "plna": "data/svet/PRY/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 125760,
+   "plna": 138144
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 18,
+  "soubory": {
+   "zjednodusena": "data/svet/PRY/uroven2.json",
+   "plna": "data/svet/PRY/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 421946,
+   "plna": 455463
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T16:34:01+00:00"
+}

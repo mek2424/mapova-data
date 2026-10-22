@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/NIC/stat.json",
+   "plna": "data/svet/NIC/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 118527,
+   "plna": 152754
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 17,
+   "6": 153,
+   "8": 6,
+   "9": 5,
+   "10": 6043
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "nicaragua"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 17,
+  "soubory": {
+   "zjednodusena": "data/svet/NIC/uroven1.json",
+   "plna": "data/svet/NIC/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 360666,
+   "plna": 323414
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 153,
+  "soubory": {
+   "zjednodusena": "data/svet/NIC/uroven2.json",
+   "plna": "data/svet/NIC/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 915795,
+   "plna": 723332
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:27:04+00:00"
+}

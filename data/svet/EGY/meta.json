@@ -1,0 +1,52 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/EGY/stat.json",
+   "plna": "data/svet/EGY/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 113730,
+   "plna": 324094
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 27,
+   "6": 4,
+   "7": 2,
+   "8": 2,
+   "9": 6,
+   "10": 1
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "egypt"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 27,
+  "soubory": {
+   "zjednodusena": "data/svet/EGY/uroven1.json",
+   "plna": "data/svet/EGY/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 159686,
+   "plna": 359604
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:52:19+00:00"
+}

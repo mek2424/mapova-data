@@ -1,0 +1,20 @@
+{
+ "vytvoreno": "2026-10-20T21:20:19+00:00",
+ "stat": {
+  "nazev": "Obrys území",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SAH/stat.json",
+   "plna": "data/svet/SAH/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 54665,
+   "plna": 109779
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MMR/stat.json",
+   "plna": "data/svet/MMR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 307777,
+   "plna": 1541156
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 4,
+   "4": 129,
+   "5": 2,
+   "6": 122,
+   "7": 359,
+   "8": 6,
+   "9": 23,
+   "10": 2002
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "myanmar"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3",
+  "prvku": 4,
+  "soubory": {
+   "zjednodusena": "data/svet/MMR/uroven1.json",
+   "plna": "data/svet/MMR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 187196,
+   "plna": 166706
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 127,
+  "soubory": {
+   "zjednodusena": "data/svet/MMR/uroven2.json",
+   "plna": "data/svet/MMR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 642417,
+   "plna": 1746631
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:21:58+00:00"
+}

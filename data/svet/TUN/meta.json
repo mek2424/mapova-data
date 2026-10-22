@@ -1,0 +1,69 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/TUN/stat.json",
+   "plna": "data/svet/TUN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 87935,
+   "plna": 209652
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 24,
+   "5": 266,
+   "6": 2084
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "tunisia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 24,
+  "soubory": {
+   "zjednodusena": "data/svet/TUN/uroven1.json",
+   "plna": "data/svet/TUN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 303624,
+   "plna": 366952
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 266,
+  "soubory": {
+   "zjednodusena": "data/svet/TUN/uroven2.json",
+   "plna": "data/svet/TUN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 856322,
+   "plna": 797277
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:14:45+00:00"
+}

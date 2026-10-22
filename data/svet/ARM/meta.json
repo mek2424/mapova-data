@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ARM/stat.json",
+   "plna": "data/svet/ARM/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 110586,
+   "plna": 77443
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 10,
+   "5": 77,
+   "6": 17,
+   "7": 155,
+   "8": 8,
+   "10": 7
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "armenia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 10,
+  "soubory": {
+   "zjednodusena": "data/svet/ARM/uroven1.json",
+   "plna": "data/svet/ARM/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 172951,
+   "plna": 100419
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 77,
+  "soubory": {
+   "zjednodusena": "data/svet/ARM/uroven2.json",
+   "plna": "data/svet/ARM/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 395155,
+   "plna": 185110
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T05:31:54+00:00"
+}

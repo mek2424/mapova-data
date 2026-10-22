@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/PAN/stat.json",
+   "plna": "data/svet/PAN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 174081,
+   "plna": 294304
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 11,
+   "6": 49,
+   "8": 179,
+   "10": 101
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "panama"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 11,
+  "soubory": {
+   "zjednodusena": "data/svet/PAN/uroven1.json",
+   "plna": "data/svet/PAN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 277336,
+   "plna": 371519
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 49,
+  "soubory": {
+   "zjednodusena": "data/svet/PAN/uroven2.json",
+   "plna": "data/svet/PAN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 520774,
+   "plna": 514582
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T14:17:29+00:00"
+}

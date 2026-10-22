@@ -1,0 +1,51 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CPV/stat.json",
+   "plna": "data/svet/CPV/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 134471,
+   "plna": 116787
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "6": 22,
+   "7": 3,
+   "8": 14,
+   "9": 16,
+   "10": 19
+  },
+  "zvolene": [
+   6
+  ],
+  "vyrez": "cape-verde"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 22,
+  "soubory": {
+   "zjednodusena": "data/svet/CPV/uroven1.json",
+   "plna": "data/svet/CPV/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 161260,
+   "plna": 127336
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:38:48+00:00"
+}

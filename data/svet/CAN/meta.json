@@ -1,0 +1,67 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CAN/stat.json"
+  },
+  "velikost": {
+   "zjednodusena": 1395920
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 64,
+   "5": 76,
+   "6": 1626,
+   "7": 3,
+   "8": 5714,
+   "9": 1598,
+   "10": 2647
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "canada"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 64,
+  "soubory": {
+   "zjednodusena": "data/svet/CAN/uroven1.json"
+  },
+  "velikost": {
+   "zjednodusena": 1631232
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 76,
+  "soubory": {
+   "zjednodusena": "data/svet/CAN/uroven2.json"
+  },
+  "velikost": {
+   "zjednodusena": 1514712
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-21T07:38:00+00:00"
+}

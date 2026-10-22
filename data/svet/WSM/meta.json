@@ -1,0 +1,48 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/WSM/stat.json",
+   "plna": "data/svet/WSM/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 122640,
+   "plna": 57607
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 32,
+   "8": 2
+  },
+  "zvolene": [
+   4
+  ],
+  "vyrez": "samoa"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 31,
+  "soubory": {
+   "zjednodusena": "data/svet/WSM/uroven1.json",
+   "plna": "data/svet/WSM/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 152022,
+   "plna": 66174
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:54:04+00:00"
+}

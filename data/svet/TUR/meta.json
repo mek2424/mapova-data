@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/TUR/stat.json",
+   "plna": "data/svet/TUR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 196339,
+   "plna": 919376
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 7,
+   "4": 81,
+   "6": 1025,
+   "7": 86,
+   "8": 13843,
+   "9": 91,
+   "10": 20
+  },
+  "zvolene": [
+   3,
+   4
+  ],
+  "vyrez": "turkey"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/TUR/uroven1.json",
+   "plna": "data/svet/TUR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 439350,
+   "plna": 1111330
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 81,
+  "soubory": {
+   "zjednodusena": "data/svet/TUR/uroven2.json",
+   "plna": "data/svet/TUR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1002630,
+   "plna": 1681872
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:16:13+00:00"
+}

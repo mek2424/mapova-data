@@ -1,0 +1,68 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/SUR/stat.json",
+   "plna": "data/svet/SUR/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 107504,
+   "plna": 111691
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 8,
+   "6": 50
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "suriname"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 8,
+  "soubory": {
+   "zjednodusena": "data/svet/SUR/uroven1.json",
+   "plna": "data/svet/SUR/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 232685,
+   "plna": 176063
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 50,
+  "soubory": {
+   "zjednodusena": "data/svet/SUR/uroven2.json",
+   "plna": "data/svet/SUR/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 339115,
+   "plna": 227440
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T17:00:18+00:00"
+}

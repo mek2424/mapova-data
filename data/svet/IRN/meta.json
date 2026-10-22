@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/IRN/stat.json",
+   "plna": "data/svet/IRN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 152497,
+   "plna": 523966
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 30,
+   "5": 470,
+   "6": 1106,
+   "7": 3510,
+   "8": 2342,
+   "9": 149,
+   "10": 290
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "iran"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 30,
+  "soubory": {
+   "zjednodusena": "data/svet/IRN/uroven1.json",
+   "plna": "data/svet/IRN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 475799,
+   "plna": 769423
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 470,
+  "soubory": {
+   "zjednodusena": "data/svet/IRN/uroven2.json",
+   "plna": "data/svet/IRN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1536983,
+   "plna": 1560093
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:42:09+00:00"
+}

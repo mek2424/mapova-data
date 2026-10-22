@@ -1,0 +1,25 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/HMD/stat.json",
+   "plna": "data/svet/HMD/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 26566,
+   "plna": 11282
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {},
+  "zvolene": [],
+  "vyrez": "heard-mcdonald"
+ },
+ "vytvoreno": "2026-10-20T12:28:33+00:00"
+}

@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CYP/stat.json",
+   "plna": "data/svet/CYP/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 118761,
+   "plna": 84558
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 2,
+   "5": 11,
+   "6": 51,
+   "7": 31,
+   "8": 685,
+   "9": 160
+  },
+  "zvolene": [
+   3,
+   5
+  ],
+  "vyrez": "cyprus"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 3 (state)",
+  "prvku": 2,
+  "soubory": {
+   "zjednodusena": "data/svet/CYP/uroven1.json",
+   "plna": "data/svet/CYP/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 144759,
+   "plna": 93173
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 11,
+  "soubory": {
+   "zjednodusena": "data/svet/CYP/uroven2.json",
+   "plna": "data/svet/CYP/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 308009,
+   "plna": 152945
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:40:22+00:00"
+}

@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/LBN/stat.json",
+   "plna": "data/svet/LBN/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 93565,
+   "plna": 57510
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 9,
+   "5": 25,
+   "7": 1031,
+   "8": 66
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "lebanon"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 9,
+  "soubory": {
+   "zjednodusena": "data/svet/LBN/uroven1.json",
+   "plna": "data/svet/LBN/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 162838,
+   "plna": 79700
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 25,
+  "soubory": {
+   "zjednodusena": "data/svet/LBN/uroven2.json",
+   "plna": "data/svet/LBN/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 233047,
+   "plna": 103527
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:11:48+00:00"
+}

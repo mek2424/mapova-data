@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GHA/stat.json",
+   "plna": "data/svet/GHA/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 85281,
+   "plna": 158207
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 16,
+   "6": 261,
+   "7": 3,
+   "8": 1,
+   "9": 72
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "ghana"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 16,
+  "soubory": {
+   "zjednodusena": "data/svet/GHA/uroven1.json",
+   "plna": "data/svet/GHA/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 461080,
+   "plna": 456029
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 261,
+  "soubory": {
+   "zjednodusena": "data/svet/GHA/uroven2.json",
+   "plna": "data/svet/GHA/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1591272,
+   "plna": 1367269
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:23:06+00:00"
+}

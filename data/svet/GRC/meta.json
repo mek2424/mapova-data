@@ -1,0 +1,74 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/GRC/stat.json",
+   "plna": "data/svet/GRC/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 595678,
+   "plna": 1653034
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 1,
+   "4": 7,
+   "5": 13,
+   "6": 74,
+   "7": 407,
+   "8": 466,
+   "9": 1420,
+   "10": 553
+  },
+  "zvolene": [
+   4,
+   5
+  ],
+  "vyrez": "greece"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 7,
+  "soubory": {
+   "zjednodusena": "data/svet/GRC/uroven1.json",
+   "plna": "data/svet/GRC/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 657121,
+   "plna": 1693971
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 13,
+  "soubory": {
+   "zjednodusena": "data/svet/GRC/uroven2.json",
+   "plna": "data/svet/GRC/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 707311,
+   "plna": 1738560
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:26:43+00:00"
+}

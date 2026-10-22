@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/KAZ/stat.json",
+   "plna": "data/svet/KAZ/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 111051,
+   "plna": 415340
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 20,
+   "6": 234,
+   "7": 3,
+   "8": 913,
+   "9": 2,
+   "10": 389
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "kazakhstan"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 20,
+  "soubory": {
+   "zjednodusena": "data/svet/KAZ/uroven1.json",
+   "plna": "data/svet/KAZ/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 261328,
+   "plna": 580984
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 234,
+  "soubory": {
+   "zjednodusena": "data/svet/KAZ/uroven2.json",
+   "plna": "data/svet/KAZ/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 857815,
+   "plna": 1262118
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:08:00+00:00"
+}

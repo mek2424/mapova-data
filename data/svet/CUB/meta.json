@@ -1,0 +1,73 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CUB/stat.json",
+   "plna": "data/svet/CUB/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 342036,
+   "plna": 1151233
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 16,
+   "5": 1,
+   "6": 167,
+   "7": 11,
+   "8": 276,
+   "9": 127,
+   "10": 9
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "cuba"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 16,
+  "soubory": {
+   "zjednodusena": "data/svet/CUB/uroven1.json",
+   "plna": "data/svet/CUB/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 461171,
+   "plna": 1258875
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 167,
+  "soubory": {
+   "zjednodusena": "data/svet/CUB/uroven2.json",
+   "plna": "data/svet/CUB/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 776024,
+   "plna": 1069331
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:40:11+00:00"
+}

@@ -1,0 +1,70 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/CHL/stat.json",
+   "plna": "data/svet/CHL/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 501417,
+   "plna": 9398118
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "3": 1,
+   "4": 176,
+   "6": 56,
+   "8": 346
+  },
+  "zvolene": [
+   4,
+   8
+  ],
+  "vyrez": "chile"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 174,
+  "soubory": {
+   "zjednodusena": "data/svet/CHL/uroven1.json",
+   "plna": "data/svet/CHL/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 628593,
+   "plna": 9654425
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 8",
+  "prvku": 346,
+  "soubory": {
+   "zjednodusena": "data/svet/CHL/uroven2.json",
+   "plna": "data/svet/CHL/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 1071622,
+   "plna": 10930305
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-21T08:47:23+00:00"
+}

@@ -1,0 +1,71 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/ISL/stat.json",
+   "plna": "data/svet/ISL/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 399738,
+   "plna": 731851
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "5": 8,
+   "6": 61,
+   "8": 1,
+   "9": 17,
+   "10": 119
+  },
+  "zvolene": [
+   5,
+   6
+  ],
+  "vyrez": "iceland"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 5",
+  "prvku": 8,
+  "soubory": {
+   "zjednodusena": "data/svet/ISL/uroven1.json",
+   "plna": "data/svet/ISL/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 445527,
+   "plna": 637359
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 61,
+  "soubory": {
+   "zjednodusena": "data/svet/ISL/uroven2.json",
+   "plna": "data/svet/ISL/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 671424,
+   "plna": 766646
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T12:42:56+00:00"
+}

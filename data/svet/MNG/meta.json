@@ -1,0 +1,69 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/MNG/stat.json",
+   "plna": "data/svet/MNG/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 77720,
+   "plna": 186396
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 22,
+   "6": 342,
+   "7": 1
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "mongolia"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 22,
+  "soubory": {
+   "zjednodusena": "data/svet/MNG/uroven1.json",
+   "plna": "data/svet/MNG/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 188417,
+   "plna": 259580
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 342,
+  "soubory": {
+   "zjednodusena": "data/svet/MNG/uroven2.json",
+   "plna": "data/svet/MNG/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 429330,
+   "plna": 467456
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T13:22:21+00:00"
+}

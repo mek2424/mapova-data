@@ -1,0 +1,72 @@
+{
+ "stat": {
+  "nazev": "Obrys státu",
+  "skupina": "Správní členění",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/svet/COD/stat.json",
+   "plna": "data/svet/COD/stat.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 141302,
+   "plna": 429929
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "_urovne": {
+  "pocty": {
+   "4": 26,
+   "6": 74,
+   "7": 122,
+   "8": 406,
+   "9": 601,
+   "10": 628
+  },
+  "zvolene": [
+   4,
+   6
+  ],
+  "vyrez": "congo-democratic-republic"
+ },
+ "uroven1": {
+  "nazev": "1. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 4",
+  "prvku": 26,
+  "soubory": {
+   "zjednodusena": "data/svet/COD/uroven1.json",
+   "plna": "data/svet/COD/uroven1.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 672612,
+   "plna": 1133356
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "uroven2": {
+  "nazev": "2. úroveň",
+  "skupina": "Správní členění",
+  "popis": "admin_level 6",
+  "prvku": 74,
+  "soubory": {
+   "zjednodusena": "data/svet/COD/uroven2.json",
+   "plna": "data/svet/COD/uroven2.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 615754,
+   "plna": 1218152
+  },
+  "sloupce": [
+   "id",
+   "nazev",
+   "uroven1"
+  ]
+ },
+ "vytvoreno": "2026-10-20T11:33:00+00:00"
+}
