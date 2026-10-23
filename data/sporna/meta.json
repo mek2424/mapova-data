@@ -1,0 +1,148 @@
+{
+ "tibet": {
+  "nazev": "Tibet (bez Arunáčalpradéše)",
+  "skupina": "Sporná území",
+  "hledat": "Tibet Tibetská autonomní oblast Xizang Si-cang Čína China",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/sporna/tibet.json",
+   "plna": "data/sporna/tibet.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 8276,
+   "plna": 5930
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "arunacalprades": {
+  "nazev": "Arunáčalpradéš (Indie)",
+  "skupina": "Sporná území",
+  "hledat": "Arunachal Pradesh Jižní Tibet Zangnan Indie Čína",
+  "popis": "Zdroj: Natural Earth",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/sporna/arunacalprades.json",
+   "plna": "data/sporna/arunacalprades.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 3983,
+   "plna": 3324
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "krym-a-sevastopol": {
+  "nazev": "Krym se Sevastopolem",
+  "skupina": "Sporná území",
+  "hledat": "Krym Crimea Sevastopol Ukrajina Rusko",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/sporna/krym-a-sevastopol.json",
+   "plna": "data/sporna/krym-a-sevastopol.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 140799,
+   "plna": 150312
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "krym": {
+  "nazev": "Autonomní republika Krym",
+  "skupina": "Sporná území",
+  "hledat": "Krym Crimea Ukrajina Rusko",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/sporna/krym.json",
+   "plna": "data/sporna/krym.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 132799,
+   "plna": 141877
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "sevastopol": {
+  "nazev": "Sevastopol",
+  "skupina": "Sporná území",
+  "hledat": "Sevastopol Krym Crimea Ukrajina Rusko",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/sporna/sevastopol.json",
+   "plna": "data/sporna/sevastopol.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 38226,
+   "plna": 23552
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "abchazie": {
+  "nazev": "Abcházie",
+  "skupina": "Sporná území",
+  "hledat": "Abcházie Abkhazia Gruzie Georgia Rusko",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/sporna/abchazie.json",
+   "plna": "data/sporna/abchazie.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 66642,
+   "plna": 40001
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "jizni-osetie": {
+  "nazev": "Jižní Osetie",
+  "skupina": "Sporná území",
+  "hledat": "Jižní Osetie South Ossetia Cchinvali Gruzie Georgia Rusko",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/sporna/jizni-osetie.json",
+   "plna": "data/sporna/jizni-osetie.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 48130,
+   "plna": 29446
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "zapadni-sahara": {
+  "nazev": "Západní Sahara (nárokováno Marokem)",
+  "skupina": "Sporná území",
+  "hledat": "Západní Sahara Western Sahara Maroko Morocco",
+  "prvku": 1,
+  "soubory": {
+   "zjednodusena": "data/sporna/zapadni-sahara.json",
+   "plna": "data/sporna/zapadni-sahara.topojson"
+  },
+  "velikost": {
+   "zjednodusena": 55198,
+   "plna": 109792
+  },
+  "sloupce": [
+   "id",
+   "nazev"
+  ]
+ },
+ "vytvoreno": "2026-10-23T05:51:18+00:00"
+}
