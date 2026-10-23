@@ -36,14 +36,14 @@
   "nazev": "1. úroveň",
   "skupina": "Správní členění",
   "popis": "admin_level 4",
-  "prvku": 57,
+  "prvku": 58,
   "soubory": {
    "zjednodusena": "data/svet/CHN/uroven1.json",
    "plna": "data/svet/CHN/uroven1.topojson"
   },
   "velikost": {
-   "zjednodusena": 872936,
-   "plna": 3849911
+   "zjednodusena": 881327,
+   "plna": 3812338
   },
   "sloupce": [
    "id",
