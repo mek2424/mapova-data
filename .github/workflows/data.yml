@@ -10,7 +10,7 @@ on:
       co:
         description: Co vygenerovat (napoprvé „pruzkum“, pak „cesko“, „svet“ – i opakovaně, navazuje –, nakonec „sporna“)
         type: choice
-        options: [pruzkum, cesko, svet, svet-znovu, svet-plne, sporna, zmensit, index, vse]
+        options: [pruzkum, cesko, svet, svet-znovu, svet-plne, sporna, sporna-vrstvy, zmensit, index, vse]
         default: pruzkum
       minut:
         description: Časový limit pro svět v minutách (běh pak skončí a příště pokračuje)

@@ -22,5 +22,26 @@
     { "nazev": "Západní Sahara zvlášť, hranice s Marokem po 27°40′ s. š.", "druh": "rovnobezka",
       "stat": "MAR", "novy": "SAH", "sirka": 27.666667, "nazev_noveho": "Západní Sahara (nárokováno Marokem)" }
   ],
-  "_beze_zmeny": "Kašmír zůstává, jak je v OSM. Kaliningrad a Nachičevan se řeší jen popisky v editoru, tvary se nemění."
+  "_beze_zmeny": "Kašmír zůstává, jak je v OSM. Kaliningrad a Nachičevan se řeší jen popisky v editoru, tvary se nemění.",
+  "_vrstvy": "Území „Sporná území“ v databázi – každé sporné území jako samostatná vrstva, aby se dalo najít v editoru (Úpravy → Přidat data). 'soubor' = ruční tvar ve složce nastroje/sporna-tvary, 'stat' + 'vrstva' + 'id' = celky z dat státu (víc id se spojí). 'hledat' = další slova pro hledání. Vrstva, ke které data chybí, se přeskočí a zapíše do zpravy/sporna-uzemi.md.",
+  "vrstvy": [
+    { "klic": "tibet", "nazev": "Tibet (bez Arunáčalpradéše)", "hledat": "Tibet Tibetská autonomní oblast Xizang Si-cang Čína China",
+      "soubor": "tibet.geojson" },
+    { "klic": "arunacalprades", "nazev": "Arunáčalpradéš (Indie)", "hledat": "Arunachal Pradesh Jižní Tibet Zangnan Indie Čína", "zdroj": "Natural Earth",
+      "soubor": "arunacalprades.geojson" },
+    { "klic": "krym-a-sevastopol", "nazev": "Krym se Sevastopolem", "hledat": "Krym Crimea Sevastopol Ukrajina Rusko",
+      "stat": "UKR", "vrstva": "uroven1", "id": ["UA-43", "r3795586", "UA-40", "r3788485"], "id_noveho": "UA-43+UA-40" },
+    { "klic": "krym", "nazev": "Autonomní republika Krym", "hledat": "Krym Crimea Ukrajina Rusko",
+      "stat": "UKR", "vrstva": "uroven1", "id": ["UA-43", "r3795586"], "id_noveho": "UA-43" },
+    { "klic": "sevastopol", "nazev": "Sevastopol", "hledat": "Sevastopol Krym Crimea Ukrajina Rusko",
+      "stat": "UKR", "vrstva": "uroven1", "id": ["UA-40", "r3788485"], "id_noveho": "UA-40" },
+    { "klic": "abchazie", "nazev": "Abcházie", "hledat": "Abcházie Abkhazia Gruzie Georgia Rusko",
+      "stat": "GEO", "vrstva": "uroven1", "id": ["GE-AB"], "id_noveho": "GE-AB" },
+    { "klic": "jizni-osetie", "nazev": "Jižní Osetie", "hledat": "Jižní Osetie South Ossetia Cchinvali Gruzie Georgia Rusko",
+      "stat": "GEO", "vrstva": "uroven1", "nazvy": ["Jižní Osetie"], "id_noveho": "JZO" },
+    { "klic": "zapadni-sahara", "nazev": "Západní Sahara (nárokováno Marokem)", "hledat": "Západní Sahara Western Sahara Maroko Morocco",
+      "stat": "SAH", "vrstva": "stat", "id": ["SAH"], "id_noveho": "SAH" },
+    { "klic": "golanske-vysiny", "nazev": "Golanské výšiny (okupováno Izraelem)", "hledat": "Golanské výšiny Golan Heights Sýrie Syria Izrael Israel",
+      "stat": "SYR", "vrstva": "uroven1", "nazvy": ["Golanské výšiny, okupováno Izraelem"], "id_noveho": "GOLAN" }
+  ]
 }

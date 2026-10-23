@@ -7,6 +7,7 @@ Spouští se v GitHub Actions (.github/workflows/data.yml), kde je přístup k G
   python nastroje/generuj.py cesko     – vrstvy Česka podle nastroje/vrstvy-cesko.json
   python nastroje/generuj.py svet      – státy + 1. a 2. úroveň správních celků (navazuje, kde skončil)
   python nastroje/generuj.py sporna    – redakční úpravy sporných území (nastroje/sporna-uzemi.json)
+  python nastroje/generuj.py sporna-vrstvy – jen území „Sporná území“ (vrstvy k vyhledání, rychlé)
   python nastroje/generuj.py index     – index.json pro editor
 
 Každá vrstva má dvě podoby: zjednodušenou (GeoJSON, rychlá) a plnou (TopoJSON, sousedé
@@ -745,8 +746,49 @@ def sporna():
         zprava.append('')
     if (DATA / 'svet' / 'meta.json').exists():
         staty_sveta(jedinecne_staty())
+    zprava += sporna_vrstvy()
     ZPRAVY.mkdir(exist_ok=True)
     (ZPRAVY / 'sporna-uzemi.md').write_text('\n'.join(zprava) + '\n', encoding='utf-8')
+
+
+def sporna_vrstvy():
+    """Území „Sporná území“: každé sporné území jako samostatná vrstva (data/sporna/), aby šlo v editoru
+    najít podle názvu. Podle seznamu 'vrstvy' v nastroje/sporna-uzemi.json. Vrací řádky zprávy."""
+    with open(NASTROJE / 'sporna-uzemi.json', encoding='utf-8') as f:
+        seznam = json.load(f).get('vrstvy', [])
+    slozka = DATA / 'sporna'
+    radky = ['## Vrstvy k vyhledání (území „Sporná území“)']
+    meta = {}
+    for v in seznam:
+        if 'soubor' in v:
+            prvky = nacti_vrstvu(NASTROJE / 'sporna-tvary' / v['soubor'])
+            g = unary_union([p['geom'] for p in prvky]) if prvky else Polygon()
+            ident = prvky[0]['vlastnosti'].get('id', v['klic']) if prvky else v['klic']
+        else:
+            zdroj = DATA / 'svet' / v['stat']
+            if not (zdroj / f'{v["vrstva"]}.json').exists():
+                radky.append(f'- {v["nazev"]}: v databázi chybí {v["stat"]} {v["vrstva"]} – přeskočeno')
+                continue
+            ids = set(v.get('id', [])); nazvy = set(v.get('nazvy', []))
+            prvky = [p for p in nacti_plnou(zdroj, v['vrstva'])
+                     if p['vlastnosti'].get('id') in ids or p['vlastnosti'].get('nazev') in nazvy]
+            g = unary_union([p['geom'] for p in prvky]) if prvky else Polygon()
+            ident = v.get('id_noveho') or v['klic']
+        g = jen_plochy(g)
+        if g.is_empty:
+            radky.append(f'- {v["nazev"]}: tvar se nenašel – přeskočeno')
+            continue
+        nazev = re.sub(r'\s*\((?!okupováno|nárokováno)[^)]*\)$', '', v['nazev'])
+        meta[v['klic']] = {
+            'nazev': v['nazev'], 'skupina': 'Sporná území', 'hledat': v.get('hledat', ''),
+            **({'popis': f'Zdroj: {v["zdroj"]}'} if v.get('zdroj') else {}),
+            **uloz_vrstvu(slozka, v['klic'], [{'vlastnosti': {'id': ident, 'nazev': nazev}, 'geom': g}]),
+        }
+        radky.append(f'- {v["nazev"]}: hotovo')
+    if meta:
+        meta['vytvoreno'] = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
+        (slozka / 'meta.json').write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding='utf-8')
+    return radky
 
 
 def prepis_vrstvu(iso3, klic, uprav):
@@ -854,6 +896,13 @@ def index():
     if svet_meta.exists():
         m = json.loads(svet_meta.read_text(encoding='utf-8'))
         uzemi.append({'kod': 'SVET', 'nazev': 'Svět – všechny státy', 'vrstvy': [{'klic': k, **v} for k, v in m.items() if not k.startswith('_')]})
+    sporna_meta = DATA / 'sporna' / 'meta.json'
+    if sporna_meta.exists():
+        m = json.loads(sporna_meta.read_text(encoding='utf-8'))
+        vrstvy = [{'klic': k, **v} for k, v in m.items() if isinstance(v, dict) and 'soubory' in v]
+        # Editor hledá i v názvech a slovech 'hledat' jednotlivých vrstev – „Tibet“ najde rovnou vrstvu Tibetu.
+        uzemi.append({'kod': 'SPORNA', 'nazev': 'Sporná území', 'hledat': 'sporna uzemi disputed territories',
+                      'pozn': f'{len(vrstvy)} území', 'vrstvy': vrstvy})
     zeme = []
     for slozka in sorted((DATA / 'svet').glob('*/')) if (DATA / 'svet').exists() else []:
         mf = slozka / 'meta.json'
@@ -897,7 +946,7 @@ def index():
 
 def main():
     a = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'svet-plne', 'sporna', 'zmensit', 'index', 'vse'])
+    a.add_argument('co', choices=['pruzkum', 'cesko', 'svet', 'svet-znovu', 'svet-plne', 'sporna', 'sporna-vrstvy', 'zmensit', 'index', 'vse'])
     a.add_argument('--minut', type=float, default=300, help='časový limit pro svět')
     arg = a.parse_args()
     PRACOVNI.mkdir(parents=True, exist_ok=True)
@@ -911,6 +960,9 @@ def main():
         zmensi_svet()
     if arg.co in ('sporna', 'vse'):
         sporna()
+    if arg.co == 'sporna-vrstvy':
+        ZPRAVY.mkdir(exist_ok=True)
+        (ZPRAVY / 'sporna-vrstvy.md').write_text('\n'.join(['# Sporná území k vyhledání', '', *sporna_vrstvy()[1:]]) + '\n', encoding='utf-8')
     if arg.co != 'pruzkum':
         index()
 

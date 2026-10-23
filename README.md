@@ -28,6 +28,9 @@ Geofabriku po zemích (Overpass se z GitHubu ukázal jako nepoužitelný – neu
 3. `svet` – státy světa z výřezů Geofabriku. Trvá hodiny; běh skončí po časovém limitu a příště **pokračuje**,
    kde přestal. Spouštět opakovaně, dokud `zpravy/souhrn.md` neukáže všechny státy.
 4. `sporna` – redakční úpravy sporných území (`nastroje/sporna-uzemi.json`), výsledek v `zpravy/sporna-uzemi.md`.
+   Na konci sestaví i území **Sporná území**: každé sporné území (Tibet, Arunáčalpradéš, Krym…) jako samostatnou
+   vrstvu, kterou editor najde podle názvu. Seznam je v `vrstvy` téhož souboru, ruční tvary v `nastroje/sporna-tvary/`.
+   Jen tuhle část (rychle, bez stahování z Geofabriku) udělá volba `sporna-vrstvy`.
 
 Data se ukládají do větve **`data`**, kterou každý běh přepíše jedním commitem (úložiště tak nebobtná).
 GitHub Pages musí servírovat právě tuhle větev: **Settings → Pages → Branch: `data`, složka `/ (root)`**.
